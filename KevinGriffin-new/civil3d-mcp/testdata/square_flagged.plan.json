@@ -1,0 +1,129 @@
+{
+ "schema": "plan2/assoc-v1",
+ "unit": "ft",
+ "source": {
+  "key": "k.json",
+  "reads": "r.json",
+  "pdf": "synthetic square (100x100 ft)",
+  "page": 0
+ },
+ "rotation_deg": 0.0,
+ "rotation_inliers": "4/4",
+ "scale_unit_per_pt": 1.0,
+ "scale_samples": 4,
+ "courses": [
+  {
+   "seg": 0,
+   "px": [
+    10.0,
+    110.0,
+    10.0,
+    10.0
+   ],
+   "flags": [],
+   "bearing": "N 0°0'0\" E",
+   "azimuth": 0.0,
+   "sense": -1,
+   "distance": 100.0,
+   "distance_raw": "100.00"
+  },
+  {
+   "seg": 1,
+   "px": [
+    10.0,
+    10.0,
+    110.0,
+    10.0
+   ],
+   "flags": [],
+   "bearing": "N 90°0'0\" E",
+   "azimuth": 90.0,
+   "sense": -1,
+   "distance": 100.0,
+   "distance_raw": "100.00"
+  },
+  {
+   "seg": 2,
+   "px": [
+    110.0,
+    10.0,
+    110.0,
+    110.0
+   ],
+   "flags": [],
+   "bearing": "S 0°0'0\" E",
+   "azimuth": 180.0,
+   "sense": -1,
+   "distance": 100.0,
+   "distance_raw": "100.00"
+  },
+  {
+   "seg": 3,
+   "px": [
+    110.0,
+    110.0,
+    10.0,
+    110.0
+   ],
+   "flags": [],
+   "bearing": "S 90°0'0\" W",
+   "azimuth": 270.0,
+   "sense": -1,
+   "distance": 100.0,
+   "distance_raw": "100.00"
+  }
+ ],
+ "rings": [
+  {
+   "segs": [
+    0,
+    3,
+    2,
+    1
+   ],
+   "legs": 4,
+   "perimeter": 400.0,
+   "misclosure": 0.0,
+   "theta_ring": 0.0,
+   "precision": "exact"
+  }
+ ],
+ "lines": [
+  [
+   10.0,
+   110.0,
+   10.0,
+   10.0
+  ],
+  [
+   10.0,
+   10.0,
+   110.0,
+   10.0
+  ],
+  [
+   110.0,
+   10.0,
+   110.0,
+   110.0
+  ],
+  [
+   110.0,
+   110.0,
+   10.0,
+   110.0
+  ]
+ ],
+ "report": {
+  "segments": 4,
+  "edges": 4,
+  "faces": 1,
+  "faces_fully_coursed": 1,
+  "courses": 4,
+  "courses_clean": 4,
+  "courses_flagged": 0,
+  "rings_closed": 1,
+  "rings_beyond_tolerance": 0,
+  "needs_human": true
+ }
+}

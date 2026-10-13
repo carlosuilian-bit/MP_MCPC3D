@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Civil3D.HybridMcp.Protocol\Civil3D.HybridMcp.Protocol.csproj" />
+    <ProjectReference Include="..\Civil3D.HybridMcp.Core\Civil3D.HybridMcp.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Civil3DTargetYear Condition="'$(Civil3DTargetYear)' == ''">2026</Civil3DTargetYear>
+    <AutodeskAcadDir Condition="'$(AutodeskAcadDir)' == '' and '$(CIVIL3D_ACAD_DIR)' != ''">$(CIVIL3D_ACAD_DIR)</AutodeskAcadDir>
+    <AutodeskAcadDir Condition="'$(AutodeskAcadDir)' == ''">$(ProgramFiles)\Autodesk\AutoCAD $(Civil3DTargetYear)</AutodeskAcadDir>
+    <AutodeskAecDir Condition="'$(AutodeskAecDir)' == '' and '$(CIVIL3D_AEC_DIR)' != ''">$(CIVIL3D_AEC_DIR)</AutodeskAecDir>
+    <AutodeskAecDir Condition="'$(AutodeskAecDir)' == ''">$(AutodeskAcadDir)\ACA</AutodeskAecDir>
+    <AutodeskCivil3DDir Condition="'$(AutodeskCivil3DDir)' == '' and '$(CIVIL3D_C3D_DIR)' != ''">$(CIVIL3D_C3D_DIR)</AutodeskCivil3DDir>
+    <AutodeskCivil3DDir Condition="'$(AutodeskCivil3DDir)' == ''">$(AutodeskAcadDir)\C3D</AutodeskCivil3DDir>
+  </PropertyGroup>
+
+  <Target Name="ValidateAutodeskReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(AutodeskAcadDir)\acmgd.dll')" Text="AutoCAD managed assemblies were not found. Set MSBuild property AutodeskAcadDir or environment variable CIVIL3D_ACAD_DIR. Current value: $(AutodeskAcadDir)" />
+    <Error Condition="!Exists('$(AutodeskAcadDir)\acdbmgd.dll')" Text="acdbmgd.dll was not found. Set AutodeskAcadDir or CIVIL3D_ACAD_DIR. Current value: $(AutodeskAcadDir)" />
+    <Error Condition="!Exists('$(AutodeskAcadDir)\accoremgd.dll')" Text="accoremgd.dll was not found. Set AutodeskAcadDir or CIVIL3D_ACAD_DIR. Current value: $(AutodeskAcadDir)" />
+    <Error Condition="!Exists('$(AutodeskAecDir)\AecBaseMgd.dll')" Text="AEC managed assemblies were not found. Set MSBuild property AutodeskAecDir or environment variable CIVIL3D_AEC_DIR. Current value: $(AutodeskAecDir)" />
+    <Error Condition="!Exists('$(AutodeskCivil3DDir)\AeccDbMgd.dll')" Text="Civil 3D managed assemblies were not found. Set AutodeskCivil3DDir or CIVIL3D_C3D_DIR. Current value: $(AutodeskCivil3DDir)" />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="acmgd">
+      <HintPath>$(AutodeskAcadDir)\acmgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="acdbmgd">
+      <HintPath>$(AutodeskAcadDir)\acdbmgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="accoremgd">
+      <HintPath>$(AutodeskAcadDir)\accoremgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AecBaseMgd">
+      <HintPath>$(AutodeskAecDir)\AecBaseMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AecPropDataMgd">
+      <HintPath>$(AutodeskAecDir)\AecPropDataMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AeccDbMgd">
+      <HintPath>$(AutodeskCivil3DDir)\AeccDbMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+  </ItemGroup>
+
+</Project>

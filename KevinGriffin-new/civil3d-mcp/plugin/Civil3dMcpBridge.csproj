@@ -1,0 +1,100 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <!-- AutoCAD/Civil 3D 2026 runs on .NET 8 -->
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Civil3dMcpBridge</RootNamespace>
+    <AssemblyName>Civil3dMcpBridge</AssemblyName>
+    <PlatformTarget>x64</PlatformTarget>
+    <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+    <!-- Copy NuGet DLLs (e.g. Newtonsoft.Json) to output for plugin bundling -->
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <UseWindowsForms>false</UseWindowsForms>
+    <!-- Suppress binding redirect warnings for Autodesk assemblies -->
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <NoWarn>$(NoWarn);MSB3277</NoWarn>
+    <!-- Exclude hot-reload sidecar projects from this project's globbing.
+         Each hotreload/vN/ has its own .csproj that builds independently;
+         their .cs sources and obj/ AssemblyInfo files must NOT be pulled
+         into the canonical build (they cause CS0579 duplicate-attribute
+         errors). -->
+    <DefaultItemExcludes>$(DefaultItemExcludes);hotreload\**;v*_handlers_snippet.cs;v*_handlers_snippet*.cs;*.bak</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- AutoCAD 2026 Managed DLLs (main install dir) -->
+    <Reference Include="AcMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\AcMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AcDbMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\AcDbMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AcCoreMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\AcCoreMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- AEC Base (needed for GeneralSegmentLabel) -->
+    <Reference Include="AecBaseMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\ACA\AecBaseMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Civil 3D 2026 Managed DLLs (C3D subfolder) -->
+    <Reference Include="AeccDbMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\C3D\AeccDbMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AeccCogoMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\C3D\AeccCogoMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AeccUiMgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\C3D\AeccUiMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+
+    <!-- Civil 3D 2026 COM Interop (Survey API is COM-only - no managed equivalent) -->
+    <Reference Include="Autodesk.AEC.Interop.Base">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\ACA\Autodesk.AEC.Interop.Base.dll</HintPath>
+      <Private>false</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AEC.Interop.UIBase">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\ACA\Autodesk.AEC.Interop.UIBase.dll</HintPath>
+      <Private>false</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AECC.Interop.Survey">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\C3D\Autodesk.AECC.Interop.Survey.dll</HintPath>
+      <Private>false</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AECC.Interop.Land">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\C3D\Autodesk.AECC.Interop.Land.dll</HintPath>
+      <Private>false</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AECC.Interop.UiLand">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\C3D\Autodesk.AECC.Interop.UiLand.dll</HintPath>
+      <Private>false</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\Autodesk.AutoCAD.Interop.dll</HintPath>
+      <Private>false</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AutoCAD.Interop.Common">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2026\Autodesk.AutoCAD.Interop.Common.dll</HintPath>
+      <Private>false</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+</Project>

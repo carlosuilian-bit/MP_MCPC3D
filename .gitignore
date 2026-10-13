@@ -1,0 +1,25 @@
+# Build
+bin/
+obj/
+.vs/
+*.user
+*.suo
+TestResults/
+
+# Caches
+.ruff_cache/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Desenhos de projeto (grandes)
+*.dwg
+*.dwl
+*.dwl2
+*.bak
+
+# Saidas geradas / testes ao vivo
+artifacts/live-tests/
+artifacts/reports/
+artifacts/Civil3D.HybridMcp.bundle/
+*.log

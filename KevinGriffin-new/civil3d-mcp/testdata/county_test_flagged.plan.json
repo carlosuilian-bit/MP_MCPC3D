@@ -1,0 +1,10344 @@
+{
+ "schema": "plan2/assoc-v1",
+ "unit": "ft",
+ "source": {
+  "key": "_assoc_key.json",
+  "reads": "_assoc_reads.json",
+  "pdf": "county_test.pdf",
+  "page": 0
+ },
+ "rotation_deg": 0.006,
+ "rotation_inliers": "49/336",
+ "scale_unit_per_pt": 2.254239,
+ "scale_samples": 66,
+ "courses": [
+  {
+   "seg": 20,
+   "px": [
+    795.12,
+    511.8,
+    864.24,
+    584.04
+   ],
+   "flags": [
+    "bearing_residual_45.48deg",
+    "partial_course"
+   ],
+   "bearing": "(R1: N45°17'36\"W 572.66')",
+   "azimuth": 1.7547,
+   "sense": -1
+  },
+  {
+   "seg": 20,
+   "px": [
+    795.12,
+    511.8,
+    864.24,
+    584.04
+   ],
+   "flags": [
+    "bearing_residual_1.01deg",
+    "partial_course"
+   ],
+   "bearing": "N44°44'38\"W 566.67'",
+   "azimuth": 315.2561,
+   "sense": -1
+  },
+  {
+   "seg": 23,
+   "px": [
+    1185.77,
+    882.32,
+    1235.63,
+    955.83
+   ],
+   "flags": [
+    "distance_vs_length_7.8pct"
+   ],
+   "bearing": "N34°08'44\"W 230.78",
+   "azimuth": 325.8544,
+   "sense": -1,
+   "distance": 217.26,
+   "distance_raw": "217.26'"
+  },
+  {
+   "seg": 24,
+   "px": [
+    1235.63,
+    955.83,
+    1269.6,
+    1005.9
+   ],
+   "flags": [
+    "bearing_residual_68.29deg",
+    "distance_vs_length_37.2pct"
+   ],
+   "bearing": "34°08'44\"W 230.78'",
+   "azimuth": 34.1456,
+   "sense": -1,
+   "distance": 217.26,
+   "distance_raw": "217.26'"
+  },
+  {
+   "seg": 26,
+   "px": [
+    1083.58,
+    931.92,
+    1098.38,
+    921.79
+   ],
+   "flags": [
+    "bearing_residual_1.04deg",
+    "partial_course"
+   ],
+   "bearing": "S56°39'10\"W",
+   "azimuth": 236.6528,
+   "sense": -1
+  },
+  {
+   "seg": 34,
+   "px": [
+    1030.08,
+    764.28,
+    1110.15,
+    862.77
+   ],
+   "flags": [
+    "bearing_residual_0.81deg",
+    "partial_course"
+   ],
+   "bearing": "N39°54'48\"W 392.39'",
+   "azimuth": 320.0867,
+   "sense": -1
+  },
+  {
+   "seg": 36,
+   "px": [
+    853.08,
+    554.76,
+    873.45,
+    575.2
+   ],
+   "flags": [
+    "bearing_residual_50.19deg",
+    "partial_course"
+   ],
+   "bearing": "5°17'36\"W 572.66'",
+   "azimuth": 5.2933,
+   "sense": -1
+  },
+  {
+   "seg": 39,
+   "px": [
+    692.88,
+    371.76,
+    820.97,
+    500.97
+   ],
+   "flags": [
+    "bearing_residual_89.49deg",
+    "partial_course"
+   ],
+   "bearing": "N44°44'38\"",
+   "azimuth": 44.7439,
+   "sense": -1
+  },
+  {
+   "seg": 40,
+   "px": [
+    820.97,
+    500.97,
+    859.74,
+    540.08
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "N44°44'38\"W 566.67'",
+   "azimuth": 315.2561,
+   "sense": -1
+  },
+  {
+   "seg": 41,
+   "px": [
+    859.74,
+    540.08,
+    887.99,
+    568.59
+   ],
+   "flags": [
+    "bearing_residual_0.56deg",
+    "partial_course"
+   ],
+   "bearing": "N45°17'36\"W 572.66'",
+   "azimuth": 314.7067,
+   "sense": -1
+  },
+  {
+   "seg": 43,
+   "px": [
+    1213.77,
+    897.22,
+    1260.78,
+    944.65
+   ],
+   "flags": [
+    "bearing_residual_10.59deg",
+    "distance_vs_length_30.7pct"
+   ],
+   "bearing": "N34°08'44\"W",
+   "azimuth": 325.8544,
+   "sense": -1,
+   "distance": 217.26,
+   "distance_raw": "217.26'"
+  },
+  {
+   "seg": 47,
+   "px": [
+    692.88,
+    371.76,
+    1151.49,
+    376.0
+   ],
+   "flags": [
+    "distance_vs_length_45.0pct"
+   ],
+   "bearing": "S89°28'18\"E 1117",
+   "azimuth": 90.5283,
+   "sense": 1,
+   "distance": 712.89,
+   "distance_raw": "712.89'"
+  },
+  {
+   "seg": 50,
+   "px": [
+    1206.3,
+    376.51,
+    1497.6,
+    379.2
+   ],
+   "flags": [
+    "bearing_residual_89.86deg",
+    "distance_vs_length_3540.2pct"
+   ],
+   "bearing": "N0°40'29\"E",
+   "azimuth": 0.6747,
+   "sense": 1,
+   "distance": 18.04,
+   "distance_raw": "18.04'"
+  },
+  {
+   "seg": 55,
+   "px": [
+    1091.96,
+    795.21,
+    1137.26,
+    849.58
+   ],
+   "flags": [
+    "bearing_residual_0.77deg",
+    "partial_course"
+   ],
+   "bearing": "N40°33'34\"W 392.60'",
+   "azimuth": 319.4406,
+   "sense": -1
+  },
+  {
+   "seg": 56,
+   "px": [
+    980.16,
+    661.56,
+    1085.28,
+    787.2
+   ],
+   "flags": [
+    "bearing_residual_79.83deg",
+    "distance_vs_length_5.9pct"
+   ],
+   "bearing": "N39°54'48",
+   "azimuth": 39.9133,
+   "sense": -1,
+   "distance": 392.39,
+   "distance_raw": "392.39"
+  },
+  {
+   "seg": 59,
+   "px": [
+    820.97,
+    500.97,
+    859.74,
+    540.08
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "N44°44'38\"W 566.67'",
+   "azimuth": 315.2561,
+   "sense": -1
+  },
+  {
+   "seg": 60,
+   "px": [
+    859.74,
+    540.08,
+    887.99,
+    568.59
+   ],
+   "flags": [
+    "bearing_residual_0.56deg",
+    "partial_course"
+   ],
+   "bearing": "N45°17'36\"W 572.66'",
+   "azimuth": 314.7067,
+   "sense": -1
+  },
+  {
+   "seg": 62,
+   "px": [
+    1599.39,
+    626.21,
+    1619.56,
+    568.37
+   ],
+   "flags": [
+    "bearing_residual_17.92deg",
+    "partial_course"
+   ],
+   "bearing": "(R1: S18°34'10\"W 230.05')",
+   "azimuth": 1.3094,
+   "sense": 1
+  },
+  {
+   "seg": 62,
+   "px": [
+    1599.39,
+    626.21,
+    1619.56,
+    568.37
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "S19°13'13\"W 230.39\"",
+   "azimuth": 199.2203,
+   "sense": -1
+  },
+  {
+   "seg": 63,
+   "px": [
+    1619.56,
+    568.37,
+    1634.04,
+    526.83
+   ],
+   "flags": [
+    "bearing_residual_1.00deg",
+    "partial_course"
+   ],
+   "bearing": "18°13'13\"W 230.39'",
+   "azimuth": 18.2203,
+   "sense": 1
+  },
+  {
+   "seg": 63,
+   "px": [
+    1619.56,
+    568.37,
+    1634.04,
+    526.83
+   ],
+   "flags": [
+    "bearing_residual_0.65deg",
+    "partial_course"
+   ],
+   "bearing": "18°34'10\"W 230.05'",
+   "azimuth": 18.5694,
+   "sense": 1
+  },
+  {
+   "seg": 84,
+   "px": [
+    1235.63,
+    955.83,
+    1269.6,
+    1005.9
+   ],
+   "flags": [
+    "bearing_residual_68.29deg",
+    "distance_vs_length_37.2pct"
+   ],
+   "bearing": "34°08'44\"W 230.78'",
+   "azimuth": 34.1456,
+   "sense": -1,
+   "distance": 217.26,
+   "distance_raw": "217.26'"
+  },
+  {
+   "seg": 87,
+   "px": [
+    1185.77,
+    882.32,
+    1235.63,
+    955.83
+   ],
+   "flags": [
+    "distance_vs_length_7.8pct"
+   ],
+   "bearing": "N34°08'44\"W 230.78",
+   "azimuth": 325.8544,
+   "sense": -1,
+   "distance": 217.26,
+   "distance_raw": "217.26'"
+  },
+  {
+   "seg": 91,
+   "px": [
+    1491.93,
+    1053.01,
+    1492.3,
+    1008.01
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "N0°38'32\"E 1317.39'",
+   "azimuth": 0.6422,
+   "sense": 1
+  },
+  {
+   "seg": 104,
+   "px": [
+    1499.22,
+    187.32,
+    1499.68,
+    132.83
+   ],
+   "flags": [
+    "distance_vs_length_81.3pct"
+   ],
+   "bearing": "N0°39'14\"E 658.88'",
+   "azimuth": 0.6539,
+   "sense": 1,
+   "distance": 656.85,
+   "distance_raw": "09'34\"E 656.85'"
+  },
+  {
+   "seg": 104,
+   "px": [
+    1499.22,
+    187.32,
+    1499.68,
+    132.83
+   ],
+   "flags": [
+    "distance_vs_length_81.4pct",
+    "partial_course"
+   ],
+   "distance": 658.99,
+   "distance_raw": "18'47\"E 658.99'"
+  },
+  {
+   "seg": 107,
+   "px": [
+    1196.28,
+    957.84,
+    1222.56,
+    994.44
+   ],
+   "flags": [
+    "bearing_residual_1.53deg",
+    "distance_vs_length_53.2pct"
+   ],
+   "bearing": "N34°08'44\"W 230.78'",
+   "azimuth": 325.8544,
+   "sense": -1,
+   "distance": 217.26,
+   "distance_raw": "217.26'"
+  },
+  {
+   "seg": 113,
+   "px": [
+    1448.43,
+    827.73,
+    1454.67,
+    768.82
+   ],
+   "flags": [
+    "bearing_residual_29.95deg",
+    "distance_vs_length_36.8pct"
+   ],
+   "bearing": "216°E",
+   "azimuth": 216,
+   "sense": -1,
+   "distance": 211.41,
+   "distance_raw": "211.41'"
+  },
+  {
+   "seg": 116,
+   "px": [
+    1442.99,
+    788.04,
+    1451.24,
+    699.6
+   ],
+   "flags": [
+    "distance_vs_length_5.3pct"
+   ],
+   "bearing": "5°22'16\"E",
+   "azimuth": 5.3711,
+   "sense": 1,
+   "distance": 211.41,
+   "distance_raw": "211.41'"
+  },
+  {
+   "seg": 120,
+   "px": [
+    1496.09,
+    558.12,
+    1523.7,
+    477.84
+   ],
+   "flags": [
+    "bearing_residual_1.57deg",
+    "partial_course"
+   ],
+   "bearing": "N20°33'25.50\"",
+   "azimuth": 20.5569,
+   "sense": 1
+  },
+  {
+   "seg": 124,
+   "px": [
+    1416.6,
+    610.44,
+    1461.96,
+    618.36
+   ],
+   "flags": [
+    "distance_vs_length_62.2pct"
+   ],
+   "bearing": "N80°04'57\"W",
+   "azimuth": 279.9175,
+   "sense": -1,
+   "distance": 64.01,
+   "distance_raw": "64.01'"
+  },
+  {
+   "seg": 125,
+   "px": [
+    1206.3,
+    376.51,
+    1416.6,
+    610.44
+   ],
+   "flags": [
+    "bearing_residual_38.13deg",
+    "partial_course"
+   ],
+   "bearing": "N80°04'57\"W",
+   "azimuth": 279.9175,
+   "sense": -1
+  },
+  {
+   "seg": 126,
+   "px": [
+    1341.48,
+    720.48,
+    1461.12,
+    687.96
+   ],
+   "flags": [
+    "distance_vs_length_62.4pct"
+   ],
+   "bearing": "N74°48'16\"E",
+   "azimuth": 74.8044,
+   "sense": 1,
+   "distance": 172.09,
+   "distance_raw": "172.09'"
+  },
+  {
+   "seg": 127,
+   "px": [
+    1181.84,
+    876.52,
+    1341.48,
+    720.48
+   ],
+   "flags": [
+    "bearing_residual_29.15deg",
+    "distance_vs_length_192.4pct"
+   ],
+   "bearing": "N74°48'16\"E",
+   "azimuth": 74.8044,
+   "sense": 1,
+   "distance": 172.09,
+   "distance_raw": "172.09'"
+  },
+  {
+   "seg": 129,
+   "px": [
+    1197.04,
+    851.07,
+    1338.15,
+    713.82
+   ],
+   "flags": [
+    "distance_vs_length_43.1pct"
+   ],
+   "bearing": "45°38'34\"E",
+   "azimuth": 45.6428,
+   "sense": 1,
+   "distance": 310.04,
+   "distance_raw": "310.04'"
+  },
+  {
+   "seg": 129,
+   "px": [
+    1197.04,
+    851.07,
+    1338.15,
+    713.82
+   ],
+   "flags": [
+    "bearing_residual_29.00deg",
+    "distance_vs_length_157.9pct"
+   ],
+   "bearing": "N74°48'16\"E",
+   "azimuth": 74.8044,
+   "sense": 1,
+   "distance": 172.09,
+   "distance_raw": "172.09'"
+  },
+  {
+   "seg": 130,
+   "px": [
+    1630.68,
+    695.04,
+    1724.16,
+    695.04
+   ],
+   "flags": [
+    "bearing_residual_63.78deg",
+    "distance_vs_length_45.4pct"
+   ],
+   "bearing": "S26°13'32\"W",
+   "azimuth": 206.2256,
+   "sense": -1,
+   "distance": 144.89,
+   "distance_raw": "-144.89'"
+  },
+  {
+   "seg": 134,
+   "px": [
+    1198.32,
+    885.36,
+    1263.93,
+    982.22
+   ],
+   "flags": [
+    "distance_vs_length_21.4pct"
+   ],
+   "bearing": "N34°08'44\"W 230.78'",
+   "azimuth": 325.8544,
+   "sense": -1,
+   "distance": 217.26,
+   "distance_raw": "217.26'"
+  },
+  {
+   "seg": 139,
+   "px": [
+    1574.64,
+    670.69,
+    1627.68,
+    518.64
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "S19°13'13\"W 230.39'",
+   "azimuth": 199.2203,
+   "sense": -1
+  },
+  {
+   "seg": 143,
+   "px": [
+    360.6,
+    874.08,
+    408.72,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_37.94deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 143,
+   "px": [
+    360.6,
+    874.08,
+    408.72,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_77.23deg",
+    "partial_course"
+   ],
+   "bearing": "12°46'25\"",
+   "azimuth": 12.7736,
+   "sense": 1
+  },
+  {
+   "seg": 143,
+   "px": [
+    360.6,
+    874.08,
+    408.72,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_88.93deg",
+    "partial_course"
+   ],
+   "bearing": "1°04'37\"",
+   "azimuth": 1.0769,
+   "sense": 1
+  },
+  {
+   "seg": 143,
+   "px": [
+    360.6,
+    874.08,
+    408.72,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1
+  },
+  {
+   "seg": 144,
+   "px": [
+    408.72,
+    874.08,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_37.94deg",
+    "distance_vs_length_8.7pct"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 144,
+   "px": [
+    408.72,
+    874.08,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_77.23deg",
+    "distance_vs_length_66.7pct"
+   ],
+   "bearing": "12°46'25\"",
+   "azimuth": 12.7736,
+   "sense": 1,
+   "distance": 305.96,
+   "distance_raw": "305.96'"
+  },
+  {
+   "seg": 144,
+   "px": [
+    408.72,
+    874.08,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_88.93deg",
+    "distance_vs_length_222.0pct"
+   ],
+   "bearing": "1°04'37\"",
+   "azimuth": 1.0769,
+   "sense": 1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 144,
+   "px": [
+    408.72,
+    874.08,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "distance_vs_length_86.1pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1,
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 144,
+   "px": [
+    408.72,
+    874.08,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_46.94deg",
+    "partial_course"
+   ],
+   "bearing": "N43°4",
+   "azimuth": 43.0667,
+   "sense": 1
+  },
+  {
+   "seg": 144,
+   "px": [
+    408.72,
+    874.08,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_21.92deg",
+    "partial_course"
+   ],
+   "bearing": "N68°5",
+   "azimuth": 68.0833,
+   "sense": 1
+  },
+  {
+   "seg": 144,
+   "px": [
+    408.72,
+    874.08,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_4.01deg",
+    "partial_course"
+   ],
+   "bearing": "N86°0",
+   "azimuth": 86.0,
+   "sense": 1
+  },
+  {
+   "seg": 144,
+   "px": [
+    408.72,
+    874.08,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_42.01deg",
+    "partial_course"
+   ],
+   "bearing": "S48°0",
+   "azimuth": 48.0,
+   "sense": 1
+  },
+  {
+   "seg": 145,
+   "px": [
+    453.96,
+    874.08,
+    542.76,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_46.22deg",
+    "partial_course"
+   ],
+   "bearing": "N43°46'27\"W",
+   "azimuth": 316.2258,
+   "sense": -1
+  },
+  {
+   "seg": 145,
+   "px": [
+    453.96,
+    874.08,
+    542.76,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_21.14deg",
+    "partial_course"
+   ],
+   "bearing": "N68°51'52\"E",
+   "azimuth": 68.8644,
+   "sense": 1
+  },
+  {
+   "seg": 145,
+   "px": [
+    453.96,
+    874.08,
+    542.76,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_3.86deg",
+    "partial_course"
+   ],
+   "bearing": "N86°08'12\"W",
+   "azimuth": 273.8633,
+   "sense": -1
+  },
+  {
+   "seg": 145,
+   "px": [
+    453.96,
+    874.08,
+    542.76,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_41.97deg",
+    "partial_course"
+   ],
+   "bearing": "S48°02'09\"W",
+   "azimuth": 228.0358,
+   "sense": -1
+  },
+  {
+   "seg": 146,
+   "px": [
+    542.76,
+    874.08,
+    618.36,
+    874.08
+   ],
+   "flags": [
+    "distance_vs_length_44.2pct",
+    "partial_course"
+   ],
+   "distance": 305.33,
+   "distance_raw": "305.33'"
+  },
+  {
+   "seg": 146,
+   "px": [
+    542.76,
+    874.08,
+    618.36,
+    874.08
+   ],
+   "flags": [
+    "distance_vs_length_447.3pct",
+    "partial_course"
+   ],
+   "distance": 31.14,
+   "distance_raw": "31.14'"
+  },
+  {
+   "seg": 146,
+   "px": [
+    542.76,
+    874.08,
+    618.36,
+    874.08
+   ],
+   "flags": [
+    "distance_vs_length_211.0pct",
+    "partial_course"
+   ],
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 146,
+   "px": [
+    542.76,
+    874.08,
+    618.36,
+    874.08
+   ],
+   "flags": [
+    "distance_vs_length_89.7pct",
+    "partial_course"
+   ],
+   "distance": 89.86,
+   "distance_raw": "89.86'"
+  },
+  {
+   "seg": 151,
+   "px": [
+    453.96,
+    634.68,
+    542.76,
+    634.68
+   ],
+   "flags": [
+    "bearing_residual_47.23deg",
+    "distance_vs_length_29.9pct"
+   ],
+   "bearing": "S42°46'04\"E",
+   "azimuth": 137.2322,
+   "sense": 1,
+   "distance": 285.5,
+   "distance_raw": "285.5"
+  },
+  {
+   "seg": 152,
+   "px": [
+    542.76,
+    634.68,
+    618.36,
+    634.68
+   ],
+   "flags": [
+    "distance_vs_length_40.3pct",
+    "partial_course"
+   ],
+   "distance": 285.56,
+   "distance_raw": "285.56'"
+  },
+  {
+   "seg": 155,
+   "px": [
+    360.6,
+    931.92,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1
+  },
+  {
+   "seg": 155,
+   "px": [
+    360.6,
+    931.92,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_86.76deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": 1
+  },
+  {
+   "seg": 155,
+   "px": [
+    360.6,
+    931.92,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_8.08deg",
+    "partial_course"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": 1
+  },
+  {
+   "seg": 156,
+   "px": [
+    408.72,
+    931.92,
+    453.96,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "distance_vs_length_38.9pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1,
+   "distance": 166.78,
+   "distance_raw": "166.78'"
+  },
+  {
+   "seg": 156,
+   "px": [
+    408.72,
+    931.92,
+    453.96,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_86.76deg",
+    "distance_vs_length_222.0pct"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": 1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 156,
+   "px": [
+    408.72,
+    931.92,
+    453.96,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_8.08deg",
+    "distance_vs_length_42.6pct"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": 1,
+   "distance": 71.5,
+   "distance_raw": "71.50'"
+  },
+  {
+   "seg": 157,
+   "px": [
+    453.96,
+    931.92,
+    511.24,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_14.25deg",
+    "partial_course"
+   ],
+   "bearing": "N75°44'44\"W",
+   "azimuth": 284.2544,
+   "sense": -1
+  },
+  {
+   "seg": 157,
+   "px": [
+    453.96,
+    931.92,
+    511.24,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_41.97deg",
+    "partial_course"
+   ],
+   "bearing": "S48°02'09\"W",
+   "azimuth": 228.0358,
+   "sense": -1
+  },
+  {
+   "seg": 157,
+   "px": [
+    453.96,
+    931.92,
+    511.24,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_25.45deg",
+    "partial_course"
+   ],
+   "bearing": "S64°33'33\"W",
+   "azimuth": 244.5592,
+   "sense": -1
+  },
+  {
+   "seg": 158,
+   "px": [
+    511.24,
+    931.92,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_14.25deg",
+    "distance_vs_length_57.4pct"
+   ],
+   "bearing": "N75°44'44\"W",
+   "azimuth": 284.2544,
+   "sense": -1,
+   "distance": 166.7,
+   "distance_raw": "166.7"
+  },
+  {
+   "seg": 158,
+   "px": [
+    511.24,
+    931.92,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_41.97deg",
+    "distance_vs_length_128.5pct"
+   ],
+   "bearing": "S48°02'09\"W",
+   "azimuth": 228.0358,
+   "sense": -1,
+   "distance": 31.1,
+   "distance_raw": "31.1"
+  },
+  {
+   "seg": 158,
+   "px": [
+    511.24,
+    931.92,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_25.45deg",
+    "distance_vs_length_8.5pct"
+   ],
+   "bearing": "S64°33'33\"W",
+   "azimuth": 244.5592,
+   "sense": -1,
+   "distance": 65.5,
+   "distance_raw": "65.5"
+  },
+  {
+   "seg": 160,
+   "px": [
+    1083.58,
+    931.92,
+    1127.02,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_33.35deg",
+    "distance_vs_length_293.4pct"
+   ],
+   "bearing": "S56°39'10\"W",
+   "azimuth": 236.6528,
+   "sense": -1,
+   "distance": 24.89,
+   "distance_raw": "24.89'"
+  },
+  {
+   "seg": 161,
+   "px": [
+    1127.02,
+    931.92,
+    1157.64,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_33.35deg",
+    "distance_vs_length_177.3pct"
+   ],
+   "bearing": "S56°39'10\"W",
+   "azimuth": 236.6528,
+   "sense": -1,
+   "distance": 24.89,
+   "distance_raw": "24.89'"
+  },
+  {
+   "seg": 181,
+   "px": [
+    1381.32,
+    331.44,
+    1438.2,
+    331.44
+   ],
+   "flags": [
+    "bearing_residual_89.33deg",
+    "distance_vs_length_610.8pct"
+   ],
+   "bearing": "N0°40'29\"E",
+   "azimuth": 0.6747,
+   "sense": 1,
+   "distance": 18.04,
+   "distance_raw": "18.04'"
+  },
+  {
+   "seg": 182,
+   "px": [
+    1381.32,
+    331.44,
+    1438.2,
+    354.36
+   ],
+   "flags": [
+    "bearing_residual_68.72deg",
+    "partial_course"
+   ],
+   "bearing": "N0°40'29\"E",
+   "azimuth": 0.6747,
+   "sense": -1
+  },
+  {
+   "seg": 186,
+   "px": [
+    1090.92,
+    361.23,
+    1150.52,
+    361.88
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "S89°28'18\"E 1117.59'",
+   "azimuth": 90.5283,
+   "sense": 1
+  },
+  {
+   "seg": 187,
+   "px": [
+    1150.52,
+    361.88,
+    1190.88,
+    362.31
+   ],
+   "flags": [
+    "bearing_residual_89.86deg",
+    "partial_course"
+   ],
+   "bearing": "N0°28'18\"E 1117.59'",
+   "azimuth": 0.4717,
+   "sense": -1
+  },
+  {
+   "seg": 187,
+   "px": [
+    1150.52,
+    361.88,
+    1190.88,
+    362.31
+   ],
+   "flags": [
+    "bearing_residual_0.59deg",
+    "partial_course"
+   ],
+   "bearing": "S89°58'31\"E 1106.07'",
+   "azimuth": 90.0247,
+   "sense": 1
+  },
+  {
+   "seg": 188,
+   "px": [
+    1354.56,
+    364.08,
+    1454.64,
+    365.16
+   ],
+   "flags": [
+    "bearing_residual_89.95deg",
+    "distance_vs_length_1150.7pct"
+   ],
+   "bearing": "N0°40'29\"E",
+   "azimuth": 0.6747,
+   "sense": 1,
+   "distance": 18.04,
+   "distance_raw": "18.04'"
+  },
+  {
+   "seg": 189,
+   "px": [
+    1090.92,
+    361.23,
+    1150.52,
+    361.88
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "S89°28'18\"E 1117.59'",
+   "azimuth": 90.5283,
+   "sense": 1
+  },
+  {
+   "seg": 190,
+   "px": [
+    1150.52,
+    361.88,
+    1190.88,
+    362.31
+   ],
+   "flags": [
+    "bearing_residual_89.86deg",
+    "partial_course"
+   ],
+   "bearing": "N0°28'18\"E 1117.59'",
+   "azimuth": 0.4717,
+   "sense": -1
+  },
+  {
+   "seg": 190,
+   "px": [
+    1150.52,
+    361.88,
+    1190.88,
+    362.31
+   ],
+   "flags": [
+    "bearing_residual_0.59deg",
+    "partial_course"
+   ],
+   "bearing": "S89°58'31\"E 1106.07'",
+   "azimuth": 90.0247,
+   "sense": 1
+  },
+  {
+   "seg": 191,
+   "px": [
+    1090.92,
+    361.23,
+    1151.49,
+    376.0
+   ],
+   "flags": [
+    "bearing_residual_13.18deg",
+    "partial_course"
+   ],
+   "bearing": "S89°28'18\"E 1117.59'",
+   "azimuth": 90.5283,
+   "sense": 1
+  },
+  {
+   "seg": 193,
+   "px": [
+    803.28,
+    503.16,
+    842.04,
+    542.28
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "N44°44'38\"W 566.67",
+   "azimuth": 315.2561,
+   "sense": -1
+  },
+  {
+   "seg": 194,
+   "px": [
+    803.28,
+    503.16,
+    859.74,
+    540.08
+   ],
+   "flags": [
+    "bearing_residual_12.07deg",
+    "partial_course"
+   ],
+   "bearing": "N44°44'38\"W 566.67'",
+   "azimuth": 315.2561,
+   "sense": -1
+  },
+  {
+   "seg": 195,
+   "px": [
+    1038.84,
+    753.72,
+    1075.2,
+    797.28
+   ],
+   "flags": [
+    "distance_vs_length_67.4pct"
+   ],
+   "bearing": "N39°54'48\"W 392.39",
+   "azimuth": 320.0867,
+   "sense": -1,
+   "distance": 392.6,
+   "distance_raw": "392.60"
+  },
+  {
+   "seg": 196,
+   "px": [
+    1038.84,
+    753.72,
+    1091.96,
+    795.21
+   ],
+   "flags": [
+    "bearing_residual_12.09deg",
+    "partial_course"
+   ],
+   "bearing": "N39°54'48\"W 392.39'",
+   "azimuth": 320.0867,
+   "sense": -1
+  },
+  {
+   "seg": 197,
+   "px": [
+    1037.76,
+    758.04,
+    1101.0,
+    835.56
+   ],
+   "flags": [
+    "bearing_residual_40.88deg",
+    "partial_course"
+   ],
+   "bearing": "(R1: N40°33'34\"W 392.60')",
+   "azimuth": 1.6758,
+   "sense": -1
+  },
+  {
+   "seg": 197,
+   "px": [
+    1037.76,
+    758.04,
+    1101.0,
+    835.56
+   ],
+   "flags": [
+    "bearing_residual_0.71deg",
+    "partial_course"
+   ],
+   "bearing": "N39°54'48\"W 392.39'",
+   "azimuth": 320.0867,
+   "sense": -1
+  },
+  {
+   "seg": 198,
+   "px": [
+    1085.28,
+    917.16,
+    1105.16,
+    917.16
+   ],
+   "flags": [
+    "bearing_residual_33.35deg",
+    "distance_vs_length_80.0pct"
+   ],
+   "bearing": "S56°39'10\"W",
+   "azimuth": 236.6528,
+   "sense": -1,
+   "distance": 24.89,
+   "distance_raw": "24.89'"
+  },
+  {
+   "seg": 199,
+   "px": [
+    1105.16,
+    917.16,
+    1150.44,
+    917.16
+   ],
+   "flags": [
+    "bearing_residual_33.35deg",
+    "distance_vs_length_310.1pct"
+   ],
+   "bearing": "S56°39'10\"W",
+   "azimuth": 236.6528,
+   "sense": -1,
+   "distance": 24.89,
+   "distance_raw": "24.89'"
+  },
+  {
+   "seg": 201,
+   "px": [
+    1098.38,
+    921.79,
+    1127.02,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_52.83deg",
+    "distance_vs_length_175.1pct"
+   ],
+   "bearing": "S56°39'10\"W",
+   "azimuth": 236.6528,
+   "sense": -1,
+   "distance": 24.89,
+   "distance_raw": "24.89'"
+  },
+  {
+   "seg": 202,
+   "px": [
+    1127.02,
+    931.92,
+    1150.44,
+    940.2
+   ],
+   "flags": [
+    "bearing_residual_52.82deg",
+    "distance_vs_length_125.0pct"
+   ],
+   "bearing": "S56°39'10\"W",
+   "azimuth": 236.6528,
+   "sense": -1,
+   "distance": 24.89,
+   "distance_raw": "24.89'"
+  },
+  {
+   "seg": 205,
+   "px": [
+    1350.0,
+    1035.24,
+    1415.28,
+    1058.28
+   ],
+   "flags": [
+    "bearing_residual_45.53deg",
+    "partial_course"
+   ],
+   "bearing": "S63°55'09\"W",
+   "azimuth": 243.9192,
+   "sense": -1
+  },
+  {
+   "seg": 208,
+   "px": [
+    1604.28,
+    838.32,
+    1665.96,
+    861.36
+   ],
+   "flags": [
+    "bearing_residual_49.93deg",
+    "distance_vs_length_34.1pct"
+   ],
+   "bearing": "S19°34'38\"E",
+   "azimuth": 160.4228,
+   "sense": 1,
+   "distance": 225.35,
+   "distance_raw": "225.35'"
+  },
+  {
+   "seg": 210,
+   "px": [
+    1604.28,
+    861.36,
+    1665.96,
+    861.36
+   ],
+   "flags": [
+    "bearing_residual_70.42deg",
+    "distance_vs_length_38.3pct"
+   ],
+   "bearing": "S19°34'38\"E",
+   "azimuth": 160.4228,
+   "sense": 1,
+   "distance": 225.35,
+   "distance_raw": "225.35'"
+  },
+  {
+   "seg": 214,
+   "px": [
+    408.72,
+    854.88,
+    453.96,
+    854.88
+   ],
+   "flags": [
+    "bearing_residual_37.94deg",
+    "distance_vs_length_8.7pct"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 214,
+   "px": [
+    408.72,
+    854.88,
+    453.96,
+    854.88
+   ],
+   "flags": [
+    "bearing_residual_77.23deg",
+    "distance_vs_length_66.7pct"
+   ],
+   "bearing": "12°46'25\"",
+   "azimuth": 12.7736,
+   "sense": 1,
+   "distance": 305.96,
+   "distance_raw": "305.96'"
+  },
+  {
+   "seg": 214,
+   "px": [
+    408.72,
+    854.88,
+    453.96,
+    854.88
+   ],
+   "flags": [
+    "bearing_residual_88.93deg",
+    "distance_vs_length_86.1pct"
+   ],
+   "bearing": "1°04'37\"",
+   "azimuth": 1.0769,
+   "sense": 1,
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 215,
+   "px": [
+    453.96,
+    854.88,
+    542.76,
+    854.88
+   ],
+   "flags": [
+    "bearing_residual_46.22deg",
+    "partial_course"
+   ],
+   "bearing": "N43°46'27\"W",
+   "azimuth": 316.2258,
+   "sense": -1
+  },
+  {
+   "seg": 215,
+   "px": [
+    453.96,
+    854.88,
+    542.76,
+    854.88
+   ],
+   "flags": [
+    "bearing_residual_21.14deg",
+    "partial_course"
+   ],
+   "bearing": "N68°51'52\"E",
+   "azimuth": 68.8644,
+   "sense": 1
+  },
+  {
+   "seg": 215,
+   "px": [
+    453.96,
+    854.88,
+    542.76,
+    854.88
+   ],
+   "flags": [
+    "bearing_residual_3.86deg",
+    "partial_course"
+   ],
+   "bearing": "N86°08'12\"W",
+   "azimuth": 273.8633,
+   "sense": -1
+  },
+  {
+   "seg": 217,
+   "px": [
+    1590.96,
+    713.28,
+    1656.12,
+    713.28
+   ],
+   "flags": [
+    "bearing_residual_63.78deg"
+   ],
+   "bearing": "S26°13'32\"W",
+   "azimuth": 206.2256,
+   "sense": -1,
+   "distance": 144.89,
+   "distance_raw": "144.89'"
+  },
+  {
+   "seg": 218,
+   "px": [
+    1590.96,
+    713.28,
+    1656.12,
+    736.32
+   ],
+   "flags": [
+    "bearing_residual_83.25deg",
+    "distance_vs_length_7.5pct"
+   ],
+   "bearing": "S26°13'32\"W",
+   "azimuth": 206.2256,
+   "sense": -1,
+   "distance": 144.89,
+   "distance_raw": "144.89'"
+  },
+  {
+   "seg": 220,
+   "px": [
+    1590.96,
+    736.32,
+    1613.12,
+    736.32
+   ],
+   "flags": [
+    "bearing_residual_63.78deg",
+    "distance_vs_length_65.5pct"
+   ],
+   "bearing": "S26°13'32\"W",
+   "azimuth": 206.2256,
+   "sense": -1,
+   "distance": 144.89,
+   "distance_raw": "144.89'"
+  },
+  {
+   "seg": 221,
+   "px": [
+    1613.12,
+    736.32,
+    1656.12,
+    736.32
+   ],
+   "flags": [
+    "bearing_residual_63.78deg",
+    "distance_vs_length_33.1pct"
+   ],
+   "bearing": "S26°13'32\"W",
+   "azimuth": 206.2256,
+   "sense": -1,
+   "distance": 144.89,
+   "distance_raw": "144.89'"
+  },
+  {
+   "seg": 222,
+   "px": [
+    1599.39,
+    626.21,
+    1619.56,
+    568.37
+   ],
+   "flags": [
+    "bearing_residual_17.92deg",
+    "partial_course"
+   ],
+   "bearing": "(R1: S18°34'10\"W 230.05')",
+   "azimuth": 1.3094,
+   "sense": 1
+  },
+  {
+   "seg": 222,
+   "px": [
+    1599.39,
+    626.21,
+    1619.56,
+    568.37
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "S19°13'13\"W 230.39\"",
+   "azimuth": 199.2203,
+   "sense": -1
+  },
+  {
+   "seg": 223,
+   "px": [
+    1619.56,
+    568.37,
+    1634.04,
+    526.83
+   ],
+   "flags": [
+    "bearing_residual_1.00deg",
+    "partial_course"
+   ],
+   "bearing": "18°13'13\"W 230.39'",
+   "azimuth": 18.2203,
+   "sense": 1
+  },
+  {
+   "seg": 223,
+   "px": [
+    1619.56,
+    568.37,
+    1634.04,
+    526.83
+   ],
+   "flags": [
+    "bearing_residual_0.65deg",
+    "partial_course"
+   ],
+   "bearing": "18°34'10\"W 230.05'",
+   "azimuth": 18.5694,
+   "sense": 1
+  },
+  {
+   "seg": 224,
+   "px": [
+    1614.0,
+    627.24,
+    1619.56,
+    568.37
+   ],
+   "flags": [
+    "bearing_residual_13.82deg",
+    "partial_course"
+   ],
+   "bearing": "S19°13'13\"W 230.39'",
+   "azimuth": 199.2203,
+   "sense": -1
+  },
+  {
+   "seg": 226,
+   "px": [
+    1614.0,
+    627.24,
+    1646.04,
+    540.6
+   ],
+   "flags": [
+    "bearing_residual_18.99deg",
+    "partial_course"
+   ],
+   "bearing": "(R1: S18°34'10\"W 230.05')",
+   "azimuth": 1.3094,
+   "sense": 1
+  },
+  {
+   "seg": 226,
+   "px": [
+    1614.0,
+    627.24,
+    1646.04,
+    540.6
+   ],
+   "flags": [
+    "bearing_residual_1.08deg",
+    "partial_course"
+   ],
+   "bearing": "S19°13'13\"W 230.39'",
+   "azimuth": 199.2203,
+   "sense": -1
+  },
+  {
+   "seg": 262,
+   "px": [
+    453.96,
+    652.08,
+    542.76,
+    652.08
+   ],
+   "flags": [
+    "bearing_residual_47.23deg",
+    "distance_vs_length_29.9pct"
+   ],
+   "bearing": "S42°46'04\"E",
+   "azimuth": 137.2322,
+   "sense": 1,
+   "distance": 285.5,
+   "distance_raw": "285.5"
+  },
+  {
+   "seg": 262,
+   "px": [
+    453.96,
+    652.08,
+    542.76,
+    652.08
+   ],
+   "flags": [
+    "bearing_residual_20.50deg",
+    "distance_vs_length_264.5pct"
+   ],
+   "bearing": "S69°30'32\"W",
+   "azimuth": 249.5089,
+   "sense": -1,
+   "distance": 54.92,
+   "distance_raw": "54.92"
+  },
+  {
+   "seg": 263,
+   "px": [
+    542.76,
+    652.08,
+    618.36,
+    652.08
+   ],
+   "flags": [
+    "distance_vs_length_40.3pct",
+    "partial_course"
+   ],
+   "distance": 285.56,
+   "distance_raw": "285.56'"
+  },
+  {
+   "seg": 263,
+   "px": [
+    542.76,
+    652.08,
+    618.36,
+    652.08
+   ],
+   "flags": [
+    "distance_vs_length_210.3pct",
+    "partial_course"
+   ],
+   "distance": 54.92,
+   "distance_raw": "54.92'"
+  },
+  {
+   "seg": 263,
+   "px": [
+    542.76,
+    652.08,
+    618.36,
+    652.08
+   ],
+   "flags": [
+    "distance_vs_length_89.7pct",
+    "partial_course"
+   ],
+   "distance": 89.86,
+   "distance_raw": "89.86'"
+  },
+  {
+   "seg": 265,
+   "px": [
+    318.0,
+    756.6,
+    359.28,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_86.77deg",
+    "distance_vs_length_96.8pct"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": 1,
+   "distance": 2944.79,
+   "distance_raw": "2944.79'"
+  },
+  {
+   "seg": 266,
+   "px": [
+    359.28,
+    756.6,
+    408.72,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_86.77deg",
+    "distance_vs_length_33.1pct"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": 1,
+   "distance": 166.57,
+   "distance_raw": "166.57'"
+  },
+  {
+   "seg": 266,
+   "px": [
+    359.28,
+    756.6,
+    408.72,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_7.95deg",
+    "distance_vs_length_96.2pct"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": 1,
+   "distance": 2944.79,
+   "distance_raw": "2944.79'"
+  },
+  {
+   "seg": 266,
+   "px": [
+    359.28,
+    756.6,
+    408.72,
+    756.6
+   ],
+   "flags": [
+    "distance_vs_length_122.9pct",
+    "partial_course"
+   ],
+   "distance": 50.0,
+   "distance_raw": "50.00'"
+  },
+  {
+   "seg": 266,
+   "px": [
+    359.28,
+    756.6,
+    408.72,
+    756.6
+   ],
+   "flags": [
+    "distance_vs_length_55.6pct",
+    "partial_course"
+   ],
+   "distance": 71.61,
+   "distance_raw": "71.61'"
+  },
+  {
+   "seg": 267,
+   "px": [
+    408.72,
+    756.6,
+    453.96,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_86.77deg",
+    "distance_vs_length_38.8pct"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": 1,
+   "distance": 166.57,
+   "distance_raw": "166.57'"
+  },
+  {
+   "seg": 267,
+   "px": [
+    408.72,
+    756.6,
+    453.96,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_7.95deg",
+    "distance_vs_length_42.4pct"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": 1,
+   "distance": 71.61,
+   "distance_raw": "71.61'"
+  },
+  {
+   "seg": 267,
+   "px": [
+    408.72,
+    756.6,
+    453.96,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_25.01deg",
+    "partial_course"
+   ],
+   "bearing": "N65°0",
+   "azimuth": 65.0,
+   "sense": 1
+  },
+  {
+   "seg": 267,
+   "px": [
+    408.72,
+    756.6,
+    453.96,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_14.99deg",
+    "partial_course"
+   ],
+   "bearing": "S75°1",
+   "azimuth": 75.0167,
+   "sense": 1
+  },
+  {
+   "seg": 268,
+   "px": [
+    453.96,
+    756.6,
+    542.76,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_24.87deg",
+    "partial_course"
+   ],
+   "bearing": "N65°08'18\"E",
+   "azimuth": 65.1383,
+   "sense": 1
+  },
+  {
+   "seg": 268,
+   "px": [
+    453.96,
+    756.6,
+    542.76,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_14.81deg",
+    "partial_course"
+   ],
+   "bearing": "S75°11'16\"E",
+   "azimuth": 104.8122,
+   "sense": 1
+  },
+  {
+   "seg": 274,
+   "px": [
+    453.96,
+    669.48,
+    542.76,
+    669.48
+   ],
+   "flags": [
+    "bearing_residual_4.46deg",
+    "partial_course"
+   ],
+   "bearing": "N85°32'19\"W",
+   "azimuth": 274.4614,
+   "sense": -1
+  },
+  {
+   "seg": 274,
+   "px": [
+    453.96,
+    669.48,
+    542.76,
+    669.48
+   ],
+   "flags": [
+    "bearing_residual_47.23deg",
+    "partial_course"
+   ],
+   "bearing": "S42°46'04\"E",
+   "azimuth": 137.2322,
+   "sense": 1
+  },
+  {
+   "seg": 274,
+   "px": [
+    453.96,
+    669.48,
+    542.76,
+    669.48
+   ],
+   "flags": [
+    "bearing_residual_20.50deg",
+    "partial_course"
+   ],
+   "bearing": "S69°30'32\"W",
+   "azimuth": 249.5089,
+   "sense": -1
+  },
+  {
+   "seg": 278,
+   "px": [
+    359.28,
+    686.88,
+    408.72,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_78.06deg",
+    "partial_course"
+   ],
+   "bearing": "11°56'37\"",
+   "azimuth": 11.9436,
+   "sense": 1
+  },
+  {
+   "seg": 278,
+   "px": [
+    359.28,
+    686.88,
+    408.72,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_37.94deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 278,
+   "px": [
+    359.28,
+    686.88,
+    408.72,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_88.93deg",
+    "partial_course"
+   ],
+   "bearing": "1°04'47\"",
+   "azimuth": 1.0797,
+   "sense": 1
+  },
+  {
+   "seg": 278,
+   "px": [
+    359.28,
+    686.88,
+    408.72,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1
+  },
+  {
+   "seg": 279,
+   "px": [
+    408.72,
+    686.88,
+    453.96,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_78.06deg",
+    "distance_vs_length_8.7pct"
+   ],
+   "bearing": "11°56'37\"",
+   "azimuth": 11.9436,
+   "sense": 1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 279,
+   "px": [
+    408.72,
+    686.88,
+    453.96,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_37.94deg",
+    "distance_vs_length_64.4pct"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1,
+   "distance": 286.08,
+   "distance_raw": "286.08'"
+  },
+  {
+   "seg": 279,
+   "px": [
+    408.72,
+    686.88,
+    453.96,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_88.93deg",
+    "distance_vs_length_222.0pct"
+   ],
+   "bearing": "1°04'47\"",
+   "azimuth": 1.0797,
+   "sense": 1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 279,
+   "px": [
+    408.72,
+    686.88,
+    453.96,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "distance_vs_length_85.7pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1,
+   "distance": 54.93,
+   "distance_raw": "54.93'"
+  },
+  {
+   "seg": 280,
+   "px": [
+    453.96,
+    686.88,
+    542.76,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_4.46deg",
+    "partial_course"
+   ],
+   "bearing": "N85°32'19\"W",
+   "azimuth": 274.4614,
+   "sense": -1
+  },
+  {
+   "seg": 280,
+   "px": [
+    453.96,
+    686.88,
+    542.76,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_47.23deg",
+    "partial_course"
+   ],
+   "bearing": "S42°46'04\"E",
+   "azimuth": 137.2322,
+   "sense": 1
+  },
+  {
+   "seg": 280,
+   "px": [
+    453.96,
+    686.88,
+    542.76,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_41.37deg",
+    "partial_course"
+   ],
+   "bearing": "S48°38'02\"W",
+   "azimuth": 228.6339,
+   "sense": -1
+  },
+  {
+   "seg": 280,
+   "px": [
+    453.96,
+    686.88,
+    542.76,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_20.50deg",
+    "partial_course"
+   ],
+   "bearing": "S69°30'32\"W",
+   "azimuth": 249.5089,
+   "sense": -1
+  },
+  {
+   "seg": 283,
+   "px": [
+    318.0,
+    704.4,
+    359.28,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_37.94deg",
+    "distance_vs_length_96.8pct"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1,
+   "distance": 2914.79,
+   "distance_raw": "2914.79'"
+  },
+  {
+   "seg": 283,
+   "px": [
+    318.0,
+    704.4,
+    359.28,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_88.93deg",
+    "distance_vs_length_96.8pct"
+   ],
+   "bearing": "1°04'47\"",
+   "azimuth": 1.0797,
+   "sense": 1,
+   "distance": 2944.79,
+   "distance_raw": "2944.79'"
+  },
+  {
+   "seg": 283,
+   "px": [
+    318.0,
+    704.4,
+    359.28,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "distance_vs_length_86.1pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1,
+   "distance": 50.0,
+   "distance_raw": "50.00'"
+  },
+  {
+   "seg": 283,
+   "px": [
+    318.0,
+    704.4,
+    359.28,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_86.77deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": 1
+  },
+  {
+   "seg": 284,
+   "px": [
+    359.28,
+    704.4,
+    408.72,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_37.94deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 284,
+   "px": [
+    359.28,
+    704.4,
+    408.72,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_88.93deg",
+    "partial_course"
+   ],
+   "bearing": "1°04'47\"",
+   "azimuth": 1.0797,
+   "sense": 1
+  },
+  {
+   "seg": 284,
+   "px": [
+    359.28,
+    704.4,
+    408.72,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1
+  },
+  {
+   "seg": 284,
+   "px": [
+    359.28,
+    704.4,
+    408.72,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_86.77deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": 1
+  },
+  {
+   "seg": 289,
+   "px": [
+    318.0,
+    722.33,
+    359.28,
+    722.77
+   ],
+   "flags": [
+    "bearing_residual_37.33deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 289,
+   "px": [
+    318.0,
+    722.33,
+    359.28,
+    722.77
+   ],
+   "flags": [
+    "bearing_residual_54.32deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1
+  },
+  {
+   "seg": 289,
+   "px": [
+    318.0,
+    722.33,
+    359.28,
+    722.77
+   ],
+   "flags": [
+    "bearing_residual_87.38deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": 1
+  },
+  {
+   "seg": 289,
+   "px": [
+    318.0,
+    722.33,
+    359.28,
+    722.77
+   ],
+   "flags": [
+    "bearing_residual_8.56deg",
+    "partial_course"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": 1
+  },
+  {
+   "seg": 290,
+   "px": [
+    359.28,
+    722.77,
+    408.72,
+    723.31
+   ],
+   "flags": [
+    "bearing_residual_37.32deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 290,
+   "px": [
+    359.28,
+    722.77,
+    408.72,
+    723.31
+   ],
+   "flags": [
+    "bearing_residual_54.34deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1
+  },
+  {
+   "seg": 290,
+   "px": [
+    359.28,
+    722.77,
+    408.72,
+    723.31
+   ],
+   "flags": [
+    "bearing_residual_87.39deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": 1
+  },
+  {
+   "seg": 290,
+   "px": [
+    359.28,
+    722.77,
+    408.72,
+    723.31
+   ],
+   "flags": [
+    "bearing_residual_8.57deg",
+    "partial_course"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": 1
+  },
+  {
+   "seg": 291,
+   "px": [
+    408.72,
+    723.31,
+    453.96,
+    723.8
+   ],
+   "flags": [
+    "distance_vs_length_8.7pct",
+    "partial_course"
+   ],
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 291,
+   "px": [
+    408.72,
+    723.31,
+    453.96,
+    723.8
+   ],
+   "flags": [
+    "distance_vs_length_38.8pct",
+    "partial_course"
+   ],
+   "distance": 166.57,
+   "distance_raw": "166.57'"
+  },
+  {
+   "seg": 291,
+   "px": [
+    408.72,
+    723.31,
+    453.96,
+    723.8
+   ],
+   "flags": [
+    "distance_vs_length_222.0pct",
+    "partial_course"
+   ],
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 291,
+   "px": [
+    408.72,
+    723.31,
+    453.96,
+    723.8
+   ],
+   "flags": [
+    "distance_vs_length_42.4pct",
+    "partial_course"
+   ],
+   "distance": 71.61,
+   "distance_raw": "71.61'"
+  },
+  {
+   "seg": 294,
+   "px": [
+    1579.8,
+    735.96,
+    1613.12,
+    736.32
+   ],
+   "flags": [
+    "bearing_residual_64.40deg",
+    "distance_vs_length_48.2pct"
+   ],
+   "bearing": "S26°13'32\"W",
+   "azimuth": 206.2256,
+   "sense": -1,
+   "distance": 144.89,
+   "distance_raw": "144.89'"
+  },
+  {
+   "seg": 295,
+   "px": [
+    1613.12,
+    736.32,
+    1656.12,
+    736.32
+   ],
+   "flags": [
+    "bearing_residual_63.78deg",
+    "distance_vs_length_33.1pct"
+   ],
+   "bearing": "S26°13'32\"W",
+   "azimuth": 206.2256,
+   "sense": -1,
+   "distance": 144.89,
+   "distance_raw": "144.89'"
+  },
+  {
+   "seg": 296,
+   "px": [
+    1656.12,
+    736.32,
+    1679.76,
+    737.04
+   ],
+   "flags": [
+    "distance_vs_length_40.1pct",
+    "partial_course"
+   ],
+   "distance": 89.0,
+   "distance_raw": "89'"
+  },
+  {
+   "seg": 299,
+   "px": [
+    359.28,
+    739.2,
+    408.72,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1
+  },
+  {
+   "seg": 299,
+   "px": [
+    359.28,
+    739.2,
+    408.72,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_86.77deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": 1
+  },
+  {
+   "seg": 299,
+   "px": [
+    359.28,
+    739.2,
+    408.72,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_7.95deg",
+    "partial_course"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": 1
+  },
+  {
+   "seg": 300,
+   "px": [
+    408.72,
+    739.2,
+    453.96,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "distance_vs_length_38.8pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1,
+   "distance": 166.57,
+   "distance_raw": "166.57'"
+  },
+  {
+   "seg": 300,
+   "px": [
+    408.72,
+    739.2,
+    453.96,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_86.77deg",
+    "distance_vs_length_222.0pct"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": 1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 300,
+   "px": [
+    408.72,
+    739.2,
+    453.96,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_7.95deg",
+    "distance_vs_length_42.4pct"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": 1,
+   "distance": 71.61,
+   "distance_raw": "71.61'"
+  },
+  {
+   "seg": 301,
+   "px": [
+    453.96,
+    739.2,
+    542.76,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_24.87deg",
+    "partial_course"
+   ],
+   "bearing": "N65°08'18\"E",
+   "azimuth": 65.1383,
+   "sense": 1
+  },
+  {
+   "seg": 301,
+   "px": [
+    453.96,
+    739.2,
+    542.76,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_41.37deg",
+    "partial_course"
+   ],
+   "bearing": "S48°38'02\"W",
+   "azimuth": 228.6339,
+   "sense": -1
+  },
+  {
+   "seg": 301,
+   "px": [
+    453.96,
+    739.2,
+    542.76,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_14.81deg",
+    "partial_course"
+   ],
+   "bearing": "S75°11'16\"E",
+   "azimuth": 104.8122,
+   "sense": 1
+  },
+  {
+   "seg": 320,
+   "px": [
+    359.28,
+    686.88,
+    359.28,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_11.94deg",
+    "partial_course"
+   ],
+   "bearing": "11°56'37\"",
+   "azimuth": 11.9436,
+   "sense": -1
+  },
+  {
+   "seg": 320,
+   "px": [
+    359.28,
+    686.88,
+    359.28,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_52.06deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 320,
+   "px": [
+    359.28,
+    686.88,
+    359.28,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "partial_course"
+   ],
+   "bearing": "1°04'47\"",
+   "azimuth": 1.0797,
+   "sense": -1
+  },
+  {
+   "seg": 320,
+   "px": [
+    359.28,
+    686.88,
+    359.28,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1
+  },
+  {
+   "seg": 320,
+   "px": [
+    359.28,
+    686.88,
+    359.28,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_3.23deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": -1
+  },
+  {
+   "seg": 321,
+   "px": [
+    359.28,
+    704.4,
+    359.28,
+    722.77
+   ],
+   "flags": [
+    "bearing_residual_52.06deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 321,
+   "px": [
+    359.28,
+    704.4,
+    359.28,
+    722.77
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "partial_course"
+   ],
+   "bearing": "1°04'47\"",
+   "azimuth": 1.0797,
+   "sense": -1
+  },
+  {
+   "seg": 321,
+   "px": [
+    359.28,
+    704.4,
+    359.28,
+    722.77
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1
+  },
+  {
+   "seg": 321,
+   "px": [
+    359.28,
+    704.4,
+    359.28,
+    722.77
+   ],
+   "flags": [
+    "bearing_residual_3.23deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": -1
+  },
+  {
+   "seg": 321,
+   "px": [
+    359.28,
+    704.4,
+    359.28,
+    722.77
+   ],
+   "flags": [
+    "bearing_residual_82.05deg",
+    "partial_course"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": -1
+  },
+  {
+   "seg": 322,
+   "px": [
+    359.28,
+    722.77,
+    359.28,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_52.06deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 322,
+   "px": [
+    359.28,
+    722.77,
+    359.28,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1
+  },
+  {
+   "seg": 322,
+   "px": [
+    359.28,
+    722.77,
+    359.28,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_3.23deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": -1
+  },
+  {
+   "seg": 322,
+   "px": [
+    359.28,
+    722.77,
+    359.28,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_82.05deg",
+    "partial_course"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": -1
+  },
+  {
+   "seg": 323,
+   "px": [
+    359.28,
+    739.2,
+    359.28,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1
+  },
+  {
+   "seg": 323,
+   "px": [
+    359.28,
+    739.2,
+    359.28,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_3.23deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": -1
+  },
+  {
+   "seg": 323,
+   "px": [
+    359.28,
+    739.2,
+    359.28,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_82.05deg",
+    "partial_course"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": -1
+  },
+  {
+   "seg": 324,
+   "px": [
+    408.72,
+    634.68,
+    408.72,
+    652.08
+   ],
+   "flags": [
+    "bearing_residual_11.94deg",
+    "distance_vs_length_86.3pct"
+   ],
+   "bearing": "11°56'37\"",
+   "azimuth": 11.9436,
+   "sense": -1,
+   "distance": 286.08,
+   "distance_raw": "286.08'"
+  },
+  {
+   "seg": 325,
+   "px": [
+    408.72,
+    652.08,
+    408.72,
+    669.48
+   ],
+   "flags": [
+    "bearing_residual_11.94deg",
+    "distance_vs_length_64.9pct"
+   ],
+   "bearing": "11°56'37\"",
+   "azimuth": 11.9436,
+   "sense": -1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 325,
+   "px": [
+    408.72,
+    652.08,
+    408.72,
+    669.48
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "distance_vs_length_86.3pct"
+   ],
+   "bearing": "1°04'47\"",
+   "azimuth": 1.0797,
+   "sense": -1,
+   "distance": 286.08,
+   "distance_raw": "286.08'"
+  },
+  {
+   "seg": 325,
+   "px": [
+    408.72,
+    652.08,
+    408.72,
+    669.48
+   ],
+   "flags": [
+    "bearing_residual_27.94deg",
+    "distance_vs_length_28.6pct"
+   ],
+   "bearing": "27°56'49\"",
+   "azimuth": 27.9469,
+   "sense": -1,
+   "distance": 54.93,
+   "distance_raw": "54.93'"
+  },
+  {
+   "seg": 326,
+   "px": [
+    408.72,
+    669.48,
+    408.72,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_11.94deg",
+    "distance_vs_length_64.9pct"
+   ],
+   "bearing": "11°56'37\"",
+   "azimuth": 11.9436,
+   "sense": -1,
+   "distance": 111.65,
+   "distance_raw": "111.65"
+  },
+  {
+   "seg": 326,
+   "px": [
+    408.72,
+    669.48,
+    408.72,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "distance_vs_length_86.3pct"
+   ],
+   "bearing": "1°04'47\"",
+   "azimuth": 1.0797,
+   "sense": -1,
+   "distance": 286.08,
+   "distance_raw": "286.08"
+  },
+  {
+   "seg": 326,
+   "px": [
+    408.72,
+    669.48,
+    408.72,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_27.94deg",
+    "distance_vs_length_23.9pct"
+   ],
+   "bearing": "27°56'49\"",
+   "azimuth": 27.9469,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67"
+  },
+  {
+   "seg": 326,
+   "px": [
+    408.72,
+    669.48,
+    408.72,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_78.27deg",
+    "distance_vs_length_28.6pct"
+   ],
+   "bearing": "281°43'57\"",
+   "azimuth": 281.7325,
+   "sense": -1,
+   "distance": 54.93,
+   "distance_raw": "54.93"
+  },
+  {
+   "seg": 326,
+   "px": [
+    408.72,
+    669.48,
+    408.72,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1
+  },
+  {
+   "seg": 327,
+   "px": [
+    408.72,
+    686.88,
+    408.72,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_11.94deg",
+    "distance_vs_length_64.6pct"
+   ],
+   "bearing": "11°56'37\"",
+   "azimuth": 11.9436,
+   "sense": -1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 327,
+   "px": [
+    408.72,
+    686.88,
+    408.72,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "distance_vs_length_76.3pct"
+   ],
+   "bearing": "1°04'47\"",
+   "azimuth": 1.0797,
+   "sense": -1,
+   "distance": 166.57,
+   "distance_raw": "166.57'"
+  },
+  {
+   "seg": 327,
+   "px": [
+    408.72,
+    686.88,
+    408.72,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_27.94deg",
+    "distance_vs_length_86.2pct"
+   ],
+   "bearing": "27°56'49\"",
+   "azimuth": 27.9469,
+   "sense": -1,
+   "distance": 286.08,
+   "distance_raw": "286.08'"
+  },
+  {
+   "seg": 327,
+   "px": [
+    408.72,
+    686.88,
+    408.72,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "distance_vs_length_24.7pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 327,
+   "px": [
+    408.72,
+    686.88,
+    408.72,
+    704.4
+   ],
+   "flags": [
+    "bearing_residual_3.23deg",
+    "distance_vs_length_28.1pct"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": -1,
+   "distance": 54.93,
+   "distance_raw": "54.93'"
+  },
+  {
+   "seg": 327,
+   "px": [
+    408.72,
+    686.88,
+    408.72,
+    704.4
+   ],
+   "flags": [
+    "distance_vs_length_44.8pct",
+    "partial_course"
+   ],
+   "distance": 71.61,
+   "distance_raw": "71.61'"
+  },
+  {
+   "seg": 328,
+   "px": [
+    408.72,
+    704.4,
+    408.72,
+    723.31
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "distance_vs_length_61.8pct"
+   ],
+   "bearing": "1°04'47\"",
+   "azimuth": 1.0797,
+   "sense": -1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 328,
+   "px": [
+    408.72,
+    704.4,
+    408.72,
+    723.31
+   ],
+   "flags": [
+    "bearing_residual_27.94deg",
+    "distance_vs_length_74.4pct"
+   ],
+   "bearing": "27°56'49\"",
+   "azimuth": 27.9469,
+   "sense": -1,
+   "distance": 166.57,
+   "distance_raw": "166.57'"
+  },
+  {
+   "seg": 328,
+   "px": [
+    408.72,
+    704.4,
+    408.72,
+    723.31
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "distance_vs_length_34.6pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 328,
+   "px": [
+    408.72,
+    704.4,
+    408.72,
+    723.31
+   ],
+   "flags": [
+    "bearing_residual_3.23deg",
+    "distance_vs_length_22.4pct"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": -1,
+   "distance": 54.93,
+   "distance_raw": "54.93'"
+  },
+  {
+   "seg": 328,
+   "px": [
+    408.72,
+    704.4,
+    408.72,
+    723.31
+   ],
+   "flags": [
+    "bearing_residual_82.05deg",
+    "distance_vs_length_40.5pct"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": -1,
+   "distance": 71.61,
+   "distance_raw": "71.61'"
+  },
+  {
+   "seg": 329,
+   "px": [
+    408.72,
+    723.31,
+    408.72,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_27.94deg",
+    "distance_vs_length_67.9pct"
+   ],
+   "bearing": "27°56'49\"",
+   "azimuth": 27.9469,
+   "sense": -1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 329,
+   "px": [
+    408.72,
+    723.31,
+    408.72,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "distance_vs_length_78.5pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1,
+   "distance": 166.57,
+   "distance_raw": "166.57'"
+  },
+  {
+   "seg": 329,
+   "px": [
+    408.72,
+    723.31,
+    408.72,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_3.23deg",
+    "distance_vs_length_13.1pct"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 329,
+   "px": [
+    408.72,
+    723.31,
+    408.72,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_82.05deg",
+    "distance_vs_length_50.0pct"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": -1,
+   "distance": 71.61,
+   "distance_raw": "71.61'"
+  },
+  {
+   "seg": 330,
+   "px": [
+    408.72,
+    739.2,
+    408.72,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "distance_vs_length_76.5pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1,
+   "distance": 166.57,
+   "distance_raw": "166.57'"
+  },
+  {
+   "seg": 330,
+   "px": [
+    408.72,
+    739.2,
+    408.72,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_3.23deg",
+    "distance_vs_length_23.9pct"
+   ],
+   "bearing": "3°14'27\"",
+   "azimuth": 3.2408,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 330,
+   "px": [
+    408.72,
+    739.2,
+    408.72,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_82.05deg",
+    "distance_vs_length_45.2pct"
+   ],
+   "bearing": "82°03'25\"",
+   "azimuth": 82.0569,
+   "sense": -1,
+   "distance": 71.61,
+   "distance_raw": "71.61'"
+  },
+  {
+   "seg": 331,
+   "px": [
+    408.72,
+    818.16,
+    408.72,
+    854.88
+   ],
+   "flags": [
+    "bearing_residual_12.77deg",
+    "distance_vs_length_25.9pct"
+   ],
+   "bearing": "12°46'25\"",
+   "azimuth": 12.7736,
+   "sense": -1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 331,
+   "px": [
+    408.72,
+    818.16,
+    408.72,
+    854.88
+   ],
+   "flags": [
+    "distance_vs_length_51.1pct",
+    "partial_course"
+   ],
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 332,
+   "px": [
+    408.72,
+    854.88,
+    408.72,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_52.06deg",
+    "distance_vs_length_61.2pct"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 332,
+   "px": [
+    408.72,
+    854.88,
+    408.72,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_12.77deg",
+    "distance_vs_length_85.9pct"
+   ],
+   "bearing": "12°46'25\"",
+   "azimuth": 12.7736,
+   "sense": -1,
+   "distance": 305.96,
+   "distance_raw": "305.96'"
+  },
+  {
+   "seg": 332,
+   "px": [
+    408.72,
+    854.88,
+    408.72,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "distance_vs_length_36.7pct"
+   ],
+   "bearing": "1°04'37\"",
+   "azimuth": 1.0769,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 332,
+   "px": [
+    408.72,
+    854.88,
+    408.72,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "distance_vs_length_21.0pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1,
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 333,
+   "px": [
+    408.72,
+    874.08,
+    408.72,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_52.06deg",
+    "distance_vs_length_61.0pct"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 333,
+   "px": [
+    408.72,
+    874.08,
+    408.72,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_12.77deg",
+    "distance_vs_length_73.9pct"
+   ],
+   "bearing": "12°46'25\"",
+   "azimuth": 12.7736,
+   "sense": -1,
+   "distance": 166.78,
+   "distance_raw": "166.78'"
+  },
+  {
+   "seg": 333,
+   "px": [
+    408.72,
+    874.08,
+    408.72,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "distance_vs_length_85.8pct"
+   ],
+   "bearing": "1°04'37\"",
+   "azimuth": 1.0769,
+   "sense": -1,
+   "distance": 305.96,
+   "distance_raw": "305.96'"
+  },
+  {
+   "seg": 333,
+   "px": [
+    408.72,
+    874.08,
+    408.72,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "distance_vs_length_37.5pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 333,
+   "px": [
+    408.72,
+    874.08,
+    408.72,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_3.24deg",
+    "distance_vs_length_20.5pct"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": -1,
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 334,
+   "px": [
+    408.72,
+    893.4,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_47.94deg",
+    "distance_vs_length_22.2pct"
+   ],
+   "bearing": "1127°56'49\"",
+   "azimuth": 1127.9469,
+   "sense": -1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 334,
+   "px": [
+    408.72,
+    893.4,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "distance_vs_length_47.9pct"
+   ],
+   "bearing": "1°04'37\"",
+   "azimuth": 1.0769,
+   "sense": -1,
+   "distance": 166.78,
+   "distance_raw": "166.78'"
+  },
+  {
+   "seg": 334,
+   "px": [
+    408.72,
+    893.4,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "distance_vs_length_174.2pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 334,
+   "px": [
+    408.72,
+    893.4,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_3.24deg",
+    "distance_vs_length_58.5pct"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": -1,
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 334,
+   "px": [
+    408.72,
+    893.4,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_81.92deg",
+    "distance_vs_length_21.4pct"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": -1,
+   "distance": 71.5,
+   "distance_raw": "71.50'"
+  },
+  {
+   "seg": 335,
+   "px": [
+    408.72,
+    931.92,
+    408.72,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "distance_vs_length_74.0pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1,
+   "distance": 166.78,
+   "distance_raw": "166.78'"
+  },
+  {
+   "seg": 335,
+   "px": [
+    408.72,
+    931.92,
+    408.72,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_3.24deg",
+    "distance_vs_length_36.7pct"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 335,
+   "px": [
+    408.72,
+    931.92,
+    408.72,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_81.92deg",
+    "distance_vs_length_39.5pct"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": -1,
+   "distance": 71.5,
+   "distance_raw": "71.50'"
+  },
+  {
+   "seg": 337,
+   "px": [
+    453.96,
+    634.68,
+    453.96,
+    652.08
+   ],
+   "flags": [
+    "bearing_residual_42.06deg",
+    "partial_course"
+   ],
+   "bearing": "S42°4'",
+   "azimuth": 42.0667,
+   "sense": -1
+  },
+  {
+   "seg": 338,
+   "px": [
+    453.96,
+    652.08,
+    453.96,
+    669.48
+   ],
+   "flags": [
+    "bearing_residual_85.51deg",
+    "distance_vs_length_64.9pct"
+   ],
+   "bearing": "N85°31'",
+   "azimuth": 85.5167,
+   "sense": -1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 338,
+   "px": [
+    453.96,
+    652.08,
+    453.96,
+    669.48
+   ],
+   "flags": [
+    "bearing_residual_42.06deg",
+    "distance_vs_length_81.0pct"
+   ],
+   "bearing": "S42°4'",
+   "azimuth": 42.0667,
+   "sense": -1,
+   "distance": 21.67,
+   "distance_raw": "21.67'"
+  },
+  {
+   "seg": 338,
+   "px": [
+    453.96,
+    652.08,
+    453.96,
+    669.48
+   ],
+   "flags": [
+    "bearing_residual_49.54deg",
+    "distance_vs_length_86.3pct"
+   ],
+   "bearing": "S49°33'",
+   "azimuth": 49.55,
+   "sense": -1,
+   "distance": 286.08,
+   "distance_raw": "286.08'"
+  },
+  {
+   "seg": 338,
+   "px": [
+    453.96,
+    652.08,
+    453.96,
+    669.48
+   ],
+   "flags": [
+    "bearing_residual_69.49deg",
+    "distance_vs_length_28.6pct"
+   ],
+   "bearing": "S69°30'",
+   "azimuth": 69.5,
+   "sense": -1,
+   "distance": 54.93,
+   "distance_raw": "54.93'"
+  },
+  {
+   "seg": 339,
+   "px": [
+    453.96,
+    669.48,
+    453.96,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_85.51deg",
+    "partial_course"
+   ],
+   "bearing": "N85°31′",
+   "azimuth": 85.5167,
+   "sense": -1
+  },
+  {
+   "seg": 339,
+   "px": [
+    453.96,
+    669.48,
+    453.96,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_16.96deg",
+    "partial_course"
+   ],
+   "bearing": "S16°58′",
+   "azimuth": 16.9667,
+   "sense": -1
+  },
+  {
+   "seg": 339,
+   "px": [
+    453.96,
+    669.48,
+    453.96,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_42.06deg",
+    "partial_course"
+   ],
+   "bearing": "S42°4",
+   "azimuth": 42.0667,
+   "sense": -1
+  },
+  {
+   "seg": 339,
+   "px": [
+    453.96,
+    669.48,
+    453.96,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_48.63deg",
+    "partial_course"
+   ],
+   "bearing": "S48°38′",
+   "azimuth": 48.6333,
+   "sense": -1
+  },
+  {
+   "seg": 339,
+   "px": [
+    453.96,
+    669.48,
+    453.96,
+    686.88
+   ],
+   "flags": [
+    "bearing_residual_69.49deg",
+    "partial_course"
+   ],
+   "bearing": "S69°30′",
+   "azimuth": 69.5,
+   "sense": -1
+  },
+  {
+   "seg": 340,
+   "px": [
+    453.96,
+    686.88,
+    453.96,
+    704.4
+   ],
+   "flags": [
+    "distance_vs_length_64.6pct",
+    "partial_course"
+   ],
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 340,
+   "px": [
+    453.96,
+    686.88,
+    453.96,
+    704.4
+   ],
+   "flags": [
+    "distance_vs_length_76.3pct",
+    "partial_course"
+   ],
+   "distance": 166.57,
+   "distance_raw": "166.57'"
+  },
+  {
+   "seg": 340,
+   "px": [
+    453.96,
+    686.88,
+    453.96,
+    704.4
+   ],
+   "flags": [
+    "distance_vs_length_86.2pct",
+    "partial_course"
+   ],
+   "distance": 286.08,
+   "distance_raw": "286.08'"
+  },
+  {
+   "seg": 340,
+   "px": [
+    453.96,
+    686.88,
+    453.96,
+    704.4
+   ],
+   "flags": [
+    "distance_vs_length_24.7pct",
+    "partial_course"
+   ],
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 340,
+   "px": [
+    453.96,
+    686.88,
+    453.96,
+    704.4
+   ],
+   "flags": [
+    "distance_vs_length_28.1pct",
+    "partial_course"
+   ],
+   "distance": 54.93,
+   "distance_raw": "54.93'"
+  },
+  {
+   "seg": 340,
+   "px": [
+    453.96,
+    686.88,
+    453.96,
+    704.4
+   ],
+   "flags": [
+    "distance_vs_length_44.8pct",
+    "partial_course"
+   ],
+   "distance": 71.61,
+   "distance_raw": "71.61'"
+  },
+  {
+   "seg": 342,
+   "px": [
+    453.96,
+    723.8,
+    453.96,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_64.99deg",
+    "partial_course"
+   ],
+   "bearing": "N65°0'",
+   "azimuth": 65.0,
+   "sense": -1
+  },
+  {
+   "seg": 342,
+   "px": [
+    453.96,
+    723.8,
+    453.96,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_85.53deg",
+    "partial_course"
+   ],
+   "bearing": "N85°32'",
+   "azimuth": 85.5333,
+   "sense": -1
+  },
+  {
+   "seg": 342,
+   "px": [
+    453.96,
+    723.8,
+    453.96,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_48.63deg",
+    "partial_course"
+   ],
+   "bearing": "S48°38'",
+   "azimuth": 48.6333,
+   "sense": -1
+  },
+  {
+   "seg": 342,
+   "px": [
+    453.96,
+    723.8,
+    453.96,
+    739.2
+   ],
+   "flags": [
+    "bearing_residual_75.01deg",
+    "partial_course"
+   ],
+   "bearing": "S75°1'",
+   "azimuth": 75.0167,
+   "sense": -1
+  },
+  {
+   "seg": 343,
+   "px": [
+    453.96,
+    739.2,
+    453.96,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_64.99deg",
+    "distance_vs_length_76.5pct"
+   ],
+   "bearing": "N65°0",
+   "azimuth": 65.0,
+   "sense": -1,
+   "distance": 166.57,
+   "distance_raw": "166.57'"
+  },
+  {
+   "seg": 343,
+   "px": [
+    453.96,
+    739.2,
+    453.96,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_48.63deg",
+    "distance_vs_length_23.9pct"
+   ],
+   "bearing": "S48°38'",
+   "azimuth": 48.6333,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 343,
+   "px": [
+    453.96,
+    739.2,
+    453.96,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_75.01deg",
+    "distance_vs_length_45.2pct"
+   ],
+   "bearing": "S75°1",
+   "azimuth": 75.0167,
+   "sense": -1,
+   "distance": 71.61,
+   "distance_raw": "71.61'"
+  },
+  {
+   "seg": 344,
+   "px": [
+    453.96,
+    818.16,
+    453.96,
+    854.88
+   ],
+   "flags": [
+    "distance_vs_length_25.9pct",
+    "partial_course"
+   ],
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 344,
+   "px": [
+    453.96,
+    818.16,
+    453.96,
+    854.88
+   ],
+   "flags": [
+    "distance_vs_length_72.9pct",
+    "partial_course"
+   ],
+   "distance": 305.96,
+   "distance_raw": "305.96'"
+  },
+  {
+   "seg": 344,
+   "px": [
+    453.96,
+    818.16,
+    453.96,
+    854.88
+   ],
+   "flags": [
+    "distance_vs_length_51.1pct",
+    "partial_course"
+   ],
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 345,
+   "px": [
+    453.96,
+    854.88,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_43.06deg",
+    "distance_vs_length_61.2pct"
+   ],
+   "bearing": "N43°4'",
+   "azimuth": 43.0667,
+   "sense": -1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 345,
+   "px": [
+    453.96,
+    854.88,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_68.08deg",
+    "distance_vs_length_85.9pct"
+   ],
+   "bearing": "N68°5'",
+   "azimuth": 68.0833,
+   "sense": -1,
+   "distance": 305.96,
+   "distance_raw": "305.96'"
+  },
+  {
+   "seg": 345,
+   "px": [
+    453.96,
+    854.88,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_85.99deg",
+    "distance_vs_length_36.7pct"
+   ],
+   "bearing": "N86°0'",
+   "azimuth": 86.0,
+   "sense": -1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 345,
+   "px": [
+    453.96,
+    854.88,
+    453.96,
+    874.08
+   ],
+   "flags": [
+    "bearing_residual_47.99deg",
+    "distance_vs_length_21.0pct"
+   ],
+   "bearing": "S48°0'",
+   "azimuth": 48.0,
+   "sense": -1,
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 346,
+   "px": [
+    453.96,
+    874.08,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_61.0pct",
+    "partial_course"
+   ],
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 346,
+   "px": [
+    453.96,
+    874.08,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_73.9pct",
+    "partial_course"
+   ],
+   "distance": 166.78,
+   "distance_raw": "166.78'"
+  },
+  {
+   "seg": 346,
+   "px": [
+    453.96,
+    874.08,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_85.8pct",
+    "partial_course"
+   ],
+   "distance": 305.96,
+   "distance_raw": "305.96'"
+  },
+  {
+   "seg": 346,
+   "px": [
+    453.96,
+    874.08,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_37.5pct",
+    "partial_course"
+   ],
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 346,
+   "px": [
+    453.96,
+    874.08,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_20.5pct",
+    "partial_course"
+   ],
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 350,
+   "px": [
+    542.76,
+    634.68,
+    542.76,
+    652.08
+   ],
+   "flags": [
+    "distance_vs_length_86.3pct",
+    "partial_course"
+   ],
+   "distance": 285.5,
+   "distance_raw": "285.5"
+  },
+  {
+   "seg": 350,
+   "px": [
+    542.76,
+    634.68,
+    542.76,
+    652.08
+   ],
+   "flags": [
+    "distance_vs_length_28.6pct",
+    "partial_course"
+   ],
+   "distance": 54.9,
+   "distance_raw": "54.9"
+  },
+  {
+   "seg": 351,
+   "px": [
+    542.76,
+    652.08,
+    542.76,
+    669.48
+   ],
+   "flags": [
+    "distance_vs_length_86.3pct",
+    "partial_course"
+   ],
+   "distance": 285.5,
+   "distance_raw": "285.5"
+  },
+  {
+   "seg": 351,
+   "px": [
+    542.76,
+    652.08,
+    542.76,
+    669.48
+   ],
+   "flags": [
+    "distance_vs_length_28.6pct",
+    "partial_course"
+   ],
+   "distance": 54.9,
+   "distance_raw": "54.9"
+  },
+  {
+   "seg": 351,
+   "px": [
+    542.76,
+    652.08,
+    542.76,
+    669.48
+   ],
+   "flags": [
+    "distance_vs_length_56.3pct",
+    "partial_course"
+   ],
+   "distance": 89.8,
+   "distance_raw": "89.8"
+  },
+  {
+   "seg": 352,
+   "px": [
+    542.76,
+    669.48,
+    542.76,
+    686.88
+   ],
+   "flags": [
+    "distance_vs_length_86.3pct",
+    "partial_course"
+   ],
+   "distance": 285.5,
+   "distance_raw": "285.5"
+  },
+  {
+   "seg": 352,
+   "px": [
+    542.76,
+    669.48,
+    542.76,
+    686.88
+   ],
+   "flags": [
+    "distance_vs_length_26.1pct",
+    "partial_course"
+   ],
+   "distance": 31.1,
+   "distance_raw": "31.1"
+  },
+  {
+   "seg": 352,
+   "px": [
+    542.76,
+    669.48,
+    542.76,
+    686.88
+   ],
+   "flags": [
+    "distance_vs_length_28.6pct",
+    "partial_course"
+   ],
+   "distance": 54.9,
+   "distance_raw": "54.9"
+  },
+  {
+   "seg": 352,
+   "px": [
+    542.76,
+    669.48,
+    542.76,
+    686.88
+   ],
+   "flags": [
+    "distance_vs_length_56.3pct",
+    "partial_course"
+   ],
+   "distance": 89.8,
+   "distance_raw": "89.8"
+  },
+  {
+   "seg": 353,
+   "px": [
+    542.76,
+    686.88,
+    542.76,
+    704.4
+   ],
+   "flags": [
+    "distance_vs_length_76.3pct",
+    "partial_course"
+   ],
+   "distance": 166.5,
+   "distance_raw": "166.5"
+  },
+  {
+   "seg": 356,
+   "px": [
+    542.76,
+    739.2,
+    542.76,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_1.99deg",
+    "distance_vs_length_76.4pct"
+   ],
+   "bearing": "02°W",
+   "azimuth": 2,
+   "sense": -1,
+   "distance": 166.5,
+   "distance_raw": "166.5"
+  },
+  {
+   "seg": 356,
+   "px": [
+    542.76,
+    739.2,
+    542.76,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_15.99deg",
+    "distance_vs_length_26.1pct"
+   ],
+   "bearing": "16°E",
+   "azimuth": 16,
+   "sense": -1,
+   "distance": 31.1,
+   "distance_raw": "31.1"
+  },
+  {
+   "seg": 356,
+   "px": [
+    542.76,
+    739.2,
+    542.76,
+    756.6
+   ],
+   "flags": [
+    "bearing_residual_17.99deg",
+    "distance_vs_length_40.2pct"
+   ],
+   "bearing": "18°E",
+   "azimuth": 18,
+   "sense": -1,
+   "distance": 65.6,
+   "distance_raw": "65.6"
+  },
+  {
+   "seg": 357,
+   "px": [
+    542.76,
+    818.16,
+    542.76,
+    854.88
+   ],
+   "flags": [
+    "distance_vs_length_72.9pct",
+    "partial_course"
+   ],
+   "distance": 305.3,
+   "distance_raw": "305.3"
+  },
+  {
+   "seg": 357,
+   "px": [
+    542.76,
+    818.16,
+    542.76,
+    854.88
+   ],
+   "flags": [
+    "distance_vs_length_51.3pct",
+    "partial_course"
+   ],
+   "distance": 54.7,
+   "distance_raw": "54.7"
+  },
+  {
+   "seg": 357,
+   "px": [
+    542.76,
+    818.16,
+    542.76,
+    854.88
+   ],
+   "flags": [
+    "distance_vs_length_7.8pct",
+    "partial_course"
+   ],
+   "distance": 89.8,
+   "distance_raw": "89.8"
+  },
+  {
+   "seg": 358,
+   "px": [
+    542.76,
+    854.88,
+    542.76,
+    874.08
+   ],
+   "flags": [
+    "distance_vs_length_85.8pct",
+    "partial_course"
+   ],
+   "distance": 305.3,
+   "distance_raw": "305.3"
+  },
+  {
+   "seg": 358,
+   "px": [
+    542.76,
+    854.88,
+    542.76,
+    874.08
+   ],
+   "flags": [
+    "distance_vs_length_39.2pct",
+    "partial_course"
+   ],
+   "distance": 31.1,
+   "distance_raw": "31.1"
+  },
+  {
+   "seg": 358,
+   "px": [
+    542.76,
+    854.88,
+    542.76,
+    874.08
+   ],
+   "flags": [
+    "distance_vs_length_20.9pct",
+    "partial_course"
+   ],
+   "distance": 54.7,
+   "distance_raw": "54.7"
+  },
+  {
+   "seg": 358,
+   "px": [
+    542.76,
+    854.88,
+    542.76,
+    874.08
+   ],
+   "flags": [
+    "distance_vs_length_51.8pct",
+    "partial_course"
+   ],
+   "distance": 89.8,
+   "distance_raw": "89.8"
+  },
+  {
+   "seg": 359,
+   "px": [
+    542.76,
+    874.08,
+    542.76,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_73.9pct",
+    "partial_course"
+   ],
+   "distance": 166.7,
+   "distance_raw": "166.7"
+  },
+  {
+   "seg": 359,
+   "px": [
+    542.76,
+    874.08,
+    542.76,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_85.7pct",
+    "partial_course"
+   ],
+   "distance": 305.3,
+   "distance_raw": "305.3"
+  },
+  {
+   "seg": 359,
+   "px": [
+    542.76,
+    874.08,
+    542.76,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_40.0pct",
+    "partial_course"
+   ],
+   "distance": 31.1,
+   "distance_raw": "31.1"
+  },
+  {
+   "seg": 359,
+   "px": [
+    542.76,
+    874.08,
+    542.76,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_20.4pct",
+    "partial_course"
+   ],
+   "distance": 54.7,
+   "distance_raw": "54.7"
+  },
+  {
+   "seg": 359,
+   "px": [
+    542.76,
+    874.08,
+    542.76,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_51.5pct",
+    "partial_course"
+   ],
+   "distance": 89.8,
+   "distance_raw": "89.8"
+  },
+  {
+   "seg": 360,
+   "px": [
+    542.76,
+    893.4,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "distance_vs_length_47.9pct",
+    "partial_course"
+   ],
+   "distance": 166.7,
+   "distance_raw": "166.7"
+  },
+  {
+   "seg": 360,
+   "px": [
+    542.76,
+    893.4,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "distance_vs_length_179.2pct",
+    "partial_course"
+   ],
+   "distance": 31.1,
+   "distance_raw": "31.1"
+  },
+  {
+   "seg": 360,
+   "px": [
+    542.76,
+    893.4,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "distance_vs_length_58.7pct",
+    "partial_course"
+   ],
+   "distance": 54.7,
+   "distance_raw": "54.7"
+  },
+  {
+   "seg": 360,
+   "px": [
+    542.76,
+    893.4,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "distance_vs_length_32.6pct",
+    "partial_course"
+   ],
+   "distance": 65.5,
+   "distance_raw": "65.5"
+  },
+  {
+   "seg": 360,
+   "px": [
+    542.76,
+    893.4,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "distance": 89.8,
+   "distance_raw": "89.8"
+  },
+  {
+   "seg": 361,
+   "px": [
+    542.76,
+    931.92,
+    542.76,
+    951.12
+   ],
+   "flags": [
+    "distance_vs_length_74.0pct",
+    "partial_course"
+   ],
+   "distance": 166.7,
+   "distance_raw": "166.7"
+  },
+  {
+   "seg": 361,
+   "px": [
+    542.76,
+    931.92,
+    542.76,
+    951.12
+   ],
+   "flags": [
+    "distance_vs_length_39.2pct",
+    "partial_course"
+   ],
+   "distance": 31.1,
+   "distance_raw": "31.1"
+  },
+  {
+   "seg": 361,
+   "px": [
+    542.76,
+    931.92,
+    542.76,
+    951.12
+   ],
+   "flags": [
+    "distance_vs_length_33.9pct",
+    "partial_course"
+   ],
+   "distance": 65.5,
+   "distance_raw": "65.5"
+  },
+  {
+   "seg": 362,
+   "px": [
+    542.76,
+    1007.88,
+    542.76,
+    1095.0
+   ],
+   "flags": [
+    "distance_vs_length_1333.5pct",
+    "partial_course"
+   ],
+   "distance": 13.7,
+   "distance_raw": "13.7"
+  },
+  {
+   "seg": 362,
+   "px": [
+    542.76,
+    1007.88,
+    542.76,
+    1095.0
+   ],
+   "flags": [
+    "distance_vs_length_1003.3pct",
+    "partial_course"
+   ],
+   "distance": 17.8,
+   "distance_raw": "17.8"
+  },
+  {
+   "seg": 362,
+   "px": [
+    542.76,
+    1007.88,
+    542.76,
+    1095.0
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "distance": 203.2,
+   "distance_raw": "203.2"
+  },
+  {
+   "seg": 362,
+   "px": [
+    542.76,
+    1007.88,
+    542.76,
+    1095.0
+   ],
+   "flags": [
+    "distance_vs_length_137.8pct",
+    "partial_course"
+   ],
+   "distance": 82.6,
+   "distance_raw": "82.6"
+  },
+  {
+   "seg": 376,
+   "px": [
+    360.6,
+    874.08,
+    360.6,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_52.06deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 376,
+   "px": [
+    360.6,
+    874.08,
+    360.6,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_12.77deg",
+    "partial_course"
+   ],
+   "bearing": "12°46'25\"",
+   "azimuth": 12.7736,
+   "sense": -1
+  },
+  {
+   "seg": 376,
+   "px": [
+    360.6,
+    874.08,
+    360.6,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "partial_course"
+   ],
+   "bearing": "1°04'37\"",
+   "azimuth": 1.0769,
+   "sense": -1
+  },
+  {
+   "seg": 376,
+   "px": [
+    360.6,
+    874.08,
+    360.6,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1
+  },
+  {
+   "seg": 376,
+   "px": [
+    360.6,
+    874.08,
+    360.6,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_3.24deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": -1
+  },
+  {
+   "seg": 377,
+   "px": [
+    360.6,
+    893.4,
+    360.6,
+    927.04
+   ],
+   "flags": [
+    "bearing_residual_52.06deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 377,
+   "px": [
+    360.6,
+    893.4,
+    360.6,
+    927.04
+   ],
+   "flags": [
+    "bearing_residual_1.07deg",
+    "partial_course"
+   ],
+   "bearing": "1°04'37\"",
+   "azimuth": 1.0769,
+   "sense": -1
+  },
+  {
+   "seg": 377,
+   "px": [
+    360.6,
+    893.4,
+    360.6,
+    927.04
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1
+  },
+  {
+   "seg": 377,
+   "px": [
+    360.6,
+    893.4,
+    360.6,
+    927.04
+   ],
+   "flags": [
+    "bearing_residual_3.24deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": -1
+  },
+  {
+   "seg": 377,
+   "px": [
+    360.6,
+    893.4,
+    360.6,
+    927.04
+   ],
+   "flags": [
+    "bearing_residual_81.92deg",
+    "partial_course"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": -1
+  },
+  {
+   "seg": 379,
+   "px": [
+    360.6,
+    931.92,
+    360.6,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_36.29deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": -1
+  },
+  {
+   "seg": 379,
+   "px": [
+    360.6,
+    931.92,
+    360.6,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_3.24deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": -1
+  },
+  {
+   "seg": 379,
+   "px": [
+    360.6,
+    931.92,
+    360.6,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_81.92deg",
+    "partial_course"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": -1
+  },
+  {
+   "seg": 387,
+   "px": [
+    408.72,
+    818.16,
+    453.96,
+    818.16
+   ],
+   "flags": [
+    "bearing_residual_77.23deg",
+    "distance_vs_length_66.7pct"
+   ],
+   "bearing": "12°46'25\"",
+   "azimuth": 12.7736,
+   "sense": 1,
+   "distance": 305.96,
+   "distance_raw": "305.96'"
+  },
+  {
+   "seg": 388,
+   "px": [
+    453.96,
+    818.16,
+    542.76,
+    818.16
+   ],
+   "flags": [
+    "bearing_residual_46.22deg",
+    "partial_course"
+   ],
+   "bearing": "N43°46'27\"W",
+   "azimuth": 316.2258,
+   "sense": -1
+  },
+  {
+   "seg": 389,
+   "px": [
+    542.76,
+    818.16,
+    618.36,
+    818.16
+   ],
+   "flags": [
+    "distance_vs_length_44.2pct",
+    "partial_course"
+   ],
+   "distance": 305.33,
+   "distance_raw": "305.33'"
+  },
+  {
+   "seg": 391,
+   "px": [
+    318.0,
+    951.12,
+    360.6,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_86.76deg",
+    "distance_vs_length_96.7pct"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": 1,
+   "distance": 2944.8,
+   "distance_raw": "2944.80'"
+  },
+  {
+   "seg": 391,
+   "px": [
+    318.0,
+    951.12,
+    360.6,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_8.08deg",
+    "distance_vs_length_92.1pct"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": 1,
+   "distance": 50.0,
+   "distance_raw": "50.00'"
+  },
+  {
+   "seg": 392,
+   "px": [
+    360.6,
+    951.12,
+    408.72,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_86.76deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": 1
+  },
+  {
+   "seg": 392,
+   "px": [
+    360.6,
+    951.12,
+    408.72,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_8.08deg",
+    "partial_course"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": 1
+  },
+  {
+   "seg": 393,
+   "px": [
+    408.72,
+    951.12,
+    453.96,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_86.76deg",
+    "distance_vs_length_38.9pct"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": 1,
+   "distance": 166.78,
+   "distance_raw": "166.78'"
+  },
+  {
+   "seg": 393,
+   "px": [
+    408.72,
+    951.12,
+    453.96,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_8.08deg",
+    "distance_vs_length_42.6pct"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": 1,
+   "distance": 71.5,
+   "distance_raw": "71.50'"
+  },
+  {
+   "seg": 394,
+   "px": [
+    453.96,
+    951.12,
+    542.76,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_14.25deg",
+    "partial_course"
+   ],
+   "bearing": "N75°44'44\"W",
+   "azimuth": 284.2544,
+   "sense": -1
+  },
+  {
+   "seg": 394,
+   "px": [
+    453.96,
+    951.12,
+    542.76,
+    951.12
+   ],
+   "flags": [
+    "bearing_residual_25.45deg",
+    "partial_course"
+   ],
+   "bearing": "S64°33'33\"W",
+   "azimuth": 244.5592,
+   "sense": -1
+  },
+  {
+   "seg": 395,
+   "px": [
+    542.76,
+    951.12,
+    618.36,
+    951.12
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "distance": 166.76,
+   "distance_raw": "166.76'"
+  },
+  {
+   "seg": 395,
+   "px": [
+    542.76,
+    951.12,
+    618.36,
+    951.12
+   ],
+   "flags": [
+    "distance_vs_length_159.9pct",
+    "partial_course"
+   ],
+   "distance": 65.56,
+   "distance_raw": "65.56'"
+  },
+  {
+   "seg": 398,
+   "px": [
+    360.6,
+    893.4,
+    408.72,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_37.94deg",
+    "partial_course"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1
+  },
+  {
+   "seg": 398,
+   "px": [
+    360.6,
+    893.4,
+    408.72,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_88.93deg",
+    "partial_course"
+   ],
+   "bearing": "1°04'37\"",
+   "azimuth": 1.0769,
+   "sense": 1
+  },
+  {
+   "seg": 398,
+   "px": [
+    360.6,
+    893.4,
+    408.72,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1
+  },
+  {
+   "seg": 398,
+   "px": [
+    360.6,
+    893.4,
+    408.72,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_86.76deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": 1
+  },
+  {
+   "seg": 399,
+   "px": [
+    408.72,
+    893.4,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_37.94deg",
+    "distance_vs_length_8.7pct"
+   ],
+   "bearing": "127°56'49\"",
+   "azimuth": 127.9469,
+   "sense": 1,
+   "distance": 111.65,
+   "distance_raw": "111.65'"
+  },
+  {
+   "seg": 399,
+   "px": [
+    408.72,
+    893.4,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_88.93deg",
+    "distance_vs_length_38.9pct"
+   ],
+   "bearing": "1°04'37\"",
+   "azimuth": 1.0769,
+   "sense": 1,
+   "distance": 166.78,
+   "distance_raw": "166.78'"
+  },
+  {
+   "seg": 399,
+   "px": [
+    408.72,
+    893.4,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "distance_vs_length_222.0pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 399,
+   "px": [
+    408.72,
+    893.4,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_86.76deg",
+    "distance_vs_length_86.1pct"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": 1,
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 399,
+   "px": [
+    408.72,
+    893.4,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_21.92deg",
+    "partial_course"
+   ],
+   "bearing": "N68°5",
+   "azimuth": 68.0833,
+   "sense": 1
+  },
+  {
+   "seg": 399,
+   "px": [
+    408.72,
+    893.4,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_4.01deg",
+    "partial_course"
+   ],
+   "bearing": "N86°0",
+   "azimuth": 86.0,
+   "sense": 1
+  },
+  {
+   "seg": 399,
+   "px": [
+    408.72,
+    893.4,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_42.01deg",
+    "partial_course"
+   ],
+   "bearing": "S48°0",
+   "azimuth": 48.0,
+   "sense": 1
+  },
+  {
+   "seg": 399,
+   "px": [
+    408.72,
+    893.4,
+    453.96,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_25.96deg",
+    "partial_course"
+   ],
+   "bearing": "S64°3",
+   "azimuth": 64.05,
+   "sense": 1
+  },
+  {
+   "seg": 400,
+   "px": [
+    453.96,
+    893.4,
+    542.76,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_21.14deg",
+    "partial_course"
+   ],
+   "bearing": "N68°51'52\"E",
+   "azimuth": 68.8644,
+   "sense": 1
+  },
+  {
+   "seg": 400,
+   "px": [
+    453.96,
+    893.4,
+    542.76,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_3.86deg",
+    "partial_course"
+   ],
+   "bearing": "N86°08'12\"W",
+   "azimuth": 273.8633,
+   "sense": -1
+  },
+  {
+   "seg": 400,
+   "px": [
+    453.96,
+    893.4,
+    542.76,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_41.97deg",
+    "partial_course"
+   ],
+   "bearing": "S48°02'09\"W",
+   "azimuth": 228.0358,
+   "sense": -1
+  },
+  {
+   "seg": 400,
+   "px": [
+    453.96,
+    893.4,
+    542.76,
+    893.4
+   ],
+   "flags": [
+    "bearing_residual_25.45deg",
+    "partial_course"
+   ],
+   "bearing": "S64°33'33\"W",
+   "azimuth": 244.5592,
+   "sense": -1
+  },
+  {
+   "seg": 401,
+   "px": [
+    542.76,
+    893.4,
+    618.36,
+    893.4
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "distance": 166.76,
+   "distance_raw": "166.76'"
+  },
+  {
+   "seg": 401,
+   "px": [
+    542.76,
+    893.4,
+    618.36,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_447.3pct",
+    "partial_course"
+   ],
+   "distance": 31.14,
+   "distance_raw": "31.14'"
+  },
+  {
+   "seg": 401,
+   "px": [
+    542.76,
+    893.4,
+    618.36,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_211.0pct",
+    "partial_course"
+   ],
+   "distance": 54.79,
+   "distance_raw": "54.79'"
+  },
+  {
+   "seg": 401,
+   "px": [
+    542.76,
+    893.4,
+    618.36,
+    893.4
+   ],
+   "flags": [
+    "distance_vs_length_89.7pct",
+    "partial_course"
+   ],
+   "distance": 89.86,
+   "distance_raw": "89.86'"
+  },
+  {
+   "seg": 403,
+   "px": [
+    318.0,
+    925.66,
+    360.6,
+    927.04
+   ],
+   "flags": [
+    "bearing_residual_55.57deg",
+    "distance_vs_length_96.7pct"
+   ],
+   "bearing": "36°17'31''",
+   "azimuth": 36.2919,
+   "sense": 1,
+   "distance": 2944.8,
+   "distance_raw": "2944.80'"
+  },
+  {
+   "seg": 403,
+   "px": [
+    318.0,
+    925.66,
+    360.6,
+    927.04
+   ],
+   "flags": [
+    "bearing_residual_88.62deg",
+    "distance_vs_length_92.2pct"
+   ],
+   "bearing": "3°14'42''",
+   "azimuth": 3.245,
+   "sense": 1,
+   "distance": 50.0,
+   "distance_raw": "50.00'"
+  },
+  {
+   "seg": 403,
+   "px": [
+    318.0,
+    925.66,
+    360.6,
+    927.04
+   ],
+   "flags": [
+    "bearing_residual_9.93deg",
+    "partial_course"
+   ],
+   "bearing": "81°55'40''",
+   "azimuth": 81.9278,
+   "sense": 1
+  },
+  {
+   "seg": 404,
+   "px": [
+    360.6,
+    927.04,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_59.50deg",
+    "partial_course"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1
+  },
+  {
+   "seg": 404,
+   "px": [
+    360.6,
+    927.04,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_87.45deg",
+    "partial_course"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": -1
+  },
+  {
+   "seg": 404,
+   "px": [
+    360.6,
+    927.04,
+    408.72,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_13.87deg",
+    "partial_course"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": 1
+  },
+  {
+   "seg": 405,
+   "px": [
+    408.72,
+    931.92,
+    453.96,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_53.71deg",
+    "distance_vs_length_38.9pct"
+   ],
+   "bearing": "36°17'31\"",
+   "azimuth": 36.2919,
+   "sense": 1,
+   "distance": 166.78,
+   "distance_raw": "166.78'"
+  },
+  {
+   "seg": 405,
+   "px": [
+    408.72,
+    931.92,
+    453.96,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_86.76deg",
+    "distance_vs_length_222.0pct"
+   ],
+   "bearing": "3°14'42\"",
+   "azimuth": 3.245,
+   "sense": 1,
+   "distance": 31.67,
+   "distance_raw": "31.67'"
+  },
+  {
+   "seg": 405,
+   "px": [
+    408.72,
+    931.92,
+    453.96,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_8.08deg",
+    "distance_vs_length_42.6pct"
+   ],
+   "bearing": "81°55'40\"",
+   "azimuth": 81.9278,
+   "sense": 1,
+   "distance": 71.5,
+   "distance_raw": "71.50'"
+  },
+  {
+   "seg": 406,
+   "px": [
+    453.96,
+    931.92,
+    511.24,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_14.25deg",
+    "partial_course"
+   ],
+   "bearing": "N75°44'44\"W",
+   "azimuth": 284.2544,
+   "sense": -1
+  },
+  {
+   "seg": 406,
+   "px": [
+    453.96,
+    931.92,
+    511.24,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_41.97deg",
+    "partial_course"
+   ],
+   "bearing": "S48°02'09\"W",
+   "azimuth": 228.0358,
+   "sense": -1
+  },
+  {
+   "seg": 406,
+   "px": [
+    453.96,
+    931.92,
+    511.24,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_25.45deg",
+    "partial_course"
+   ],
+   "bearing": "S64°33'33\"W",
+   "azimuth": 244.5592,
+   "sense": -1
+  },
+  {
+   "seg": 407,
+   "px": [
+    511.24,
+    931.92,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_14.25deg",
+    "distance_vs_length_57.4pct"
+   ],
+   "bearing": "N75°44'44\"W",
+   "azimuth": 284.2544,
+   "sense": -1,
+   "distance": 166.7,
+   "distance_raw": "166.7"
+  },
+  {
+   "seg": 407,
+   "px": [
+    511.24,
+    931.92,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_41.97deg",
+    "distance_vs_length_128.5pct"
+   ],
+   "bearing": "S48°02'09\"W",
+   "azimuth": 228.0358,
+   "sense": -1,
+   "distance": 31.1,
+   "distance_raw": "31.1"
+  },
+  {
+   "seg": 407,
+   "px": [
+    511.24,
+    931.92,
+    542.76,
+    931.92
+   ],
+   "flags": [
+    "bearing_residual_25.45deg",
+    "distance_vs_length_8.5pct"
+   ],
+   "bearing": "S64°33'33\"W",
+   "azimuth": 244.5592,
+   "sense": -1,
+   "distance": 65.5,
+   "distance_raw": "65.5"
+  },
+  {
+   "seg": 409,
+   "px": [
+    1070.28,
+    950.04,
+    1170.24,
+    953.28
+   ],
+   "flags": [
+    "bearing_residual_35.21deg",
+    "distance_vs_length_805.8pct"
+   ],
+   "bearing": "S56°39'10\"W",
+   "azimuth": 236.6528,
+   "sense": -1,
+   "distance": 24.89,
+   "distance_raw": "24.89'"
+  },
+  {
+   "seg": 410,
+   "px": [
+    1620.84,
+    637.92,
+    1646.04,
+    540.6
+   ],
+   "flags": [
+    "bearing_residual_13.21deg",
+    "partial_course"
+   ],
+   "bearing": "(R1: S18°34'10\"W 230.05')",
+   "azimuth": 1.3094,
+   "sense": 1
+  },
+  {
+   "seg": 410,
+   "px": [
+    1620.84,
+    637.92,
+    1646.04,
+    540.6
+   ],
+   "flags": [
+    "bearing_residual_4.70deg",
+    "partial_course"
+   ],
+   "bearing": "S19°13'13\"W 230.39'",
+   "azimuth": 199.2203,
+   "sense": -1
+  },
+  {
+   "seg": 411,
+   "px": [
+    1620.84,
+    637.92,
+    1656.4,
+    541.35
+   ],
+   "flags": [
+    "bearing_residual_18.91deg",
+    "partial_course"
+   ],
+   "bearing": "(R1: S18°34'10\"W 230.05')",
+   "azimuth": 1.3094,
+   "sense": 1
+  },
+  {
+   "seg": 411,
+   "px": [
+    1620.84,
+    637.92,
+    1656.4,
+    541.35
+   ],
+   "flags": [
+    "bearing_residual_1.00deg",
+    "partial_course"
+   ],
+   "bearing": "S19°13'13\"W 230.39'",
+   "azimuth": 199.2203,
+   "sense": -1
+  },
+  {
+   "seg": 479,
+   "px": [
+    1491.93,
+    1053.01,
+    1492.3,
+    1008.01
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "N0°38'32\"E 1317.39'",
+   "azimuth": 0.6422,
+   "sense": 1
+  },
+  {
+   "seg": 484,
+   "px": [
+    1509.0,
+    975.0,
+    1507.99,
+    950.36
+   ],
+   "flags": [
+    "bearing_residual_11.24deg",
+    "partial_course"
+   ],
+   "bearing": "8°32' E 1317.39'",
+   "azimuth": 8.8992,
+   "sense": 1
+  },
+  {
+   "seg": 487,
+   "px": [
+    1518.84,
+    1118.76,
+    1519.08,
+    975.94
+   ],
+   "flags": [
+    "distance_vs_length_75.6pct",
+    "partial_course"
+   ],
+   "distance": 1317.39,
+   "distance_raw": "1317.39'"
+  },
+  {
+   "seg": 488,
+   "px": [
+    1499.68,
+    132.83,
+    1499.22,
+    187.32
+   ],
+   "flags": [
+    "distance_vs_length_81.3pct"
+   ],
+   "bearing": "N0°39'14\"E 658.88'",
+   "azimuth": 0.6539,
+   "sense": -1,
+   "distance": 656.85,
+   "distance_raw": "09'34\"E 656.85'"
+  },
+  {
+   "seg": 488,
+   "px": [
+    1499.68,
+    132.83,
+    1499.22,
+    187.32
+   ],
+   "flags": [
+    "distance_vs_length_81.4pct",
+    "partial_course"
+   ],
+   "distance": 658.99,
+   "distance_raw": "18'47\"E 658.99'"
+  },
+  {
+   "seg": 489,
+   "px": [
+    1499.22,
+    187.32,
+    1498.84,
+    232.32
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "N00°18'47\"E 658.99'",
+   "azimuth": 0.3131,
+   "sense": -1
+  },
+  {
+   "seg": 489,
+   "px": [
+    1499.22,
+    187.32,
+    1498.84,
+    232.32
+   ],
+   "flags": [
+    "bearing_residual_0.67deg",
+    "partial_course"
+   ],
+   "bearing": "N01°09'34\"E 656.85'",
+   "azimuth": 1.1594,
+   "sense": -1
+  },
+  {
+   "seg": 489,
+   "px": [
+    1499.22,
+    187.32,
+    1498.84,
+    232.32
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "N0°39'14\"E 658.88'",
+   "azimuth": 0.6539,
+   "sense": -1
+  },
+  {
+   "seg": 496,
+   "px": [
+    1091.04,
+    350.84,
+    1191.0,
+    352.04
+   ],
+   "flags": [
+    "partial_course"
+   ],
+   "bearing": "S89°28'18\"E 1117.59'",
+   "azimuth": 90.5283,
+   "sense": 1
+  },
+  {
+   "seg": 497,
+   "px": [
+    1354.68,
+    354.0,
+    1438.2,
+    354.36
+   ],
+   "flags": [
+    "bearing_residual_89.58deg",
+    "distance_vs_length_943.7pct"
+   ],
+   "bearing": "N0°40'29\"E",
+   "azimuth": 0.6747,
+   "sense": 1,
+   "distance": 18.04,
+   "distance_raw": "18.04'"
+  },
+  {
+   "seg": 498,
+   "px": [
+    1438.2,
+    354.36,
+    1455.51,
+    353.55
+   ],
+   "flags": [
+    "distance_vs_length_116.5pct",
+    "partial_course"
+   ],
+   "distance": 18.04,
+   "distance_raw": "18.04'"
+  },
+  {
+   "seg": 506,
+   "px": [
+    1515.72,
+    147.36,
+    1514.67,
+    291.19
+   ],
+   "flags": [
+    "distance_vs_length_50.8pct",
+    "partial_course"
+   ],
+   "distance": 658.88,
+   "distance_raw": "658.88'"
+  },
+  {
+   "seg": 519,
+   "px": [
+    1070.52,
+    940.08,
+    1150.44,
+    940.2
+   ],
+   "flags": [
+    "bearing_residual_33.44deg",
+    "distance_vs_length_623.8pct"
+   ],
+   "bearing": "S56°39'10\"W",
+   "azimuth": 236.6528,
+   "sense": -1,
+   "distance": 24.89,
+   "distance_raw": "24.89'"
+  },
+  {
+   "seg": 520,
+   "px": [
+    1150.44,
+    940.2,
+    1170.48,
+    943.32
+   ],
+   "flags": [
+    "distance_vs_length_83.7pct",
+    "partial_course"
+   ],
+   "distance": 24.89,
+   "distance_raw": "24.89'"
+  },
+  {
+   "seg": 521,
+   "px": [
+    795.12,
+    511.8,
+    873.45,
+    575.2
+   ],
+   "flags": [
+    "bearing_residual_6.26deg",
+    "partial_course"
+   ],
+   "bearing": "N44°44'38\"W 566.67'",
+   "azimuth": 315.2561,
+   "sense": -1
+  },
+  {
+   "seg": 522,
+   "px": [
+    1030.08,
+    764.28,
+    1101.0,
+    835.56
+   ],
+   "flags": [
+    "bearing_residual_46.52deg",
+    "partial_course"
+   ],
+   "bearing": "(R1: N40°33'34\"W 392.60')",
+   "azimuth": 1.6758,
+   "sense": -1
+  },
+  {
+   "seg": 522,
+   "px": [
+    1030.08,
+    764.28,
+    1101.0,
+    835.56
+   ],
+   "flags": [
+    "bearing_residual_4.94deg",
+    "partial_course"
+   ],
+   "bearing": "N39°54'48\"W 392.39'",
+   "azimuth": 320.0867,
+   "sense": -1
+  },
+  {
+   "seg": 523,
+   "px": [
+    1185.72,
+    925.08,
+    1250.88,
+    1001.64
+   ],
+   "flags": [
+    "bearing_residual_6.25deg"
+   ],
+   "bearing": "N34°08'44\"W 230.78'",
+   "azimuth": 325.8544,
+   "sense": -1,
+   "distance": 230.78,
+   "distance_raw": "230.78'"
+  },
+  {
+   "seg": 524,
+   "px": [
+    1194.0,
+    919.44,
+    1250.88,
+    1001.64
+   ],
+   "flags": [
+    "bearing_residual_0.53deg"
+   ],
+   "bearing": "N34°08'44\"W 230.78'",
+   "azimuth": 325.8544,
+   "sense": -1,
+   "distance": 217.26,
+   "distance_raw": "217.26'"
+  },
+  {
+   "seg": 525,
+   "px": [
+    1185.72,
+    925.08,
+    1242.72,
+    1007.28
+   ],
+   "flags": [
+    "bearing_residual_0.59deg"
+   ],
+   "bearing": "N34°08'44\"W 230.78'",
+   "azimuth": 325.8544,
+   "sense": -1,
+   "distance": 217.26,
+   "distance_raw": "217.26'"
+  },
+  {
+   "seg": 526,
+   "px": [
+    1070.28,
+    950.04,
+    1170.48,
+    943.32
+   ],
+   "flags": [
+    "bearing_residual_29.52deg",
+    "distance_vs_length_809.5pct"
+   ],
+   "bearing": "S56°39'10\"W",
+   "azimuth": 236.6528,
+   "sense": -1,
+   "distance": 24.89,
+   "distance_raw": "24.89'"
+  },
+  {
+   "seg": 527,
+   "px": [
+    1581.12,
+    871.68,
+    1665.96,
+    861.36
+   ],
+   "flags": [
+    "bearing_residual_77.35deg",
+    "distance_vs_length_14.5pct"
+   ],
+   "bearing": "S19°34'38\"E",
+   "azimuth": 160.4228,
+   "sense": 1,
+   "distance": 225.35,
+   "distance_raw": "225.35'"
+  },
+  {
+   "seg": 529,
+   "px": [
+    1581.12,
+    871.68,
+    1681.08,
+    872.88
+   ],
+   "flags": [
+    "bearing_residual_69.73deg"
+   ],
+   "bearing": "S19°34'38\"E",
+   "azimuth": 160.4228,
+   "sense": 1,
+   "distance": 225.35,
+   "distance_raw": "225.35'"
+  },
+  {
+   "seg": 530,
+   "px": [
+    1579.68,
+    745.92,
+    1656.12,
+    736.32
+   ],
+   "flags": [
+    "bearing_residual_56.62deg",
+    "distance_vs_length_19.9pct"
+   ],
+   "bearing": "S26°13'32\"W",
+   "azimuth": 206.2256,
+   "sense": -1,
+   "distance": 144.89,
+   "distance_raw": "144.89'"
+  },
+  {
+   "seg": 531,
+   "px": [
+    1656.12,
+    736.32,
+    1679.76,
+    737.04
+   ],
+   "flags": [
+    "distance_vs_length_40.1pct",
+    "partial_course"
+   ],
+   "distance": 89.0,
+   "distance_raw": "89'"
+  },
+  {
+   "seg": 532,
+   "px": [
+    1579.68,
+    745.92,
+    1679.64,
+    747.12
+   ],
+   "flags": [
+    "bearing_residual_64.47deg",
+    "distance_vs_length_55.5pct"
+   ],
+   "bearing": "S26°13'32\"W",
+   "azimuth": 206.2256,
+   "sense": -1,
+   "distance": 144.89,
+   "distance_raw": "144.89'"
+  },
+  {
+   "seg": 533,
+   "px": [
+    1354.56,
+    364.08,
+    1438.2,
+    354.36
+   ],
+   "flags": [
+    "bearing_residual_82.70deg",
+    "distance_vs_length_952.2pct"
+   ],
+   "bearing": "N0°40'29\"E",
+   "azimuth": 0.6747,
+   "sense": 1,
+   "distance": 18.04,
+   "distance_raw": "18.04'"
+  },
+  {
+   "seg": 534,
+   "px": [
+    1438.2,
+    354.36,
+    1455.51,
+    353.55
+   ],
+   "flags": [
+    "distance_vs_length_116.5pct",
+    "partial_course"
+   ],
+   "distance": 18.04,
+   "distance_raw": "18.04'"
+  },
+  {
+   "seg": 535,
+   "px": [
+    1090.92,
+    361.23,
+    1191.0,
+    352.04
+   ],
+   "flags": [
+    "bearing_residual_5.77deg",
+    "partial_course"
+   ],
+   "bearing": "S89°28'18\"E 1117.59'",
+   "azimuth": 90.5283,
+   "sense": 1
+  },
+  {
+   "seg": 536,
+   "px": [
+    1325.52,
+    1067.16,
+    1415.28,
+    1058.28
+   ],
+   "flags": [
+    "bearing_residual_20.44deg",
+    "distance_vs_length_171.3pct"
+   ],
+   "bearing": "S63°55'09\"W",
+   "azimuth": 243.9192,
+   "sense": -1,
+   "distance": 74.95,
+   "distance_raw": "74.95'"
+  },
+  {
+   "seg": 539,
+   "px": [
+    1528.92,
+    1119.72,
+    1529.04,
+    975.96
+   ],
+   "flags": [
+    "bearing_residual_33.91deg",
+    "partial_course"
+   ],
+   "bearing": "12°E 1317.39'",
+   "azimuth": 33.9608,
+   "sense": 1
+  },
+  {
+   "seg": 541,
+   "px": [
+    1514.67,
+    291.19,
+    1515.72,
+    147.36
+   ],
+   "flags": [
+    "distance_vs_length_50.8pct",
+    "partial_course"
+   ],
+   "distance": 658.88,
+   "distance_raw": "658.88'"
+  },
+  {
+   "seg": 542,
+   "px": [
+    1525.44,
+    291.12,
+    1525.68,
+    147.36
+   ],
+   "flags": [
+    "bearing_residual_0.55deg",
+    "distance_vs_length_50.8pct"
+   ],
+   "bearing": "N0°39'14\"E 658.88'",
+   "azimuth": 0.6539,
+   "sense": 1,
+   "distance": 658.88,
+   "distance_raw": "658.88'"
+  },
+  {
+   "seg": 549,
+   "px": [
+    1381.32,
+    331.44,
+    1438.92,
+    321.24
+   ],
+   "flags": [
+    "bearing_residual_79.29deg",
+    "distance_vs_length_631.0pct"
+   ],
+   "bearing": "N0°40'29\"E",
+   "azimuth": 0.6747,
+   "sense": 1,
+   "distance": 18.04,
+   "distance_raw": "18.04'"
+  },
+  {
+   "seg": 550,
+   "px": [
+    1371.72,
+    321.24,
+    1438.92,
+    321.24
+   ],
+   "flags": [
+    "bearing_residual_89.33deg",
+    "distance_vs_length_739.7pct"
+   ],
+   "bearing": "N0°40'29\"E",
+   "azimuth": 0.6747,
+   "sense": 1,
+   "distance": 18.04,
+   "distance_raw": "18.04'"
+  },
+  {
+   "seg": 552,
+   "px": [
+    1381.32,
+    331.44,
+    1438.2,
+    331.44
+   ],
+   "flags": [
+    "bearing_residual_89.33deg",
+    "distance_vs_length_610.8pct"
+   ],
+   "bearing": "N0°40'29\"E",
+   "azimuth": 0.6747,
+   "sense": 1,
+   "distance": 18.04,
+   "distance_raw": "18.04'"
+  },
+  {
+   "seg": 560,
+   "px": [
+    1525.2,
+    508.68,
+    1586.4,
+    478.2
+   ],
+   "flags": [
+    "bearing_residual_42.97deg",
+    "partial_course"
+   ],
+   "bearing": "N20°33'25\"E",
+   "azimuth": 20.5569,
+   "sense": 1
+  },
+  {
+   "seg": 562,
+   "px": [
+    1525.2,
+    508.68,
+    1587.12,
+    508.68
+   ],
+   "flags": [
+    "bearing_residual_69.45deg",
+    "distance_vs_length_55.5pct"
+   ],
+   "bearing": "N20°33'25\"E",
+   "azimuth": 20.5569,
+   "sense": 1,
+   "distance": 313.81,
+   "distance_raw": "313.81'"
+  }
+ ],
+ "rings": [
+  {
+   "segs": [
+    214,
+    345,
+    144,
+    332
+   ],
+   "legs": 4,
+   "perimeter": 446.6,
+   "misclosure": 150.687,
+   "theta_ring": 37.9469,
+   "precision": "1:2"
+  },
+  {
+   "segs": [
+    300,
+    343,
+    267,
+    330
+   ],
+   "legs": 4,
+   "perimeter": 666.28,
+   "misclosure": 380.175,
+   "theta_ring": -53.7081,
+   "precision": "1:1"
+  }
+ ],
+ "lines": [
+  [
+   1651.44,
+   536.4,
+   1656.4,
+   541.35
+  ],
+  [
+   1656.4,
+   541.35,
+   1701.72,
+   586.56
+  ],
+  [
+   1756.92,
+   824.28,
+   1802.64,
+   786.12
+  ],
+  [
+   1676.64,
+   891.12,
+   1722.36,
+   853.08
+  ],
+  [
+   278.16,
+   981.48,
+   618.36,
+   981.48
+  ],
+  [
+   1124.76,
+   981.48,
+   1200.0,
+   981.48
+  ],
+  [
+   1312.32,
+   981.48,
+   1389.09,
+   981.48
+  ],
+  [
+   1389.09,
+   981.48,
+   1484.64,
+   981.48
+  ],
+  [
+   1543.32,
+   981.48,
+   1681.2,
+   981.48
+  ],
+  [
+   1765.2,
+   981.48,
+   1868.28,
+   981.48
+  ],
+  [
+   1389.09,
+   981.48,
+   1417.92,
+   968.4
+  ],
+  [
+   1417.92,
+   968.4,
+   1445.3,
+   955.97
+  ],
+  [
+   1353.48,
+   998.91,
+   1364.01,
+   993.92
+  ],
+  [
+   1364.01,
+   993.92,
+   1380.42,
+   986.16
+  ],
+  [
+   1380.42,
+   986.16,
+   1389.09,
+   981.48
+  ],
+  [
+   1389.09,
+   981.48,
+   1417.92,
+   968.4
+  ],
+  [
+   1315.44,
+   1018.08,
+   1364.01,
+   993.92
+  ],
+  [
+   1364.01,
+   993.92,
+   1380.42,
+   986.16
+  ],
+  [
+   1380.42,
+   986.16,
+   1389.09,
+   981.48
+  ],
+  [
+   1805.45,
+   952.84,
+   1876.85,
+   958.79
+  ],
+  [
+   795.12,
+   511.8,
+   864.24,
+   584.04
+  ],
+  [
+   1176.36,
+   868.44,
+   1181.84,
+   876.52
+  ],
+  [
+   1181.84,
+   876.52,
+   1185.77,
+   882.32
+  ],
+  [
+   1185.77,
+   882.32,
+   1235.63,
+   955.83
+  ],
+  [
+   1235.63,
+   955.83,
+   1269.6,
+   1005.9
+  ],
+  [
+   1077.96,
+   935.76,
+   1083.58,
+   931.92
+  ],
+  [
+   1083.58,
+   931.92,
+   1098.38,
+   921.79
+  ],
+  [
+   1098.38,
+   921.79,
+   1105.16,
+   917.16
+  ],
+  [
+   1105.16,
+   917.16,
+   1115.16,
+   910.32
+  ],
+  [
+   1137.39,
+   895.12,
+   1146.65,
+   888.79
+  ],
+  [
+   1146.65,
+   888.79,
+   1161.67,
+   878.51
+  ],
+  [
+   1161.67,
+   878.51,
+   1176.36,
+   868.44
+  ],
+  [
+   1120.44,
+   854.4,
+   1146.65,
+   888.79
+  ],
+  [
+   1020.32,
+   752.27,
+   1030.08,
+   764.28
+  ],
+  [
+   1030.08,
+   764.28,
+   1110.15,
+   862.77
+  ],
+  [
+   967.44,
+   669.6,
+   1000.8,
+   710.04
+  ],
+  [
+   853.08,
+   554.76,
+   873.45,
+   575.2
+  ],
+  [
+   873.45,
+   575.2,
+   913.59,
+   615.45
+  ],
+  [
+   689.89,
+   368.75,
+   692.88,
+   371.76
+  ],
+  [
+   692.88,
+   371.76,
+   820.97,
+   500.97
+  ],
+  [
+   820.97,
+   500.97,
+   859.74,
+   540.08
+  ],
+  [
+   859.74,
+   540.08,
+   887.99,
+   568.59
+  ],
+  [
+   887.99,
+   568.59,
+   980.16,
+   661.56
+  ],
+  [
+   1213.77,
+   897.22,
+   1260.78,
+   944.65
+  ],
+  [
+   664.68,
+   378.0,
+   708.84,
+   416.76
+  ],
+  [
+   742.71,
+   446.49,
+   786.87,
+   485.25
+  ],
+  [
+   663.69,
+   371.49,
+   692.88,
+   371.76
+  ],
+  [
+   692.88,
+   371.76,
+   1151.49,
+   376.0
+  ],
+  [
+   1151.49,
+   376.0,
+   1194.09,
+   376.39
+  ],
+  [
+   1194.09,
+   376.39,
+   1206.3,
+   376.51
+  ],
+  [
+   1206.3,
+   376.51,
+   1497.6,
+   379.2
+  ],
+  [
+   1497.6,
+   379.2,
+   1568.42,
+   379.85
+  ],
+  [
+   1568.42,
+   379.85,
+   1602.18,
+   380.17
+  ],
+  [
+   1602.18,
+   380.17,
+   1654.43,
+   380.65
+  ],
+  [
+   1085.28,
+   787.2,
+   1091.96,
+   795.21
+  ],
+  [
+   1091.96,
+   795.21,
+   1137.26,
+   849.58
+  ],
+  [
+   980.16,
+   661.56,
+   1085.28,
+   787.2
+  ],
+  [
+   1085.28,
+   787.2,
+   1091.96,
+   795.21
+  ],
+  [
+   1091.96,
+   795.21,
+   1161.67,
+   878.51
+  ],
+  [
+   820.97,
+   500.97,
+   859.74,
+   540.08
+  ],
+  [
+   859.74,
+   540.08,
+   887.99,
+   568.59
+  ],
+  [
+   1582.8,
+   673.8,
+   1599.39,
+   626.21
+  ],
+  [
+   1599.39,
+   626.21,
+   1619.56,
+   568.37
+  ],
+  [
+   1619.56,
+   568.37,
+   1634.04,
+   526.83
+  ],
+  [
+   1634.04,
+   526.83,
+   1637.4,
+   517.2
+  ],
+  [
+   1536.72,
+   767.4,
+   1582.8,
+   673.8
+  ],
+  [
+   1536.72,
+   767.4,
+   1542.77,
+   783.66
+  ],
+  [
+   1542.77,
+   783.66,
+   1551.18,
+   807.43
+  ],
+  [
+   1551.18,
+   807.43,
+   1556.55,
+   822.62
+  ],
+  [
+   1571.52,
+   864.96,
+   1591.08,
+   920.28
+  ],
+  [
+   1536.72,
+   767.4,
+   1542.77,
+   783.66
+  ],
+  [
+   1542.77,
+   783.66,
+   1551.18,
+   807.43
+  ],
+  [
+   1551.18,
+   807.43,
+   1556.55,
+   822.62
+  ],
+  [
+   1556.55,
+   822.62,
+   1591.08,
+   920.28
+  ],
+  [
+   1459.57,
+   871.68,
+   1480.77,
+   931.73
+  ],
+  [
+   1447.8,
+   838.68,
+   1454.2,
+   773.57
+  ],
+  [
+   1454.2,
+   773.57,
+   1454.67,
+   768.82
+  ],
+  [
+   1448.43,
+   827.73,
+   1454.2,
+   773.57
+  ],
+  [
+   1454.2,
+   773.57,
+   1462.26,
+   697.94
+  ],
+  [
+   1505.88,
+   765.12,
+   1508.64,
+   723.72
+  ],
+  [
+   1383.1,
+   1088.85,
+   1426.44,
+   1067.64
+  ],
+  [
+   1267.92,
+   1065.72,
+   1272.21,
+   1063.59
+  ],
+  [
+   1272.21,
+   1063.59,
+   1308.24,
+   1045.68
+  ],
+  [
+   1315.44,
+   1018.08,
+   1364.01,
+   993.92
+  ],
+  [
+   1235.63,
+   955.83,
+   1269.6,
+   1005.9
+  ],
+  [
+   1176.36,
+   868.44,
+   1181.84,
+   876.52
+  ],
+  [
+   1181.84,
+   876.52,
+   1185.77,
+   882.32
+  ],
+  [
+   1185.77,
+   882.32,
+   1235.63,
+   955.83
+  ],
+  [
+   1018.8,
+   976.32,
+   1061.28,
+   1050.72
+  ],
+  [
+   1061.28,
+   1050.72,
+   1089.72,
+   1090.32
+  ],
+  [
+   1491.18,
+   1141.82,
+   1491.55,
+   1098.01
+  ],
+  [
+   1491.93,
+   1053.01,
+   1492.3,
+   1008.01
+  ],
+  [
+   1492.68,
+   963.01,
+   1492.87,
+   941.16
+  ],
+  [
+   1492.87,
+   941.16,
+   1493.06,
+   918.01
+  ],
+  [
+   1493.44,
+   873.01,
+   1493.82,
+   828.01
+  ],
+  [
+   1494.2,
+   783.13,
+   1494.58,
+   738.13
+  ],
+  [
+   1494.96,
+   693.13,
+   1495.34,
+   648.13
+  ],
+  [
+   1495.71,
+   603.12,
+   1496.09,
+   558.12
+  ],
+  [
+   1496.47,
+   513.12,
+   1496.57,
+   502.1
+  ],
+  [
+   1496.57,
+   502.1,
+   1496.85,
+   468.12
+  ],
+  [
+   1497.23,
+   423.12,
+   1497.6,
+   379.2
+  ],
+  [
+   1497.6,
+   379.2,
+   1497.71,
+   366.21
+  ],
+  [
+   1497.71,
+   366.21,
+   1498.08,
+   322.32
+  ],
+  [
+   1498.46,
+   277.32,
+   1498.84,
+   232.32
+  ],
+  [
+   1499.22,
+   187.32,
+   1499.68,
+   132.83
+  ],
+  [
+   1146.65,
+   888.79,
+   1162.13,
+   910.28
+  ],
+  [
+   1162.13,
+   910.28,
+   1170.0,
+   921.24
+  ],
+  [
+   1196.28,
+   957.84,
+   1222.56,
+   994.44
+  ],
+  [
+   1248.78,
+   1030.96,
+   1272.21,
+   1063.59
+  ],
+  [
+   1447.8,
+   838.68,
+   1459.57,
+   871.68
+  ],
+  [
+   1459.57,
+   871.68,
+   1480.77,
+   931.73
+  ],
+  [
+   1480.77,
+   931.73,
+   1481.16,
+   938.88
+  ],
+  [
+   1447.8,
+   838.68,
+   1448.43,
+   827.73
+  ],
+  [
+   1448.43,
+   827.73,
+   1454.67,
+   768.82
+  ],
+  [
+   1454.67,
+   768.82,
+   1462.26,
+   697.94
+  ],
+  [
+   1462.26,
+   697.94,
+   1461.12,
+   687.96
+  ],
+  [
+   1442.99,
+   788.04,
+   1451.24,
+   699.6
+  ],
+  [
+   1469.88,
+   678.84,
+   1470.54,
+   629.28
+  ],
+  [
+   1461.96,
+   618.36,
+   1541.28,
+   406.8
+  ],
+  [
+   1469.74,
+   619.71,
+   1496.09,
+   558.12
+  ],
+  [
+   1496.09,
+   558.12,
+   1523.7,
+   477.84
+  ],
+  [
+   1523.7,
+   477.84,
+   1544.76,
+   422.45
+  ],
+  [
+   1456.44,
+   608.64,
+   1496.57,
+   502.1
+  ],
+  [
+   1496.57,
+   502.1,
+   1531.61,
+   409.07
+  ],
+  [
+   1416.6,
+   610.44,
+   1461.96,
+   618.36
+  ],
+  [
+   1206.3,
+   376.51,
+   1416.6,
+   610.44
+  ],
+  [
+   1341.48,
+   720.48,
+   1461.12,
+   687.96
+  ],
+  [
+   1181.84,
+   876.52,
+   1341.48,
+   720.48
+  ],
+  [
+   1185.77,
+   882.32,
+   1315.9,
+   755.5
+  ],
+  [
+   1197.04,
+   851.07,
+   1338.15,
+   713.82
+  ],
+  [
+   1630.68,
+   695.04,
+   1724.16,
+   695.04
+  ],
+  [
+   276.72,
+   605.76,
+   618.36,
+   605.76
+  ],
+  [
+   714.53,
+   380.0,
+   768.03,
+   434.5
+  ],
+  [
+   950.97,
+   620.9,
+   985.63,
+   656.2
+  ],
+  [
+   1198.32,
+   885.36,
+   1263.93,
+   982.22
+  ],
+  [
+   1532.16,
+   779.39,
+   1533.66,
+   783.64
+  ],
+  [
+   1533.66,
+   783.64,
+   1543.91,
+   812.74
+  ],
+  [
+   1543.91,
+   812.74,
+   1571.04,
+   889.8
+  ],
+  [
+   1527.61,
+   767.04,
+   1574.64,
+   670.69
+  ],
+  [
+   1574.64,
+   670.69,
+   1627.68,
+   518.64
+  ],
+  [
+   1461.12,
+   687.96,
+   1461.96,
+   618.36
+  ],
+  [
+   278.16,
+   874.08,
+   318.0,
+   874.08
+  ],
+  [
+   318.0,
+   874.08,
+   360.6,
+   874.08
+  ],
+  [
+   360.6,
+   874.08,
+   408.72,
+   874.08
+  ],
+  [
+   408.72,
+   874.08,
+   453.96,
+   874.08
+  ],
+  [
+   453.96,
+   874.08,
+   542.76,
+   874.08
+  ],
+  [
+   542.76,
+   874.08,
+   618.36,
+   874.08
+  ],
+  [
+   276.72,
+   634.68,
+   318.0,
+   634.68
+  ],
+  [
+   318.0,
+   634.68,
+   359.28,
+   634.68
+  ],
+  [
+   359.28,
+   634.68,
+   408.72,
+   634.68
+  ],
+  [
+   408.72,
+   634.68,
+   453.96,
+   634.68
+  ],
+  [
+   453.96,
+   634.68,
+   542.76,
+   634.68
+  ],
+  [
+   542.76,
+   634.68,
+   618.36,
+   634.68
+  ],
+  [
+   278.16,
+   931.92,
+   318.0,
+   931.92
+  ],
+  [
+   318.0,
+   931.92,
+   360.6,
+   931.92
+  ],
+  [
+   360.6,
+   931.92,
+   408.72,
+   931.92
+  ],
+  [
+   408.72,
+   931.92,
+   453.96,
+   931.92
+  ],
+  [
+   453.96,
+   931.92,
+   511.24,
+   931.92
+  ],
+  [
+   511.24,
+   931.92,
+   542.76,
+   931.92
+  ],
+  [
+   542.76,
+   931.92,
+   618.36,
+   931.92
+  ],
+  [
+   1083.58,
+   931.92,
+   1127.02,
+   931.92
+  ],
+  [
+   1127.02,
+   931.92,
+   1157.64,
+   931.92
+  ],
+  [
+   1254.84,
+   830.88,
+   1316.4,
+   830.88
+  ],
+  [
+   1584.36,
+   399.12,
+   1689.6,
+   471.96
+  ],
+  [
+   1602.18,
+   380.17,
+   1689.6,
+   471.96
+  ],
+  [
+   1584.36,
+   399.12,
+   1670.76,
+   489.84
+  ],
+  [
+   1382.52,
+   1039.2,
+   1449.0,
+   989.28
+  ],
+  [
+   1374.84,
+   1021.44,
+   1449.0,
+   989.28
+  ],
+  [
+   1382.52,
+   1039.2,
+   1456.68,
+   1006.92
+  ],
+  [
+   1124.76,
+   1020.84,
+   1200.0,
+   992.16
+  ],
+  [
+   1630.68,
+   695.04,
+   1724.16,
+   659.64
+  ],
+  [
+   1630.68,
+   659.64,
+   1724.16,
+   659.64
+  ],
+  [
+   861.36,
+   721.56,
+   926.04,
+   714.96
+  ],
+  [
+   861.96,
+   711.24,
+   926.04,
+   714.96
+  ],
+  [
+   861.36,
+   721.56,
+   925.44,
+   725.28
+  ],
+  [
+   942.48,
+   335.4,
+   1008.96,
+   327.36
+  ],
+  [
+   942.6,
+   326.76,
+   1008.96,
+   327.36
+  ],
+  [
+   942.48,
+   335.4,
+   1008.96,
+   336.0
+  ],
+  [
+   807.36,
+   663.96,
+   909.96,
+   629.28
+  ],
+  [
+   807.36,
+   629.28,
+   909.96,
+   629.28
+  ],
+  [
+   807.36,
+   663.96,
+   909.96,
+   663.96
+  ],
+  [
+   1381.32,
+   331.44,
+   1438.2,
+   331.44
+  ],
+  [
+   1381.32,
+   331.44,
+   1438.2,
+   354.36
+  ],
+  [
+   1445.4,
+   348.96,
+   1455.51,
+   353.55
+  ],
+  [
+   1455.51,
+   353.55,
+   1485.97,
+   367.38
+  ],
+  [
+   1485.97,
+   367.38,
+   1491.12,
+   369.72
+  ],
+  [
+   1090.92,
+   361.23,
+   1150.52,
+   361.88
+  ],
+  [
+   1150.52,
+   361.88,
+   1190.88,
+   362.31
+  ],
+  [
+   1354.56,
+   364.08,
+   1454.64,
+   365.16
+  ],
+  [
+   1090.92,
+   361.23,
+   1150.52,
+   361.88
+  ],
+  [
+   1150.52,
+   361.88,
+   1190.88,
+   362.31
+  ],
+  [
+   1090.92,
+   361.23,
+   1151.49,
+   376.0
+  ],
+  [
+   1150.52,
+   361.88,
+   1194.09,
+   376.39
+  ],
+  [
+   803.28,
+   503.16,
+   842.04,
+   542.28
+  ],
+  [
+   803.28,
+   503.16,
+   859.74,
+   540.08
+  ],
+  [
+   1038.84,
+   753.72,
+   1075.2,
+   797.28
+  ],
+  [
+   1038.84,
+   753.72,
+   1091.96,
+   795.21
+  ],
+  [
+   1037.76,
+   758.04,
+   1101.0,
+   835.56
+  ],
+  [
+   1085.28,
+   917.16,
+   1105.16,
+   917.16
+  ],
+  [
+   1105.16,
+   917.16,
+   1150.44,
+   917.16
+  ],
+  [
+   1085.28,
+   917.16,
+   1098.38,
+   921.79
+  ],
+  [
+   1098.38,
+   921.79,
+   1127.02,
+   931.92
+  ],
+  [
+   1127.02,
+   931.92,
+   1150.44,
+   940.2
+  ],
+  [
+   1157.64,
+   931.92,
+   1162.13,
+   910.28
+  ],
+  [
+   1162.13,
+   910.28,
+   1167.6,
+   880.44
+  ],
+  [
+   1350.0,
+   1035.24,
+   1415.28,
+   1058.28
+  ],
+  [
+   1433.04,
+   968.88,
+   1476.36,
+   968.88
+  ],
+  [
+   1543.32,
+   968.88,
+   1610.4,
+   968.88
+  ],
+  [
+   1604.28,
+   838.32,
+   1665.96,
+   861.36
+  ],
+  [
+   1254.84,
+   861.36,
+   1316.4,
+   861.36
+  ],
+  [
+   1604.28,
+   861.36,
+   1665.96,
+   861.36
+  ],
+  [
+   278.16,
+   854.88,
+   318.0,
+   854.88
+  ],
+  [
+   318.0,
+   854.88,
+   360.6,
+   854.88
+  ],
+  [
+   360.6,
+   854.88,
+   408.72,
+   854.88
+  ],
+  [
+   408.72,
+   854.88,
+   453.96,
+   854.88
+  ],
+  [
+   453.96,
+   854.88,
+   542.76,
+   854.88
+  ],
+  [
+   542.76,
+   854.88,
+   618.36,
+   854.88
+  ],
+  [
+   1590.96,
+   713.28,
+   1656.12,
+   713.28
+  ],
+  [
+   1590.96,
+   713.28,
+   1656.12,
+   736.32
+  ],
+  [
+   1654.56,
+   311.76,
+   1654.56,
+   366.24
+  ],
+  [
+   1590.96,
+   736.32,
+   1613.12,
+   736.32
+  ],
+  [
+   1613.12,
+   736.32,
+   1656.12,
+   736.32
+  ],
+  [
+   1599.39,
+   626.21,
+   1619.56,
+   568.37
+  ],
+  [
+   1619.56,
+   568.37,
+   1634.04,
+   526.83
+  ],
+  [
+   1614.0,
+   627.24,
+   1619.56,
+   568.37
+  ],
+  [
+   1611.48,
+   634.44,
+   1614.0,
+   627.24
+  ],
+  [
+   1614.0,
+   627.24,
+   1646.04,
+   540.6
+  ],
+  [
+   1646.04,
+   540.6,
+   1651.44,
+   536.4
+  ],
+  [
+   618.36,
+   605.76,
+   618.36,
+   634.68
+  ],
+  [
+   618.36,
+   634.68,
+   618.36,
+   652.08
+  ],
+  [
+   618.36,
+   652.08,
+   618.36,
+   669.48
+  ],
+  [
+   618.36,
+   669.48,
+   618.36,
+   686.88
+  ],
+  [
+   618.36,
+   686.88,
+   618.36,
+   704.4
+  ],
+  [
+   618.36,
+   704.4,
+   618.36,
+   725.57
+  ],
+  [
+   618.36,
+   725.57,
+   618.36,
+   739.2
+  ],
+  [
+   618.36,
+   739.2,
+   618.36,
+   756.6
+  ],
+  [
+   618.36,
+   791.88,
+   618.36,
+   818.16
+  ],
+  [
+   618.36,
+   818.16,
+   618.36,
+   854.88
+  ],
+  [
+   618.36,
+   854.88,
+   618.36,
+   874.08
+  ],
+  [
+   618.36,
+   874.08,
+   618.36,
+   893.4
+  ],
+  [
+   618.36,
+   893.4,
+   618.36,
+   931.92
+  ],
+  [
+   618.36,
+   931.92,
+   618.36,
+   951.12
+  ],
+  [
+   618.36,
+   981.48,
+   618.36,
+   1095.0
+  ],
+  [
+   276.72,
+   605.76,
+   276.72,
+   634.68
+  ],
+  [
+   276.72,
+   634.68,
+   276.72,
+   652.08
+  ],
+  [
+   276.72,
+   652.08,
+   276.72,
+   669.48
+  ],
+  [
+   276.72,
+   669.48,
+   276.72,
+   686.88
+  ],
+  [
+   276.72,
+   686.88,
+   276.72,
+   704.4
+  ],
+  [
+   276.72,
+   704.4,
+   276.72,
+   721.88
+  ],
+  [
+   276.72,
+   721.88,
+   276.72,
+   739.2
+  ],
+  [
+   276.72,
+   739.2,
+   276.72,
+   756.6
+  ],
+  [
+   276.72,
+   791.88,
+   276.72,
+   818.16
+  ],
+  [
+   276.72,
+   818.16,
+   278.16,
+   854.88
+  ],
+  [
+   278.16,
+   854.88,
+   278.16,
+   874.08
+  ],
+  [
+   278.16,
+   874.08,
+   276.72,
+   893.4
+  ],
+  [
+   276.72,
+   893.4,
+   276.72,
+   924.32
+  ],
+  [
+   276.72,
+   924.32,
+   278.16,
+   931.92
+  ],
+  [
+   278.16,
+   931.92,
+   276.72,
+   951.12
+  ],
+  [
+   276.72,
+   652.08,
+   318.0,
+   652.08
+  ],
+  [
+   318.0,
+   652.08,
+   359.28,
+   652.08
+  ],
+  [
+   359.28,
+   652.08,
+   408.72,
+   652.08
+  ],
+  [
+   408.72,
+   652.08,
+   453.96,
+   652.08
+  ],
+  [
+   453.96,
+   652.08,
+   542.76,
+   652.08
+  ],
+  [
+   542.76,
+   652.08,
+   618.36,
+   652.08
+  ],
+  [
+   276.72,
+   756.6,
+   318.0,
+   756.6
+  ],
+  [
+   318.0,
+   756.6,
+   359.28,
+   756.6
+  ],
+  [
+   359.28,
+   756.6,
+   408.72,
+   756.6
+  ],
+  [
+   408.72,
+   756.6,
+   453.96,
+   756.6
+  ],
+  [
+   453.96,
+   756.6,
+   542.76,
+   756.6
+  ],
+  [
+   542.76,
+   756.6,
+   618.36,
+   756.6
+  ],
+  [
+   276.72,
+   669.48,
+   318.0,
+   669.48
+  ],
+  [
+   318.0,
+   669.48,
+   359.28,
+   669.48
+  ],
+  [
+   359.28,
+   669.48,
+   408.72,
+   669.48
+  ],
+  [
+   408.72,
+   669.48,
+   453.96,
+   669.48
+  ],
+  [
+   453.96,
+   669.48,
+   542.76,
+   669.48
+  ],
+  [
+   542.76,
+   669.48,
+   618.36,
+   669.48
+  ],
+  [
+   276.72,
+   686.88,
+   318.0,
+   686.88
+  ],
+  [
+   318.0,
+   686.88,
+   359.28,
+   686.88
+  ],
+  [
+   359.28,
+   686.88,
+   408.72,
+   686.88
+  ],
+  [
+   408.72,
+   686.88,
+   453.96,
+   686.88
+  ],
+  [
+   453.96,
+   686.88,
+   542.76,
+   686.88
+  ],
+  [
+   542.76,
+   686.88,
+   618.36,
+   686.88
+  ],
+  [
+   276.72,
+   704.4,
+   318.0,
+   704.4
+  ],
+  [
+   318.0,
+   704.4,
+   359.28,
+   704.4
+  ],
+  [
+   359.28,
+   704.4,
+   408.72,
+   704.4
+  ],
+  [
+   408.72,
+   704.4,
+   453.96,
+   704.4
+  ],
+  [
+   453.96,
+   704.4,
+   542.76,
+   704.4
+  ],
+  [
+   542.76,
+   704.4,
+   618.36,
+   704.4
+  ],
+  [
+   276.72,
+   721.88,
+   318.0,
+   722.33
+  ],
+  [
+   318.0,
+   722.33,
+   359.28,
+   722.77
+  ],
+  [
+   359.28,
+   722.77,
+   408.72,
+   723.31
+  ],
+  [
+   408.72,
+   723.31,
+   453.96,
+   723.8
+  ],
+  [
+   453.96,
+   723.8,
+   542.76,
+   724.76
+  ],
+  [
+   542.76,
+   724.76,
+   618.36,
+   725.57
+  ],
+  [
+   1579.8,
+   735.96,
+   1613.12,
+   736.32
+  ],
+  [
+   1613.12,
+   736.32,
+   1656.12,
+   736.32
+  ],
+  [
+   1656.12,
+   736.32,
+   1679.76,
+   737.04
+  ],
+  [
+   276.72,
+   739.2,
+   318.0,
+   739.2
+  ],
+  [
+   318.0,
+   739.2,
+   359.28,
+   739.2
+  ],
+  [
+   359.28,
+   739.2,
+   408.72,
+   739.2
+  ],
+  [
+   408.72,
+   739.2,
+   453.96,
+   739.2
+  ],
+  [
+   453.96,
+   739.2,
+   542.76,
+   739.2
+  ],
+  [
+   542.76,
+   739.2,
+   618.36,
+   739.2
+  ],
+  [
+   318.0,
+   634.68,
+   318.0,
+   652.08
+  ],
+  [
+   318.0,
+   652.08,
+   318.0,
+   669.48
+  ],
+  [
+   318.0,
+   669.48,
+   318.0,
+   686.88
+  ],
+  [
+   318.0,
+   686.88,
+   318.0,
+   704.4
+  ],
+  [
+   318.0,
+   704.4,
+   318.0,
+   722.33
+  ],
+  [
+   318.0,
+   722.33,
+   318.0,
+   739.2
+  ],
+  [
+   318.0,
+   739.2,
+   318.0,
+   756.6
+  ],
+  [
+   318.0,
+   818.16,
+   318.0,
+   854.88
+  ],
+  [
+   318.0,
+   854.88,
+   318.0,
+   874.08
+  ],
+  [
+   318.0,
+   874.08,
+   318.0,
+   893.4
+  ],
+  [
+   318.0,
+   893.4,
+   318.0,
+   925.66
+  ],
+  [
+   318.0,
+   925.66,
+   318.0,
+   931.92
+  ],
+  [
+   318.0,
+   931.92,
+   318.0,
+   951.12
+  ],
+  [
+   318.0,
+   1007.88,
+   318.0,
+   1095.0
+  ],
+  [
+   359.28,
+   634.68,
+   359.28,
+   652.08
+  ],
+  [
+   359.28,
+   652.08,
+   359.28,
+   669.48
+  ],
+  [
+   359.28,
+   669.48,
+   359.28,
+   686.88
+  ],
+  [
+   359.28,
+   686.88,
+   359.28,
+   704.4
+  ],
+  [
+   359.28,
+   704.4,
+   359.28,
+   722.77
+  ],
+  [
+   359.28,
+   722.77,
+   359.28,
+   739.2
+  ],
+  [
+   359.28,
+   739.2,
+   359.28,
+   756.6
+  ],
+  [
+   408.72,
+   634.68,
+   408.72,
+   652.08
+  ],
+  [
+   408.72,
+   652.08,
+   408.72,
+   669.48
+  ],
+  [
+   408.72,
+   669.48,
+   408.72,
+   686.88
+  ],
+  [
+   408.72,
+   686.88,
+   408.72,
+   704.4
+  ],
+  [
+   408.72,
+   704.4,
+   408.72,
+   723.31
+  ],
+  [
+   408.72,
+   723.31,
+   408.72,
+   739.2
+  ],
+  [
+   408.72,
+   739.2,
+   408.72,
+   756.6
+  ],
+  [
+   408.72,
+   818.16,
+   408.72,
+   854.88
+  ],
+  [
+   408.72,
+   854.88,
+   408.72,
+   874.08
+  ],
+  [
+   408.72,
+   874.08,
+   408.72,
+   893.4
+  ],
+  [
+   408.72,
+   893.4,
+   408.72,
+   931.92
+  ],
+  [
+   408.72,
+   931.92,
+   408.72,
+   951.12
+  ],
+  [
+   408.72,
+   1007.88,
+   408.72,
+   1095.0
+  ],
+  [
+   453.96,
+   634.68,
+   453.96,
+   652.08
+  ],
+  [
+   453.96,
+   652.08,
+   453.96,
+   669.48
+  ],
+  [
+   453.96,
+   669.48,
+   453.96,
+   686.88
+  ],
+  [
+   453.96,
+   686.88,
+   453.96,
+   704.4
+  ],
+  [
+   453.96,
+   704.4,
+   453.96,
+   723.8
+  ],
+  [
+   453.96,
+   723.8,
+   453.96,
+   739.2
+  ],
+  [
+   453.96,
+   739.2,
+   453.96,
+   756.6
+  ],
+  [
+   453.96,
+   818.16,
+   453.96,
+   854.88
+  ],
+  [
+   453.96,
+   854.88,
+   453.96,
+   874.08
+  ],
+  [
+   453.96,
+   874.08,
+   453.96,
+   893.4
+  ],
+  [
+   453.96,
+   893.4,
+   453.96,
+   931.92
+  ],
+  [
+   453.96,
+   931.92,
+   453.96,
+   951.12
+  ],
+  [
+   453.96,
+   1007.88,
+   453.96,
+   1095.0
+  ],
+  [
+   542.76,
+   634.68,
+   542.76,
+   652.08
+  ],
+  [
+   542.76,
+   652.08,
+   542.76,
+   669.48
+  ],
+  [
+   542.76,
+   669.48,
+   542.76,
+   686.88
+  ],
+  [
+   542.76,
+   686.88,
+   542.76,
+   704.4
+  ],
+  [
+   542.76,
+   704.4,
+   542.76,
+   724.76
+  ],
+  [
+   542.76,
+   724.76,
+   542.76,
+   739.2
+  ],
+  [
+   542.76,
+   739.2,
+   542.76,
+   756.6
+  ],
+  [
+   542.76,
+   818.16,
+   542.76,
+   854.88
+  ],
+  [
+   542.76,
+   854.88,
+   542.76,
+   874.08
+  ],
+  [
+   542.76,
+   874.08,
+   542.76,
+   893.4
+  ],
+  [
+   542.76,
+   893.4,
+   542.76,
+   931.92
+  ],
+  [
+   542.76,
+   931.92,
+   542.76,
+   951.12
+  ],
+  [
+   542.76,
+   1007.88,
+   542.76,
+   1095.0
+  ],
+  [
+   264.36,
+   71.04,
+   583.56,
+   71.04
+  ],
+  [
+   266.04,
+   92.76,
+   413.16,
+   92.76
+  ],
+  [
+   266.04,
+   81.96,
+   413.16,
+   81.96
+  ],
+  [
+   265.8,
+   136.68,
+   412.92,
+   136.68
+  ],
+  [
+   266.04,
+   149.88,
+   317.04,
+   149.88
+  ],
+  [
+   362.04,
+   149.88,
+   413.16,
+   149.88
+  ],
+  [
+   1554.84,
+   149.88,
+   1622.04,
+   149.88
+  ],
+  [
+   1550.52,
+   161.52,
+   1554.84,
+   161.52
+  ],
+  [
+   1554.84,
+   161.52,
+   1622.04,
+   161.52
+  ],
+  [
+   266.16,
+   125.4,
+   413.28,
+   125.4
+  ],
+  [
+   1511.88,
+   121.2,
+   1644.84,
+   121.2
+  ],
+  [
+   360.6,
+   818.16,
+   360.6,
+   854.88
+  ],
+  [
+   360.6,
+   854.88,
+   360.6,
+   874.08
+  ],
+  [
+   360.6,
+   874.08,
+   360.6,
+   893.4
+  ],
+  [
+   360.6,
+   893.4,
+   360.6,
+   927.04
+  ],
+  [
+   360.6,
+   927.04,
+   360.6,
+   931.92
+  ],
+  [
+   360.6,
+   931.92,
+   360.6,
+   951.12
+  ],
+  [
+   360.6,
+   1007.88,
+   360.6,
+   1095.0
+  ],
+  [
+   265.92,
+   114.24,
+   413.16,
+   114.12
+  ],
+  [
+   278.16,
+   981.48,
+   281.16,
+   1095.0
+  ],
+  [
+   276.72,
+   791.88,
+   618.36,
+   791.88
+  ],
+  [
+   276.72,
+   818.16,
+   318.0,
+   818.16
+  ],
+  [
+   318.0,
+   818.16,
+   360.6,
+   818.16
+  ],
+  [
+   360.6,
+   818.16,
+   408.72,
+   818.16
+  ],
+  [
+   408.72,
+   818.16,
+   453.96,
+   818.16
+  ],
+  [
+   453.96,
+   818.16,
+   542.76,
+   818.16
+  ],
+  [
+   542.76,
+   818.16,
+   618.36,
+   818.16
+  ],
+  [
+   276.72,
+   951.12,
+   318.0,
+   951.12
+  ],
+  [
+   318.0,
+   951.12,
+   360.6,
+   951.12
+  ],
+  [
+   360.6,
+   951.12,
+   408.72,
+   951.12
+  ],
+  [
+   408.72,
+   951.12,
+   453.96,
+   951.12
+  ],
+  [
+   453.96,
+   951.12,
+   542.76,
+   951.12
+  ],
+  [
+   542.76,
+   951.12,
+   618.36,
+   951.12
+  ],
+  [
+   276.72,
+   893.4,
+   318.0,
+   893.4
+  ],
+  [
+   318.0,
+   893.4,
+   360.6,
+   893.4
+  ],
+  [
+   360.6,
+   893.4,
+   408.72,
+   893.4
+  ],
+  [
+   408.72,
+   893.4,
+   453.96,
+   893.4
+  ],
+  [
+   453.96,
+   893.4,
+   542.76,
+   893.4
+  ],
+  [
+   542.76,
+   893.4,
+   618.36,
+   893.4
+  ],
+  [
+   276.72,
+   924.32,
+   318.0,
+   925.66
+  ],
+  [
+   318.0,
+   925.66,
+   360.6,
+   927.04
+  ],
+  [
+   360.6,
+   927.04,
+   408.72,
+   931.92
+  ],
+  [
+   408.72,
+   931.92,
+   453.96,
+   931.92
+  ],
+  [
+   453.96,
+   931.92,
+   511.24,
+   931.92
+  ],
+  [
+   511.24,
+   931.92,
+   542.76,
+   931.92
+  ],
+  [
+   542.76,
+   931.92,
+   618.36,
+   931.92
+  ],
+  [
+   1070.28,
+   950.04,
+   1170.24,
+   953.28
+  ],
+  [
+   1620.84,
+   637.92,
+   1646.04,
+   540.6
+  ],
+  [
+   1620.84,
+   637.92,
+   1656.4,
+   541.35
+  ],
+  [
+   1805.87,
+   1033.25,
+   1847.76,
+   1038.96
+  ],
+  [
+   276.48,
+   1191.72,
+   363.72,
+   1191.72
+  ],
+  [
+   954.84,
+   1191.72,
+   1314.84,
+   1191.72
+  ],
+  [
+   1465.56,
+   1191.72,
+   1506.96,
+   1191.72
+  ],
+  [
+   1518.12,
+   1191.72,
+   1535.58,
+   1191.72
+  ],
+  [
+   1535.58,
+   1191.72,
+   1637.04,
+   1191.72
+  ],
+  [
+   1744.68,
+   1191.72,
+   1749.24,
+   1191.72
+  ],
+  [
+   1749.24,
+   1191.72,
+   1827.12,
+   1191.72
+  ],
+  [
+   1827.12,
+   1191.72,
+   1906.91,
+   1191.72
+  ],
+  [
+   432.36,
+   1187.28,
+   432.36,
+   1206.72
+  ],
+  [
+   432.36,
+   1206.72,
+   432.36,
+   1234.56
+  ],
+  [
+   954.84,
+   1209.72,
+   1098.84,
+   1209.72
+  ],
+  [
+   1098.84,
+   1209.72,
+   1314.84,
+   1209.72
+  ],
+  [
+   1746.48,
+   1209.72,
+   1827.12,
+   1209.72
+  ],
+  [
+   1827.12,
+   1209.72,
+   1907.77,
+   1209.72
+  ],
+  [
+   286.8,
+   1214.4,
+   327.0,
+   1214.4
+  ],
+  [
+   286.8,
+   1206.72,
+   332.28,
+   1206.72
+  ],
+  [
+   377.64,
+   1206.72,
+   432.36,
+   1206.72
+  ],
+  [
+   278.16,
+   1234.56,
+   346.56,
+   1234.56
+  ],
+  [
+   253.44,
+   1262.28,
+   1744.68,
+   1262.28
+  ],
+  [
+   1744.68,
+   1262.28,
+   1910.28,
+   1262.28
+  ],
+  [
+   257.88,
+   1257.84,
+   1744.68,
+   1257.84
+  ],
+  [
+   1744.68,
+   1257.84,
+   1749.24,
+   1257.84
+  ],
+  [
+   1749.24,
+   1257.84,
+   1905.84,
+   1257.84
+  ],
+  [
+   253.44,
+   33.84,
+   253.44,
+   1262.28
+  ],
+  [
+   257.88,
+   38.28,
+   257.88,
+   1257.84
+  ],
+  [
+   257.88,
+   38.28,
+   1910.28,
+   33.84
+  ],
+  [
+   253.44,
+   33.84,
+   1910.28,
+   33.84
+  ],
+  [
+   1905.84,
+   38.28,
+   1909.93,
+   1164.85
+  ],
+  [
+   1909.93,
+   1164.85,
+   1906.91,
+   1191.72
+  ],
+  [
+   1906.91,
+   1191.72,
+   1907.77,
+   1209.72
+  ],
+  [
+   1907.77,
+   1209.72,
+   1910.28,
+   1262.28
+  ],
+  [
+   1910.28,
+   33.84,
+   1909.93,
+   1164.85
+  ],
+  [
+   1909.93,
+   1164.85,
+   1906.91,
+   1191.72
+  ],
+  [
+   1906.91,
+   1191.72,
+   1907.77,
+   1209.72
+  ],
+  [
+   1907.77,
+   1209.72,
+   1910.28,
+   1262.28
+  ],
+  [
+   1827.12,
+   1169.4,
+   1827.12,
+   1191.72
+  ],
+  [
+   1827.12,
+   1191.72,
+   1827.12,
+   1209.72
+  ],
+  [
+   1744.68,
+   1262.28,
+   1905.84,
+   1257.84
+  ],
+  [
+   1744.68,
+   1164.84,
+   1744.68,
+   1191.72
+  ],
+  [
+   1744.68,
+   1191.72,
+   1746.48,
+   1209.72
+  ],
+  [
+   1746.48,
+   1209.72,
+   1749.24,
+   1257.84
+  ],
+  [
+   1744.68,
+   1164.84,
+   1744.68,
+   1191.72
+  ],
+  [
+   1744.68,
+   1191.72,
+   1746.48,
+   1209.72
+  ],
+  [
+   1746.48,
+   1209.72,
+   1744.68,
+   1257.84
+  ],
+  [
+   1744.68,
+   1257.84,
+   1744.68,
+   1262.28
+  ],
+  [
+   1749.24,
+   1169.4,
+   1749.24,
+   1191.72
+  ],
+  [
+   1749.24,
+   1191.72,
+   1746.48,
+   1209.72
+  ],
+  [
+   1746.48,
+   1209.72,
+   1749.24,
+   1257.84
+  ],
+  [
+   1749.24,
+   1169.4,
+   1827.12,
+   1169.4
+  ],
+  [
+   1827.12,
+   1169.4,
+   1909.93,
+   1164.85
+  ],
+  [
+   1905.84,
+   1169.4,
+   1906.91,
+   1191.72
+  ],
+  [
+   1906.91,
+   1191.72,
+   1907.77,
+   1209.72
+  ],
+  [
+   1907.77,
+   1209.72,
+   1910.28,
+   1262.28
+  ],
+  [
+   1508.76,
+   1118.76,
+   1509.0,
+   975.0
+  ],
+  [
+   1518.12,
+   1135.92,
+   1518.12,
+   1191.72
+  ],
+  [
+   1518.12,
+   1191.72,
+   1518.12,
+   1201.32
+  ],
+  [
+   1518.12,
+   1201.32,
+   1535.58,
+   1191.72
+  ],
+  [
+   1535.58,
+   1191.72,
+   1637.04,
+   1135.92
+  ],
+  [
+   1637.04,
+   1135.92,
+   1637.04,
+   1191.72
+  ],
+  [
+   1637.04,
+   1191.72,
+   1637.04,
+   1201.32
+  ],
+  [
+   1492.87,
+   941.16,
+   1492.68,
+   963.01
+  ],
+  [
+   1492.68,
+   963.01,
+   1508.76,
+   1118.76
+  ],
+  [
+   1508.76,
+   1118.76,
+   1506.96,
+   1147.44
+  ],
+  [
+   1492.32,
+   1147.32,
+   1491.18,
+   1141.82
+  ],
+  [
+   1491.18,
+   1141.82,
+   1491.55,
+   1098.01
+  ],
+  [
+   1491.55,
+   1098.01,
+   1491.93,
+   1053.01
+  ],
+  [
+   1491.93,
+   1053.01,
+   1492.3,
+   1008.01
+  ],
+  [
+   1492.3,
+   1008.01,
+   1492.68,
+   963.01
+  ],
+  [
+   1492.68,
+   963.01,
+   1492.87,
+   941.16
+  ],
+  [
+   1506.96,
+   1147.44,
+   1508.76,
+   1118.76
+  ],
+  [
+   1508.76,
+   1118.76,
+   1509.0,
+   975.0
+  ],
+  [
+   1509.0,
+   975.0,
+   1507.99,
+   950.36
+  ],
+  [
+   1507.99,
+   950.36,
+   1508.04,
+   941.16
+  ],
+  [
+   1509.0,
+   975.0,
+   1518.84,
+   1118.76
+  ],
+  [
+   1518.84,
+   1118.76,
+   1519.08,
+   975.94
+  ],
+  [
+   1499.68,
+   132.83,
+   1499.22,
+   187.32
+  ],
+  [
+   1499.22,
+   187.32,
+   1498.84,
+   232.32
+  ],
+  [
+   1498.84,
+   232.32,
+   1498.46,
+   277.32
+  ],
+  [
+   1498.46,
+   277.32,
+   1501.08,
+   303.48
+  ],
+  [
+   1501.08,
+   311.76,
+   1498.08,
+   322.32
+  ],
+  [
+   1498.08,
+   322.32,
+   1497.71,
+   366.21
+  ],
+  [
+   1502.04,
+   366.24,
+   1654.56,
+   311.76
+  ],
+  [
+   1501.08,
+   311.76,
+   1654.56,
+   311.76
+  ],
+  [
+   1091.04,
+   350.84,
+   1191.0,
+   352.04
+  ],
+  [
+   1354.68,
+   354.0,
+   1438.2,
+   354.36
+  ],
+  [
+   1438.2,
+   354.36,
+   1455.51,
+   353.55
+  ],
+  [
+   1511.88,
+   57.48,
+   1511.88,
+   121.2
+  ],
+  [
+   1511.88,
+   121.2,
+   1644.84,
+   57.48
+  ],
+  [
+   1511.88,
+   57.48,
+   1644.84,
+   57.48
+  ],
+  [
+   1644.84,
+   57.48,
+   1644.84,
+   121.2
+  ],
+  [
+   1499.68,
+   132.83,
+   1514.67,
+   291.19
+  ],
+  [
+   1514.67,
+   291.19,
+   1515.72,
+   303.48
+  ],
+  [
+   1515.72,
+   132.84,
+   1515.72,
+   147.36
+  ],
+  [
+   1515.72,
+   147.36,
+   1514.67,
+   291.19
+  ],
+  [
+   1514.67,
+   291.19,
+   1515.72,
+   303.48
+  ],
+  [
+   1534.2,
+   394.2,
+   1568.42,
+   379.85
+  ],
+  [
+   1568.42,
+   379.85,
+   1598.04,
+   367.44
+  ],
+  [
+   1534.2,
+   394.2,
+   1598.04,
+   394.2
+  ],
+  [
+   1539.12,
+   816.24,
+   1543.91,
+   812.74
+  ],
+  [
+   1543.91,
+   812.74,
+   1551.18,
+   807.43
+  ],
+  [
+   1551.18,
+   807.43,
+   1583.64,
+   783.72
+  ],
+  [
+   1507.44,
+   783.6,
+   1533.66,
+   783.64
+  ],
+  [
+   1533.66,
+   783.64,
+   1542.77,
+   783.66
+  ],
+  [
+   1542.77,
+   783.66,
+   1583.64,
+   783.72
+  ],
+  [
+   1098.84,
+   1209.72,
+   1170.84,
+   1201.08
+  ],
+  [
+   1170.84,
+   1201.08,
+   1314.84,
+   1191.72
+  ],
+  [
+   1070.52,
+   940.08,
+   1150.44,
+   940.2
+  ],
+  [
+   1150.44,
+   940.2,
+   1170.48,
+   943.32
+  ],
+  [
+   795.12,
+   511.8,
+   873.45,
+   575.2
+  ],
+  [
+   1030.08,
+   764.28,
+   1101.0,
+   835.56
+  ],
+  [
+   1185.72,
+   925.08,
+   1250.88,
+   1001.64
+  ],
+  [
+   1194.0,
+   919.44,
+   1250.88,
+   1001.64
+  ],
+  [
+   1185.72,
+   925.08,
+   1242.72,
+   1007.28
+  ],
+  [
+   1070.28,
+   950.04,
+   1170.48,
+   943.32
+  ],
+  [
+   1581.12,
+   871.68,
+   1665.96,
+   861.36
+  ],
+  [
+   1665.96,
+   861.36,
+   1681.2,
+   862.8
+  ],
+  [
+   1581.12,
+   871.68,
+   1681.08,
+   872.88
+  ],
+  [
+   1579.68,
+   745.92,
+   1656.12,
+   736.32
+  ],
+  [
+   1656.12,
+   736.32,
+   1679.76,
+   737.04
+  ],
+  [
+   1579.68,
+   745.92,
+   1679.64,
+   747.12
+  ],
+  [
+   1354.56,
+   364.08,
+   1438.2,
+   354.36
+  ],
+  [
+   1438.2,
+   354.36,
+   1455.51,
+   353.55
+  ],
+  [
+   1090.92,
+   361.23,
+   1191.0,
+   352.04
+  ],
+  [
+   1325.52,
+   1067.16,
+   1415.28,
+   1058.28
+  ],
+  [
+   1415.28,
+   1058.28,
+   1424.88,
+   1060.32
+  ],
+  [
+   1519.08,
+   975.94,
+   1528.92,
+   1119.72
+  ],
+  [
+   1528.92,
+   1119.72,
+   1529.04,
+   975.96
+  ],
+  [
+   1515.72,
+   147.36,
+   1525.44,
+   291.12
+  ],
+  [
+   1514.67,
+   291.19,
+   1515.72,
+   147.36
+  ],
+  [
+   1525.44,
+   291.12,
+   1525.68,
+   147.36
+  ],
+  [
+   1525.68,
+   147.36,
+   1535.76,
+   292.44
+  ],
+  [
+   1535.76,
+   292.44,
+   1536.0,
+   148.68
+  ],
+  [
+   695.4,
+   334.56,
+   762.6,
+   322.92
+  ],
+  [
+   695.4,
+   322.92,
+   762.6,
+   322.92
+  ],
+  [
+   695.4,
+   334.56,
+   762.6,
+   334.56
+  ],
+  [
+   1371.72,
+   332.88,
+   1381.32,
+   331.44
+  ],
+  [
+   1381.32,
+   331.44,
+   1438.92,
+   321.24
+  ],
+  [
+   1371.72,
+   321.24,
+   1438.92,
+   321.24
+  ],
+  [
+   1371.72,
+   332.88,
+   1381.32,
+   331.44
+  ],
+  [
+   1381.32,
+   331.44,
+   1438.2,
+   331.44
+  ],
+  [
+   1443.24,
+   327.12,
+   1485.97,
+   367.38
+  ],
+  [
+   1554.84,
+   161.52,
+   1622.04,
+   149.88
+  ],
+  [
+   1506.48,
+   112.2,
+   1511.88,
+   121.2
+  ],
+  [
+   1511.88,
+   121.2,
+   1550.52,
+   155.64
+  ],
+  [
+   1543.32,
+   981.48,
+   1610.4,
+   968.88
+  ],
+  [
+   1492.87,
+   941.16,
+   1507.99,
+   950.36
+  ],
+  [
+   1507.99,
+   950.36,
+   1538.88,
+   974.76
+  ],
+  [
+   1525.2,
+   508.68,
+   1586.4,
+   478.2
+  ],
+  [
+   1523.7,
+   477.84,
+   1586.4,
+   478.2
+  ],
+  [
+   1525.2,
+   508.68,
+   1587.12,
+   508.68
+  ],
+  [
+   1563.6,
+   453.24,
+   1586.4,
+   478.2
+  ],
+  [
+   1586.4,
+   478.2,
+   1591.44,
+   483.72
+  ],
+  [
+   1254.84,
+   861.36,
+   1316.4,
+   830.88
+  ],
+  [
+   1309.68,
+   769.44,
+   1316.4,
+   830.88
+  ],
+  [
+   1316.4,
+   830.88,
+   1318.68,
+   836.64
+  ]
+ ],
+ "report": {
+  "segments": 274,
+  "edges": 568,
+  "faces": 89,
+  "faces_fully_coursed": 2,
+  "courses": 417,
+  "courses_clean": 0,
+  "courses_flagged": 417,
+  "rings_closed": 2,
+  "rings_beyond_tolerance": 2,
+  "needs_human": true
+ }
+}

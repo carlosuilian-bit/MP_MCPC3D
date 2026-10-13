@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Deterministic>true</Deterministic>
+    <Company>Civil3D Hybrid MCP</Company>
+    <Authors>Civil3D Hybrid MCP Contributors</Authors>
+    <Version>0.1.0</Version>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+</Project>
+

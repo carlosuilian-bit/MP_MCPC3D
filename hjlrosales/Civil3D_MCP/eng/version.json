@@ -1,0 +1,7 @@
+{
+  "version": "1.0.1",
+  "npmPackage": "autodesk-mcp-server",
+  "bundleName": "Civil3D.Bridge.Bundle",
+  "bundleProduct": "Civil 3D",
+  "repositoryUrl": "https://github.com/hjlrosales/Civil3D_MCP"
+}

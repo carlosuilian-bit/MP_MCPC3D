@@ -1,0 +1,497 @@
+# Changelog
+
+## Unreleased
+
+- registered the Surface/TIN correction tool plan for the `TN RTK` workflow as documentation/backlog only, with no implementation started and no drawing mutation implied
+- added `docs/ROADMAP_PROGRESS.md` with phase-by-phase progress estimates and immediate next steps
+- added `scripts/check-bundle-install.ps1` for offline Autodesk bundle diagnostics without touching Civil 3D
+- added integration coverage for successful bundle diagnostics and rejection of packaged Autodesk managed assemblies
+- clean-start Civil 3D autoload validation passed with a new session launched without a `/b` loader script
+- implemented `layer_set_current` as a transaction-safe WRITE/Low AutoCAD layer tool
+- implemented `layer_update` as a transaction-safe WRITE/Low AutoCAD layer tool for bounded layer property changes
+- added `Civil3D.HybridMcp.Tools.Survey` with pure READ/Low Survey geometry tools
+- implemented `survey_bearing_to_azimuth`, `survey_azimuth_to_bearing`, `survey_distance`, and `survey_point_by_azimuth`
+- extended fake bridge and MCP integration coverage to 23 advertised tools
+- updated bundle diagnostics to require `Civil3D.HybridMcp.Tools.Survey.dll`
+- implemented `survey_fbk_dry_run` as a READ/Low inline FBK parser and dry-run Survey preview
+- added `survey_fbk_dry_run_enabled` capability feature flag
+- added FBK comment-line handling for `!`, `;`, and `#`
+- documented the AutoCAD `/ld` quoting error that can trigger "Cannot find the specified drawing file"
+- packaged and installed the Phase 3A 17-tool bundle, then live validated `layer_set_current` against Civil 3D 2026 on a temporary DWG copy
+- packaged and installed the Phase 3B 18-tool bundle, then live validated `layer_update` against Civil 3D 2026 on a temporary DWG copy
+- packaged and installed the Phase 4A 22-tool bundle after closing the temporary Civil 3D process that was holding the previous bridge DLL
+- live validated the Phase 4A installed bundle against Civil 3D 2026 and executed `survey_bearing_to_azimuth` through the live named pipe
+- packaged and installed the Phase 4B 23-tool bundle without opening Civil 3D, then passed the offline bundle diagnostic
+- live smoke validated the Phase 4B 23-tool bundle against Civil 3D 2026 through the official MCP client, including `survey_fbk_dry_run`
+- started Phase 4C with `survey_database_status`, a READ/Low Survey Database readiness/status probe
+- extended `survey_database_status` with an Autodesk bridge `environment_probe` that detects known Civil 3D Survey runtime files without initializing COM
+- fixed the live Survey runtime detector to fall back from unloaded `AeccDbMgd` to the loaded AutoCAD assembly directory plus `C3D`
+- extended fake bridge and MCP integration coverage to the 24-tool development catalog
+- packaged the Phase 4C 24-tool Release bundle to `artifacts\Civil3D.HybridMcp.bundle` and passed the offline bundle diagnostic
+- deferred replacing the installed bundle while Civil 3D was open on the Start screen to avoid overwriting loaded bridge DLLs
+- installed the Phase 4C 24-tool bundle after terminating the Civil 3D process that was holding the previous bridge DLL
+- live smoke validated the Phase 4C installed bundle against Civil 3D 2026 through the official MCP client, including `survey_database_status`
+- started Phase 4D with `survey_working_folder_get`, a READ/Low Survey COM working-folder read
+- added a typed Survey COM gateway in the Autodesk bridge for `IAeccSurveyProjects.GetWorkingFolder()` without opening Survey Databases or mutating drawing state
+- routed `survey_working_folder_get` through the Autodesk host dispatcher and returned structured `DocumentNotFound` when no active document is visible to the bridge
+- extended fake bridge and MCP integration coverage to the 25-tool development catalog
+- packaged and installed the Phase 4D 25-tool bundle after terminating the Civil 3D process that was holding the previous bridge DLL
+- live smoke validated the Phase 4D installed bundle against Civil 3D 2026 through the official MCP client, including `survey_working_folder_get`
+- started Phase 4E-A as a Survey COM read-stability pass for `survey_working_folder_get`
+- added structured tool exception details so host-context tool failures can return typed error details instead of collapsing to `InternalError`
+- mapped no-active-document `drawing_info` failures to `DocumentNotFound` with `document_count` and `requires_active_document` details
+- returned Survey COM no-active-document details from `survey_working_folder_get`, including `adapter`, `document_count`, and `requires_active_document`
+- included the active document descriptor on successful `survey_working_folder_get` responses
+- live validated Phase 4E-A against Civil 3D 2026 with both the Start/no-document state and a transient unsaved `Drawing1.dwg`
+- started Phase 4E-B with `survey_project_list`, a READ/Low Survey COM project collection read
+- extended the typed Survey Database gateway contract with project-list responses and fake bridge coverage
+- added `survey_project_list_enabled` capability feature flag
+- added a typed Autodesk Survey COM project-list adapter without Survey Database open/create/import/write behavior
+- extended fake bridge and MCP integration coverage to the 26-tool development catalog
+- packaged, installed, and live validated the Phase 4E-B 26-tool bundle against Civil 3D 2026
+- started Phase 4E-C with `survey_network_list`, a READ/Low Survey COM network collection read for one or all Survey projects
+- extended the typed Survey Database gateway contract with `ListNetworks` and an optional `project_name` filter
+- added `SurveyProjectNotFound` error code so an unmatched `project_name` fails structurally instead of returning an empty success
+- added `survey_network_list_enabled` capability feature flag
+- added a typed Autodesk Survey COM network-list adapter that never calls `IAeccSurveyNetworks.Create` or `IAeccSurveyNetworks.Remove`
+- added `networks_available`, `networks_partial`, and `no_projects` statuses plus per-project `warnings` so unreadable projects are reported instead of hidden
+- extended fake bridge and MCP integration coverage to the 27-tool development catalog
+- packaged, installed, and live validated the Phase 4E-C 27-tool bundle against Civil 3D 2026
+- started Phase 3C with `propertyset_numeric_test_create`, a bounded WRITE/Low AEC property-set numeric create/write/readback probe
+- verified the AEC property data write API from installed metadata before implementation, covering `PropertyDataServices.AddPropertySet`, `PropertySet.SetAt`, `PropertySet.GetAt`, and property-set definition dictionary writes
+- added a reusable Civil write pipeline for `Document.LockDocument()`, AutoCAD transactions, commit on success, and rollback-before-commit on failure
+- added `propertyset_numeric_test_create` contracts, catalog metadata, fake bridge support, unit tests, and official MCP integration coverage, taking the current catalog to 37 tools
+- packaged, installed, and live validated the Phase 3C 37-tool bundle against Civil 3D 2026 on a temporary DWG copy
+- live `propertyset_numeric_test_create` created `MCP_NUMERIC_TEST_LIVE_111759`, wrote `987.654321`, and `propertyset_get` read the same `numeric_value` back from the created object handle
+- Phase 3C live validation initially timed out because Civil 3D was blocked by `References - Not Found Files`; the dialog was read first, then the `Ignore unresolved reference files` button was used for the test DWG copy before retrying
+
+Validation:
+
+- Phase 3C RED unit pass failed before `PropertySetNumericTestCreate` contracts/catalog/adapter support existed
+- Phase 3C RED MCP integration pass failed before the fake bridge exposed `propertyset_numeric_test_create`
+- Phase 3C `dotnet test .\tests\Civil3D.HybridMcp.Tools.Civil.Tests\Civil3D.HybridMcp.Tools.Civil.Tests.csproj -c Debug -v:q --no-restore --nologo` passed: 40 tests
+- Phase 3C `dotnet test .\tests\Civil3D.HybridMcp.Integration.Tests\Civil3D.HybridMcp.Integration.Tests.csproj -c Debug -v:q --no-restore --nologo` passed: 34 tests
+- Phase 3C final `dotnet test .\Civil3D.HybridMcp.sln -c Debug -v:q --no-restore --nologo` passed: 161 tests
+- Phase 3C `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Release --no-restore -v:q --nologo` passed with 9 known Autodesk MSB3277 warnings
+- Phase 3C `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-bundle.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings
+- Phase 3C installed-bundle diagnostic passed with no issues or warnings
+- Phase 3C live bridge reported a 37-tool catalog including `propertyset_numeric_test_create`
+- Phase 3C live validation left no `acad.exe` running after closing the temporary test process
+- `dotnet test .\tests\Civil3D.HybridMcp.Integration.Tests\Civil3D.HybridMcp.Integration.Tests.csproj -c Debug --filter FullyQualifiedName~PackagingDiagnosticsTests -v:minimal` passed: 2 tests
+- `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-bundle-install.ps1 -AsJson` passed against the installed bundle
+- `dotnet test .\tests\Civil3D.HybridMcp.Tools.AutoCAD.Tests\Civil3D.HybridMcp.Tools.AutoCAD.Tests.csproj -c Debug --filter FullyQualifiedName~LayerToolTests -v:minimal` passed: 21 tests
+- `dotnet test .\tests\Civil3D.HybridMcp.Tools.Survey.Tests\Civil3D.HybridMcp.Tools.Survey.Tests.csproj -c Debug --filter "FullyQualifiedName~DatabaseStatusCanProbeC3DSubdirectoryFromAutoCadRoot" -v:minimal` failed before the directory-resolution fix and passed after it
+- `dotnet test .\tests\Civil3D.HybridMcp.Tools.Survey.Tests\Civil3D.HybridMcp.Tools.Survey.Tests.csproj -c Debug -v:minimal` passed: 26 tests
+- `dotnet test .\tests\Civil3D.HybridMcp.Integration.Tests\Civil3D.HybridMcp.Integration.Tests.csproj -c Debug -v:minimal` passed: 33 tests
+- `dotnet test .\Civil3D.HybridMcp.sln -c Debug -v:q --no-restore` passed: 100 tests
+- `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Debug -v:minimal` passed with 9 known Autodesk MSB3277 warnings
+- `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Debug -v:q -clp:ErrorsOnly` passed with 9 known Autodesk MSB3277 warnings
+- `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-bundle.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings
+- `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-bundle-install.ps1 -AsJson` passed against the installed bundle, including `Civil3D.HybridMcp.Tools.Survey.dll`
+- `dotnet build .\Civil3D.HybridMcp.sln -c Debug -v:q -clp:ErrorsOnly` passed with 9 known Autodesk MSB3277 warnings
+- `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\package.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings and produced `artifacts\Civil3D.HybridMcp.bundle`
+- `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-bundle-install.ps1 -BundlePath .\artifacts\Civil3D.HybridMcp.bundle -AsJson` passed against the Phase 4C artifact bundle
+- Phase 4C `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-bundle.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings after terminating the stale Civil 3D process that held `Civil3D.HybridMcp.Bridge.dll`
+- Phase 4C `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-bundle-install.ps1 -AsJson` passed against the installed bundle
+- Phase 4C live `civil3d_status` reported instance `cbe58d0d4fb54825a5fa484cd4b00137`, 24 advertised tools, no active DWG, and `survey_database_status_enabled=true`
+- Phase 4C live direct named-pipe call to `survey_database_status` returned `adapter: "environment_probe"`, `status: "interop_available"`, `survey_com_available: true`, and `survey_database_available: false`
+- Phase 4C live official MCP client test against Civil 3D 2026 passed for the 24-tool installed bundle, including `survey_database_status`
+- Phase 4D `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\package.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings and produced `artifacts\Civil3D.HybridMcp.bundle`
+- Phase 4D `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-bundle-install.ps1 -BundlePath .\artifacts\Civil3D.HybridMcp.bundle -AsJson` passed against the artifact bundle with no issues or warnings
+- Phase 4D `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-bundle.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings after terminating the prior Civil 3D process that held `Civil3D.HybridMcp.Bridge.dll`
+- Phase 4D `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-bundle-install.ps1 -AsJson` passed against the installed bundle with no issues or warnings
+- Phase 4D live `civil3d_status` reported instance `80157282508b47f7b8b379aabd9c7805`, 25 advertised tools, `survey_working_folder_get_enabled=true`, and `surveyCom=true`
+- Phase 4D live direct named-pipe call to `survey_working_folder_get` returned structured `DocumentNotFound` because the bridge reported no active document
+- Phase 4D live official MCP client test against Civil 3D 2026 passed for the 25-tool installed bundle, including `survey_working_folder_get`
+- Phase 4D `dotnet test .\tests\Civil3D.HybridMcp.Tools.Survey.Tests\Civil3D.HybridMcp.Tools.Survey.Tests.csproj -c Debug -v:minimal` passed: 29 tests
+- Phase 4D targeted integration filter for official MCP/fake bridge Survey catalog behavior passed: 8 tests
+- Phase 4D `dotnet test .\Civil3D.HybridMcp.sln -c Debug -v:q --no-restore` passed: 103 tests
+- Phase 4D `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Debug -v:q -clp:ErrorsOnly` passed with 9 known Autodesk MSB3277 warnings
+- Phase 4D final installed-bundle diagnostic passed with no issues or warnings
+- Phase 4E-A `dotnet test .\tests\Civil3D.HybridMcp.Tools.Survey.Tests\Civil3D.HybridMcp.Tools.Survey.Tests.csproj --no-restore` passed: 31 tests
+- Phase 4E-A `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Release --no-restore` passed with 9 known Autodesk MSB3277 warnings
+- Phase 4E-A `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-bundle.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings
+- Phase 4E-A installed-bundle diagnostic passed with no issues or warnings
+- Phase 4E-A live `civil3d_status` reported instance `e197cc9ebd714c99b7f9c2f6a4005e4f`, process `42780`, 25 advertised tools, `survey=true`, `surveyCom=true`, and `survey_working_folder_get_enabled=true`
+- Phase 4E-A live no-document calls returned structured `DocumentNotFound` from both `drawing_info` and `survey_working_folder_get`
+- Phase 4E-A live active-document call opened a transient unsaved `Drawing1.dwg`, returned `status: "working_folder_available"` and `working_folder: "C:\\Users\\Public\\Documents\\Autodesk\\Civil 3D Projects"`, then closed the transient drawing without saving
+- Phase 4E-B RED test pass: `dotnet test .\tests\Civil3D.HybridMcp.Tools.Survey.Tests\Civil3D.HybridMcp.Tools.Survey.Tests.csproj -c Debug -v:minimal` initially failed before `survey_project_list` contracts/handler support existed
+- Phase 4E-B `dotnet test .\tests\Civil3D.HybridMcp.Tools.Survey.Tests\Civil3D.HybridMcp.Tools.Survey.Tests.csproj -c Debug -v:minimal` passed: 34 tests
+- Phase 4E-B `dotnet test .\tests\Civil3D.HybridMcp.Integration.Tests\Civil3D.HybridMcp.Integration.Tests.csproj -c Debug -v:minimal` passed: 33 tests
+- Phase 4E-B `powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-bundle.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings
+- Phase 4E-B installed-bundle diagnostic passed with no issues or warnings
+- Phase 4E-B live bridge reported a 26-tool catalog including `survey_project_list`
+- Phase 4E-B live no-document call returned structured `DocumentNotFound` from `survey_project_list`
+- Phase 4E-B live active-document call opened a transient unsaved `Drawing1.dwg`, returned `status: "projects_available"`, `count: 0`, `working_folder: null`, and response document `Drawing1.dwg`, then closed the transient drawing without saving
+- Phase 4E-B review follow-up corrected Survey project docs to use `project_guid`, updated `docs/SECURITY_MODEL.md` for `survey_project_list`, and strengthened `DocumentNotFound` regression coverage
+- Phase 4E-B final `dotnet test .\Civil3D.HybridMcp.sln -c Debug -v:q --no-restore --nologo` passed: 109 tests
+- Phase 4E-B final `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Release --no-restore -v:q -clp:ErrorsOnly --nologo` passed with 9 known Autodesk MSB3277 warnings
+- Phase 4E-B final installed-bundle diagnostic passed with no issues or warnings
+- Phase 4E-C verified the Survey COM surface by reflection over the installed `Autodesk.AECC.Interop.Survey.dll` before writing adapter code
+- Phase 4E-C RED test pass: the Survey unit test project failed to compile with CS0246 on `SurveyNetworkListResponse` before the contracts existed
+- Phase 4E-C `dotnet test .\tests\Civil3D.HybridMcp.Tools.Survey.Tests\Civil3D.HybridMcp.Tools.Survey.Tests.csproj -c Debug -v:minimal` passed: 45 tests
+- Phase 4E-C `dotnet test .\tests\Civil3D.HybridMcp.Integration.Tests\Civil3D.HybridMcp.Integration.Tests.csproj -c Debug -v:minimal` passed: 33 tests
+- Phase 4E-C `dotnet test .\Civil3D.HybridMcp.sln -c Debug -v:q --nologo` passed: 119 tests
+- Phase 4E-C `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Release -v:q -clp:ErrorsOnly --nologo` passed with 9 known Autodesk MSB3277 warnings
+- Phase 4E-C installed-bundle diagnostic passed with no issues or warnings and 10 required files
+- Phase 4E-C live bridge reported a 27-tool catalog including `survey_network_list`
+- Phase 4E-C live no-document call returned structured `DocumentNotFound` with `adapter: "survey_com"`, `document_count: 0`, and `requires_active_document: true`
+- Phase 4E-C live active-document call opened a transient unsaved `Drawing1.dwg` and returned `status: "no_projects"`, `count: 0`, `adapter: "survey_com"`, and response document `Drawing1.dwg`, then closed the transient drawing without saving
+- Phase 4E-C live unmatched `project_name` call returned structured `SurveyProjectNotFound` with `project_count: 0`
+- Phase 4E-C live validation could not exercise network item enumeration because the host had no Survey projects; that branch remains covered by unit and fake-bridge tests only and is recorded in `docs/PHASE_4E_C_LIVE_TEST.md`
+- Phase 4E-C left no `acad.exe` running after validation
+- started Phase 2D with `profile_list`, `profile_get`, and `profile_elevation_at_station` as READ/Low Civil 3D profile read tools
+- verified the Civil 3D profile API from assembly metadata before implementation, covering `Alignment.GetProfileIds`, `Profile.ElevationAt`, `Profile.GradeAt`, and the `Entity` members `Name`, `Description`, and `StyleName`
+- added `ProfileNotFound` and `ProfileAmbiguous` error codes so profile names repeated across alignments never resolve silently
+- profiles are enumerated through their parent alignments and every record carries `alignment_name` and `alignment_handle`
+- extended fake bridge and MCP integration coverage to the 30-tool development catalog
+- Phase 2D RED test pass: the Civil unit test project failed to compile with CS0246 on `ProfileInfo` before the contracts existed
+- Phase 2D `dotnet test .\Civil3D.HybridMcp.sln -c Debug -v:q --nologo` passed: 131 tests
+- Phase 2D `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Release -v:q -clp:ErrorsOnly --nologo` passed with 9 known Autodesk MSB3277 warnings
+- Phase 2D installed-bundle diagnostic passed with no issues or warnings
+- Phase 2D live bridge reported a 30-tool catalog including the three profile tools
+- Phase 2D live validation opened a copy of the user-confirmed test DWG, read 59 profiles across 32 alignments, resolved one by handle, and returned elevation 280.856 and grade -0.216 at station 2178.913
+- Phase 2D live validation returned structured `ProfileNotFound` for a nonexistent profile name
+- Phase 2D left the original test DWG untouched and no `acad.exe` running
+- parked the Survey module after the user confirmed this machine has no Survey project; Phase 4E-D was started and reverted, leaving no Survey network detail code in the repository
+- started Phase 2E with `corridor_list` and `corridor_get` as READ/Low Civil 3D corridor read tools
+- verified the corridor API from assembly metadata first, covering `CivilDocument.CorridorCollection`, `Corridor.Baselines`, `Baseline.BaselineRegions`, `Baseline.AlignmentId`, `Baseline.ProfileId`, and `BaselineRegion.AssemblyId`
+- added the `CorridorNotFound` error code
+- `corridor_get` resolves baseline alignment, baseline profile, and region assembly names, and derives baseline station range from its regions
+- `Corridor.Rebuild()`, `SetTargets`, and `ExportSolids` are never called; corridor rebuild stays unimplemented as a long-running write
+- extended fake bridge and MCP integration coverage to the 32-tool development catalog
+- Phase 2E RED test pass: the Civil unit test project failed to compile with CS0246 on `CorridorInfo` before the contracts existed
+- Phase 2E `dotnet test .\Civil3D.HybridMcp.sln -c Debug -v:q --nologo` passed: 138 tests
+- Phase 2E `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Release -v:q -clp:ErrorsOnly --nologo` passed with 9 known Autodesk MSB3277 warnings
+- Phase 2E installed-bundle diagnostic passed with no issues or warnings
+- Phase 2E live bridge reported a 32-tool catalog including both corridor tools
+- Phase 2E live validation read corridor `PAV` with 19 baselines and 2 corridor surfaces from a copy of the user-confirmed test DWG, resolving alignments such as `RAMO 100`, profiles such as `V-RAMO 100`, and assemblies such as `RAMO - STC`
+- Phase 2E live validation returned structured `CorridorNotFound` for a nonexistent corridor name
+- Phase 2E reproduced the modal blocker: `tools/list` answered instantly while every host-dispatched read hung until the `References - Not Found Files` dialog was identified and dismissed, which raises dialog-monitor priority
+- Phase 2E left the original test DWG untouched and no `acad.exe` running
+- started Phase 1C with `list_dialogs`, a READ/Low Win32 modal dialog monitor, replacing the Phase 1 placeholder that always reported `supported: false`
+- `list_dialogs` deliberately bypasses the Autodesk host dispatcher so it still answers while a modal has the host thread blocked, which is the only case it exists for
+- window titles are read with `SendMessageTimeout` and `SMTO_ABORTIFHUNG` instead of `GetWindowText`, so a hung UI thread cannot hang the bridge
+- separated window classification from Win32 behind `IWindowEnumerator`, making the detection rule unit testable
+- added the `Civil3D.HybridMcp.Diagnostics.Tests` project with 9 tests covering modal detection, palette discrimination, missing main window, and enumeration failure
+- `civil3d_status` now reports real dialog state including `blockingDialogTitle`, and the `DialogMonitor` capability flag moved from `partial` to `active`
+- extended fake bridge and MCP integration coverage to the 33-tool development catalog
+- Phase 1C RED test pass: the new Diagnostics test project failed to compile with CS0246 on `WindowSnapshot` before the implementation existed
+- Phase 1C `dotnet test .\Civil3D.HybridMcp.sln -c Debug -v:q --nologo` passed: 147 tests
+- Phase 1C `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Release` passed with 0 errors
+- Phase 1C live validation called `list_dialogs` while Civil 3D was blocked by `References - Not Found Files`; it answered in 28 ms with `blocked_by_modal: true`, named the dialog, flagged the enabled `#32770` window as the modal candidate, and did not flag the disabled `Properties` palette
+- Phase 1C live validation confirmed the cleared state after dismissal, with `document_list` recovering and `civil3d_status` reporting `supported: true`
+- Phase 1C left the original test DWG untouched and no `acad.exe` running, with the test process force-stopped under permission granted for 2026-09-14
+- `dismiss_dialog` and `cancel_active_command` remain intentionally unimplemented pending a write-side allowlist and a required expected-title argument
+- started Phase 2F with `propertyset_definition_list`, `propertyset_list`, and `propertyset_get` as READ/Low AEC property set read tools
+- verified the AEC property data API from assembly metadata first, covering `DictionaryPropertySetDefinitions`, `Autodesk.Aec.DatabaseServices.Dictionary.Records`, `PropertyDataServices.GetPropertySets`, `PropertySet.PropertySetData`, and `PropertyDefinition`
+- added an `AecPropDataMgd` assembly reference to the Civil tools project, the first dependency outside the Civil 3D API
+- added the `PropertySetNotFound` and `ObjectNotFound` error codes so a bad handle or an unattached set never returns an empty success
+- property values are returned as a culture-invariant `value` string plus `numeric_value`, populated only for numeric data, so callers can compute without reparsing
+- property set writes are deliberately unimplemented; `AddPropertySet`, `RemovePropertySet`, and `PropertySet.SetAt` are never called
+- extended fake bridge and MCP integration coverage to the 36-tool development catalog
+- Phase 2F RED test pass: the Civil unit test project failed to compile with CS0246 on `PropertySetInfo` before the contracts existed
+- Phase 2F `dotnet test .\Civil3D.HybridMcp.sln -c Debug -v:q --nologo` passed: 156 tests
+- Phase 2F `dotnet build .\src\Civil3D.HybridMcp.Bridge\Civil3D.HybridMcp.Bridge.csproj -c Release` passed with 0 errors
+- Phase 2F live validation read 6 real property set definitions from a copy of the user-confirmed test DWG: `CADINFRA_BACIA`, `CADINFRA_TALVEGUE`, `COORDENACAO`, and three stock Corridor definitions, with accented and en-dash names round-tripping correctly
+- Phase 2F live validation confirmed the `ObjectNotFound` path for an unresolvable handle
+- Phase 2F second live run used a user-supplied production drawing that carries property data, closing the value-reading gap
+- Phase 2F read real attached values: 526 objects carried the `Dados_Rodovia` set, and consecutive objects returned distinct BR-153 kilometre markers, proving values are read per object
+- Phase 2F validated property name resolution against real definitions, `propertyset_get` by exact and lower-case name, `PropertySetNotFound`, and a non-matching `name_contains` filter returning an empty success
+- Phase 2F left `numeric_value` unproven against live data because every attached property in both test drawings is of type `Text`; that branch stays covered by unit tests only
+- Phase 2F second run quit Civil 3D cleanly without a force stop, the first phase in this project where that was not needed
+- Phase 2F found two Civil 3D processes it had not started and left them untouched until the user explicitly authorised closing them
+- Phase 2F used the Phase 1C `list_dialogs` tool to detect and clear the `References - Not Found Files` modal before testing, the first time the dialog monitor was used as a working tool rather than being tested itself
+- `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\check-bundle-install.ps1 -AsJson` passed after restoring the installed bundle's missing `.deps.json` from the packaged artifact
+- Phase 3A `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-bundle.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings
+- live bridge manifest reported 17 tools including `layer_set_current`
+- live `layer_set_current` changed the current layer from `_Deletar linha` to `0`, then restored `_Deletar linha`; both write transactions reported `document_locked`, `transaction_started`, and `committed`
+- Phase 3B `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-bundle.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings after Civil 3D was closed
+- live bridge manifest reported 18 tools including `layer_update`
+- live `layer_update` renamed `MCP_LU_OK_114201` to `MCP_LU_OK_114201_UPDATED`, changed color to ACI 2, locked the layer, and read the result back; the write transaction reported `document_locked`, `transaction_started`, and `committed`
+- live modal recovery observed `References - Not Found Files` and `Drawing Recovery` blocking `tools/execute`; both were identified before dismissal
+- Phase 4A live `civil3d_status` reported a 22-tool catalog, `survey=true`, `surveyCom=false`, and `survey_geometry_enabled=true`
+- Phase 4A live `survey_bearing_to_azimuth` converted `N 45 0 0 E` to azimuth `45` with no warnings
+- Phase 4B live official MCP client test against Civil 3D 2026 passed for the 23-tool installed bundle, including `survey_fbk_dry_run`
+
+## 0.3.0 - 2026-09-11
+
+Phase 2C:
+
+- added `Civil3D.HybridMcp.Tools.Civil`
+- implemented typed Civil 3D READ contracts in `Civil3D.HybridMcp.Protocol`
+- implemented `alignment_list`, `alignment_get`, `alignment_station_offset`, and `alignment_point_location`
+- implemented `surface_list`, `surface_get`, and `surface_elevation_at_xy`
+- implemented `cogo_list` and `cogo_get`
+- added `AecBaseMgd` reference detection through configurable `AutodeskAecDir` / `CIVIL3D_AEC_DIR`
+- required explicit `instance_id` and `document_id` for Civil 3D object reads
+- returned structured object references with document, database fingerprint, handle, ObjectId, type, and name
+- extended bridge routing and fake bridge integration coverage to 16 advertised tools
+- live validated against a user-confirmed Civil 3D test DWG containing alignments, surfaces, and COGO points
+
+Validation:
+
+- `dotnet build .\Civil3D.HybridMcp.sln -c Debug -v:q -clp:ErrorsOnly` passed with 9 known Autodesk MSB3277 warnings
+- `dotnet test .\Civil3D.HybridMcp.sln -c Debug --no-build -v:minimal` passed: 60 tests
+- `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-bundle.ps1 -Configuration Release` passed with 9 known Autodesk MSB3277 warnings
+- live tool manifest reported 16 tools, including the nine Civil 3D read tools
+- live read results: 32 alignments, 4 surfaces, 100 sampled COGO points
+- live `alignment_station_offset` and `alignment_point_location` round-tripped a COGO coordinate
+- live `surface_elevation_at_xy` returned elevation `267.6852606193413` on surface `PAV - DATUM`
+- live official MCP client test against Civil 3D 2026 passed
+
+Not executed:
+
+- any destructive operation
+- COGO, alignment, or surface writes
+- Survey, Developer Mode, corridors, blocks, property sets, or Roadway tools
+
+## 0.2.0 - 2026-09-11
+
+Phase 2A:
+
+- added `Civil3D.HybridMcp.Tools.AutoCAD`
+- implemented typed AutoCAD layer contracts in `Civil3D.HybridMcp.Protocol`
+- implemented `layer_list` as READ/Low
+- implemented `layer_get` as READ/Low
+- returned layer identity, handle, object reference, state flags, color, linetype, lineweight, and description
+- required explicit `instance_id` and `document_id` for layer tools
+- live validated `layer_list` and `layer_get` against Civil 3D 2026 and a user-confirmed test DWG
+
+Phase 2B:
+
+- implemented `layer_create` as WRITE/Low with no confirmation requirement
+- added reusable AutoCAD write pipeline with document lock, transaction start, commit, and rollback-before-commit behavior
+- added layer-name validation, duplicate-name rejection, color index validation, and document target validation
+- added unit and fake-bridge integration coverage for layer reads, layer creation, duplicate errors, and rollback behavior
+- packaged and installed the updated Autodesk bundle with `Civil3D.HybridMcp.Tools.AutoCAD.dll`
+- live validated `layer_create` by creating `MCP_TEST_LAYER` in the test DWG, then reading it back by name
+- live validated duplicate protection: a second create returned `LayerAlreadyExists` and the filtered layer list still returned exactly one matching layer
+
+Validation:
+
+- `dotnet build .\Civil3D.HybridMcp.sln -c Debug -v:minimal` passed with 6 known Autodesk MSB3277 warnings
+- `dotnet test .\Civil3D.HybridMcp.sln -c Debug --no-build -v:minimal` passed: 51 tests
+- `dotnet build .\Civil3D.HybridMcp.sln -c Release -v:minimal` passed with the same 6 known Autodesk MSB3277 warnings
+- live official MCP client test against Civil 3D 2026 passed
+
+Not executed:
+
+- layer update, delete, or set-current
+- destructive operations
+- Survey, Developer Mode, Civil 3D alignments/surfaces/COGO, or Roadway tools
+
+## 0.1.0 - 2026-09-04
+
+Phase 0.5:
+
+- accepted ADR-0001 through ADR-0008
+- selected C#/.NET as the MCP Server runtime
+- formalized endpoint registry, pipe naming, capability model, version negotiation, document identity, and confirmation model
+
+Phase 1:
+
+- created `Civil3D.HybridMcp.sln`
+- added Protocol, Core, SDK, Diagnostics, Server, and Bridge projects
+- implemented named-pipe JSON-RPC foundation
+- implemented endpoint registry validation and cleanup
+- implemented capability and version contracts
+- implemented confirmation hash/token foundation
+- implemented bridge scaffold with `IExtensionApplication`
+- implemented read/diagnostic tools:
+  - `civil3d_ping`
+  - `civil3d_status`
+  - `document_list`
+  - `drawing_info`
+- added fake bridge integration tests
+- added Autodesk bundle scaffold
+- added build/test/package/install/uninstall/run-server scripts
+
+Phase 1.5:
+
+- added official MCP C# SDK STDIO server entrypoint: `Civil3D.HybridMcp.Server.exe mcp`
+- mapped bridge `ToolManifest` descriptors to MCP tools without hardcoding tool availability
+- preserved bridge input/output schemas in MCP `tools/list`
+- returned structured MCP tool results and structured external error codes
+- propagated `correlation_id` through MCP, named pipe requests, and JSONL audit logs
+- added fake bridge integration coverage for bridge unavailable, reconnect, disconnect/recovery, ambiguity, protocol incompatibility, malformed calls, structured bridge errors, and official MCP client STDIO execution
+- added bridge startup diagnostics for Autodesk assembly/runtime snapshot, pipe start, endpoint registration, initialize, and terminate events
+- updated package/install scripts to include bridge `.deps.json` and `.runtimeconfig.json` and to fail clearly when package output is missing
+- updated Autodesk bundle runtime requirements to allow `R25.1` after live Civil 3D 2026 reported `ACADVER=25.1s`
+- live-smoke validated Civil 3D 2026 bundle autoload, endpoint registry, named pipe, four CLI tools, and MCP STDIO calls against a blank drawing
+- documented Autodesk MSB3277 assembly resolution, MCP client setup, and live smoke validation results
+- started Phase 2G with `object_get` and `object_properties`, two READ/Low generic entity reads addressed by handle
+- verified the AutoCAD identity API from installed metadata before implementation, covering `DBObject.Handle/OwnerId/IsErased/IsAProxy/IsPersistent`, `Entity.Layer/Linetype/LineWeight/ColorIndex/BlockName/GeometricExtents`, and `RXClass.Name/DxfName/AppName/MyParent`
+- enumerated object properties by reflection over the concrete runtime type, so Civil 3D and AEC classes report without this module referencing either API
+- formatted every property value with `CultureInfo.InvariantCulture`, because the validation host runs pt-BR and a default `ToString` would emit a decimal comma
+- reported a property the host refused to evaluate as a row carrying the reason instead of dropping it or inventing a value
+- bounded property enumeration at 500 entries with an explicit `truncated` flag
+- routed the AutoCAD module by tool name so `object_get` and `object_properties` reach the new handler while layer tools keep the existing one
+- extended fake bridge and MCP integration coverage to the 39-tool development catalog
+- scoped the layer catalog test to layer tools so an unrelated AutoCAD tool no longer fails it
+- started Phase 3D as a rollback regression pass over both write pipelines
+- added the first tests for `CivilWritePipeline`, the pipeline the Phase 3C AEC property-set write runs through, which had no coverage at all
+- fixed a failed rollback discarding the original failure: the write pipelines now report `RollbackFailed` with the original exception attached as the inner exception
+- fixed `Dispose` on both write scopes throwing on a failed rollback, which replaced whatever exception was already propagating and destroyed the real cause
+- added inner-exception constructors to `LayerToolException` and `CivilToolException`
+- aligned the fake write scopes with the real scopes, including the completed-once guard and rollback on dispose, so a passing fake can no longer hide a misbehaving scope
+- covered commit, rollback, rollback-after-commit, dispose-without-commit, failed rollback, and non-throwing dispose on both pipelines
+- started Phase 1D by reading the contents of a blocking dialog, which `list_dialogs` previously reported it could not do
+- extended `IWindowEnumerator` with `EnumerateChildControls` and added a pure `ControlSnapshot` record
+- added `text`, `buttons`, and `content_read` to `DialogWindowInfo`, plus a `DialogButtonInfo` record carrying caption, control id, and enabled state
+- read dialog contents only for windows already classified as dialogs, never for the main frame, since the monitor runs while the host is hung
+- distinguished an unreadable dialog from a dialog with no buttons through `content_read`, and surfaced the difference as a limitation
+- bounded the child sweep at 128 controls and kept every caption on `SendMessageTimeout` with `SMTO_ABORTIFHUNG`
+- added the `dialog_content_read` capability and removed the stale limitation claiming contents and button captions are not read
+- started Phase 1E with the dialog decision registry: `dialog_decision_list` and `dialog_decision_set`, taking the development catalog to 41 tools
+- made a decision bind one exact dialog title to one exact button caption, so a loose match can never press a button nobody chose
+- gave every decision an operator-chosen scope: `Default` stands for future occurrences and is persisted, `Once` is spent after a single use and never reaches disk
+- refused to act when the named button is absent or disabled, reporting `ButtonNotPresent` instead of falling back to another button
+- refused to act when the dialog's contents could not be read, reporting `ContentUnreadable`, because unknown buttons are not absent buttons
+- returned the available options with every unresolved dialog, so the operator decides from what is actually on screen
+- persisted defaults to `%LOCALAPPDATA%\Civil3DHybridMcp\dialog-decisions.json`, treating a missing or corrupt file as no stored defaults rather than a failure
+- kept both decision tools off the Autodesk dispatcher, since they exist for the case where that dispatcher is blocked by the very dialog being decided
+- started Phase 1F with `dismiss_dialog`, the first tool that acts on the host UI, taking the development catalog to 42 tools
+- required `expected_title` on every call, so the caller states which dialog they mean instead of closing whatever is on screen
+- refused to press anything without a recorded decision, returning the options and the reason instead
+- refused a title that matches no dialog (`DialogNotFound`) or more than one (`DialogAmbiguous`) rather than guessing
+- allowed deciding and applying in one call through optional `button_text` and `scope`, recording the decision only after the dialog is known to exist
+- re-read the dialog's controls immediately before pressing, so a button that vanished between reading and acting is reported rather than pressed by stale handle
+- reported a click the host did not accept as `DialogDismissFailed` instead of assuming it worked
+- clicked with PostMessage rather than SendMessage, because the host main thread is blocked by the very modal being closed and a synchronous send could park the caller behind it
+- put pressing behind a separate `IDialogActuator`, so the reading path stays provably read-only
+- recorded the operator's IBGE-PPP knowledge in `docs/SURVEY_IBGE_PPP.md` as reference only, with nothing implemented
+- documented the proven JPS to RINEX 2.11 to ZIP to IBGE-PPP pipeline, the submission fields, and the RTKLIB `convbin` conversion
+- documented the antenna-height rule that decides the result: the vertical height to the ARP is submitted, never the slant height, with the measured 1.5626 m against 1.6200 m evidence
+- documented that `.HCN` does not convert with RTKLIB or teqc and is converted upstream by CHCNAV vendor software, so it reaches this platform already as RINEX
+- flagged that submitting to IBGE would be this platform's first outbound network call and its first unrollbackable external action, so it needs an explicit decision rather than another tool
+- live validated Phases 1D, 1E, 1F and 2G against Civil 3D 2026 on a copy of the test drawing; see `docs/PHASE_1F_LIVE_TEST.md`
+- fixed `dismiss_dialog` addressing a click by control id: the Civil 3D `References - Not Found Files` dialog reports control id 0 on both buttons, so the actuator now posts `BM_CLICK` to the button handle
+- fixed `dismiss_dialog` reporting a queued click as success: `IDialogActuator.WaitUntilClosed` now polls until the dialog is gone, and a dialog still open fails with `DialogDismissFailed`
+- restricted pending decisions to modal candidates, after live validation surfaced the docked Properties palette as something to decide about
+- live read the real button captions for both blocking dialogs for the first time: `Ignore unresolved reference files`, `Open the External References palette`, and `&Fechar` on `Drawing Recovery`
+- live validated `object_get` and `object_properties` on a Civil 3D alignment, returning an eight-level class hierarchy and 105 reflected properties with no read failures
+- started Phase 3E with `propertyset_set`, the first tool that requires confirmation, taking the development catalog to 43 tools
+- gave the confirmation model in Core its first consumer: it has existed since Phase 1 with no tool using it
+- returned the preview as the `CONFIRMATION_REQUIRED` message, naming the drawing, object, set and every before/after pair
+- hashed the request body and never the token, so a confirmation can never be part of what it is confirming
+- counted only values that would actually change in `affected_count`, and refused a request that would change nothing
+- refused to attach a set, add a property, or write a read-only property; this tool only updates what is already there
+- converted invariant text to the property's declared AEC type before writing, so a number does not silently become text
+- re-resolved the object and set immediately before writing, failing when either changed between preview and write
+- read values back from the drawing after writing rather than echoing the request
+- started Phase 6 with the `Civil3D.HybridMcp.Tools.Roadway` module and `roadway_station_offset_batch`, taking the development catalog to 44 tools
+- kept the roadway module free of any Autodesk reference by defining a narrow `IRoadwayAlignmentAdapter` port and adapting the existing Civil read adapter in the bridge
+- reused the live-validated `alignment_station_offset` geometry instead of reimplementing it, so the batch cannot drift from the single-point tool
+- made the batch survive a bad point: a point outside the alignment is reported on its own row and the rest of the batch still returns
+- failed a missing alignment once, before any point is touched, rather than once per point
+- capped a batch at 2000 points, since this runs on the Autodesk idle loop and an unbounded list would freeze the host
+- carried the request index and original coordinates on every row so callers can match results without relying on order
+- added `Civil3D.HybridMcp.Tools.Roadway.dll` to the bundle diagnostic's required files
+- fixed `propertyset_set` telling a caller to confirm without returning the token to confirm with, which made the flow unusable end to end
+- returned the preview, affected count and confirmation token in the `CONFIRMATION_REQUIRED` error details, via a new `ConfirmationEvaluation` and structured `Details` on `CivilToolException`
+- live validated Phase 3E and Phase 6A against Civil 3D 2026 on drawing copies; see `docs/PHASE_3E_6A_LIVE_TEST.md`
+- live validated the first change the platform has made to a value an engineer put in a drawing: `Dados_Rodovia.Secao` from `529` to `529-TESTE-MCP`, confirmed, committed and read back
+- live validated the no-op guard: repeating an applied write returned `INVALID_REQUEST` without asking for confirmation
+- live validated that a roadway batch survives a bad point, returning one resolved row and one failed row rather than failing the batch
+- live validated the station round-trip: a point taken at station 2178.913067160348 came back through the batch at 2178.913067160337
+- cleared both blocking modals through `dismiss_dialog` as a scripted step rather than a human interruption, the first run where Phases 1D through 1F paid off
+- started Phase 2H with `propertyset_find`, closing the gap live validation exposed: every property-set tool took a handle, and nothing in the platform produced one
+- swept both model space and paper space for a named property set, capped at 50,000 objects, skipping an unreadable entity rather than failing the sweep
+- reported `count`, `matched_count` and `scanned_count` separately, so a caller can tell an empty answer from an incomplete sweep
+- set `truncated` when either the limit cut the list or the sweep stopped early, so a prefix is never mistaken for the whole answer
+- rejected a filter with no criterion, because a filter that constrains nothing would silently widen the result
+- treated an object missing the filtered property as a non-match rather than a match
+- named the exact-match filter `EqualsValue` in C# while keeping `equals` on the wire, since a record cannot declare a member called Equals
+- live validated `propertyset_find` against Civil 3D 2026 on a copy of `Way-153`: 526 carriers found, agreeing with the Phase 2F report by an independent path
+- live confirmed the gap this phase closes: the first result was handle `10781C`, the same handle the Phase 3E live test had to take from an old report because the platform could not produce one
+- live validated the value filters on real data: `Secao = 530` returned exactly one object, a missing value returned `count: 0` with a real `scanned_count`, and a filter with no criterion was rejected
+- recorded that the 50,000-object sweep cap is reachable: `Way-153` hit it and correctly reported `truncated: true`, so an unfiltered find on a large drawing returns a prefix
+- corrected the catalog entry, which claimed the sweep covers model and paper space; it walks every block table record, which is broader
+- made the `propertyset_find` sweep budget caller-controllable through `max_scan` and raised the default from 50,000 to 250,000, after live validation hit the fixed ceiling on a real drawing
+- rejected a non-positive `max_scan` rather than silently falling back to the default
+- live confirmed the fix: the same drawing now sweeps all 94,824 objects and returns the same 526 carriers, so the earlier count was correct but unverifiable, and is now provably complete
+- started Phase 6B with `roadway_propertyset_write`, an atomic batch property-set update, taking the development catalog to 46 tools
+- made the batch write all-or-nothing, unlike the batch read beside it: half a list of stations is still useful, but half-updated kilometre markers is a worse state than none and nobody can tell by looking which half went through
+- resolved and validated every object before writing any, so a bad object mid-list cannot leave the first half committed
+- accepted explicit handles only, never a filter, so the platform cannot expand a query into a write the operator never saw
+- summarised the preview instead of listing every change, because a preview nobody reads transfers responsibility without transferring understanding
+- rejected a duplicated handle, since two updates to one object make the outcome depend on ordering
+- skipped objects already holding the requested values rather than writing them, and rejected a batch where nothing would change
+- moved `IConfirmationGate`, `ConfirmationDecision`, `ConfirmationEvaluation` and `HmacConfirmationGate` from Tools.Civil to Core, so the roadway module can require confirmation without referencing Autodesk
+- made the Civil write scope and factory public so the bridge can compose the same transaction pipeline for roadway writes
+- fixed `roadway_propertyset_write` losing the confirmation token, the same defect Phase 3E had: `RoadwayToolException` now carries structured details and the handler passes them through
+- fixed the roadway handler signing each confirmation with a fresh HMAC secret: the token service is now one per handler, not one per call, so a token issued by the preview still validates on the confirming call
+- live validated Phase 6B against Civil 3D 2026 on a copy of `Way-153`: three objects updated atomically after confirmation, with the summarised preview naming the set, the drawing and three real before/after pairs
+- live proved atomicity, which only a batch can demonstrate: a batch with a valid handle followed by an invalid one failed with `OBJECT_NOT_FOUND` and left the valid object untouched
+- recorded the geometric/exported project phases as a first-class distinction in `docs/PROJECT_PHASES_GEOMETRIC_EXPORTED.md`, measured against a real before/after pair of the same project (knowledge only, nothing implemented)
+- measured that export destroys AEC property sets outright: 6 definitions in the geometric drawing, 0 in the delivered AC1015 file, and 0 of 4146 geometric objects carried an attached set to begin with
+- identified the layer naming convention (`F-HZ-*` plan, `F-VT-*` profile, `F-SC-*` cross section) as the only structure bridging both phases, to be consumed as a declared role-to-layer map and never hardcoded
+- revised `AGENTS.md` section 16: duplication is measured by mechanism rather than by name, and the two property set entries in the roadway list belong in the Civil module as `propertyset_set_batch` / `propertyset_get_batch`
+- audited the whole platform against the geometric/exported finding and recorded the result in `docs/CONSOLIDATION_REVIEW.md`: 46 tools classified by moment, five ranked defects (D1-D5) and four decisions that need the operator (R1-R4)
+- classified the catalog by project moment: 15 tools read Civil 3D objects and go silent on an exported drawing, 7 property set tools return empty, 15 work identically in both, 9 are independent of the drawing
+- found that an exported drawing is indistinguishable from an empty one: `alignment_list` returns `count: 0` in both cases, so 15 tools fail by returning a valid empty answer (defect D1)
+- root-caused the response naming split flagged twice in live testing: `JsonContractOptions` builds on `JsonSerializerDefaults.Web`, so properties without an explicit `[JsonPropertyName]` serialize as camelCase while attributed ones are snake_case, with `DocumentDescriptor` the most visible case (defect D2)
+- documented `roadway_propertyset_write` in `docs/TOOL_CATALOG.md`, which had been one tool behind since Phase 6B (defect D5, fixed)
+- corrected stale validation status on `propertyset_find`, `propertyset_set` and `roadway_station_offset_batch`, all three still marked "not yet live validated" after being validated on 2026-09-19
+- corrected the claim, carried in both the catalog header and the handoff, that Phase 2G was never live validated; it was, inside `docs/PHASE_1F_LIVE_TEST.md`
+- declared the per-tool `Validation status` line authoritative over the catalog header paragraph, since the two had drifted
+- refreshed the handoff front matter: 46 tools, 264 passing tests measured on 2026-09-19, progress figures reconciled against `docs/ROADMAP_PROGRESS.md` (87% platform, was 69%), and last completed phase corrected from 3C to 6B
+- replaced the handoff "Proxima Fase Recomendada" list, which recommended three tools that had already shipped and been live validated
+- answered R1: the layer convention is a Civil 3D drawing setting, not a hand-authored list. `CivilDocument.Settings -> DrawingSettings -> ObjectLayerSettings -> GetObjectLayerSetting(SettingsObjectLayerType)` returns `ObjectType` / `LayerName` / `Modifier` / `ModifierValue`, over ~45 object types including labelling variants, confirmed from `AeccDbMgd.dll` metadata
+- established that the role-to-layer map can be read out of the geometric drawing rather than typed, which satisfies the never-hardcode rule and removes the transcription step
+- added `docs/DATA_CARRIERS.md` comparing AEC Property Set, Map 3D Object Data and XData as data carriers, with every API member confirmed by assembly metadata rather than recalled
+- confirmed `Autodesk.Gis.Map.ObjectData` surface in `Map\ManagedMapApi.dll`: `Tables.Add/GetTableNames/IsTableDefined/GetObjectRecords`, `FieldDefinition.Create` over character/integer/real/point, `Record` indexed to `MapValue`
+- confirmed `PropertyDefinition.Automatic` with `SetAutomaticData` / `GetAutomaticData` in `AecPropDataMgd.dll`: a property can derive its own value from the object it is attached to, which for a hatch includes its area
+- recommended Property Set over Object Data for the geometric moment on three grounds: automatic derivation of area (the pavement case is calculation), unit-aware properties, and seven already live-validated tools against zero
+- left the exported-moment carrier deliberately undecided: Property Set is measured dead there, Object Data and XData are unmeasured
+- widened the export survival test from one carrier to three, so one export round measures Property Set, Object Data and XData together instead of costing three exports for the same information
+- restated R4 (`roadway_create_km_marker`) after the operator reported the question was unclear, and noted it now has a second half: what the marker should become after export
+- elevated the object-layer setting path to a first-class section of `docs/PROJECT_PHASES_GEOMETRIC_EXPORTED.md` at the operator's request, as the tracking anchor between the geometric and exported moments, with the full `SettingsObjectLayerType` enumeration and the measured correspondence to the delivered layers
+- recorded in `AGENTS.md` section 16.1 that the role-to-layer map has a programmatic origin and must be read from the drawing setting rather than typed
+- opened **Phase 3F**, a data-carrier export survival test measuring AEC Property Set, Map 3D Object Data and XData in one export round, at the operator's request; recorded in the handoff and in `docs/ROADMAP_PROGRESS.md`
+- noted the platform gap Phase 3F exposes: Object Data and XData have no read or write support at all, so stamping the carriers needs a throwaway probe rather than new tools
+- revised the carrier recommendation after the operator reported that Object Data exports to KMZ and that KMZ is a required deliverable: Property Set and Object Data are not competing for one slot, since Property Set serves calculation in the geometric moment and Object Data serves what leaves the drawing
+- recorded Object Data to KMZ as a verification and study point, explicitly **unverified**: no KML or KMZ component was found in the Civil 3D 2026 install and `ManagedMapApi.dll` contains zero occurrences of the string `kml`, so the mechanism must be confirmed by watching the operator's own export before anything is built on it
+- paused `roadway_create_km_marker` by operator decision in `AGENTS.md`, `docs/ROADMAP_PROGRESS.md`, `docs/CONSOLIDATION_REVIEW.md` and the handoff: do not implement, propose, or estimate it, and explain the tool's purpose rather than re-asking the block/polyline/COGO question
+- read the operator-supplied research report "Relatorio tecnico - Object Data, Property Set e XData no AutoCAD/Civil 3D" and folded it into `docs/DATA_CARRIERS.md`, which now declares three evidence classes (measured, API-confirmed, secondary) so unverified claims cannot be mistaken for measured ones
+- **corrected an earlier claim of mine**: automatic property availability is hard-coded per object type and cannot be extended through the interface, with the 3D area of a TIN Surface as a documented counterexample, so "a hatch derives its own area automatically" is demoted from stated fact to the first open question in the verification list
+- resolved the mechanism behind the operator's KMZ requirement: **MAPEXPORT exports Object Data as SHP/SDF attributes and does not offer Property Set data for the SHP's DBF**, which is the concrete reason Object Data is necessary rather than preferred; KMZ specifically remains unconfirmed
+- added **XRecord** as a fourth carrier, not previously considered: Extension Dictionary plus XRecord has no 16 KB ceiling and is Autodesk's documented recommendation over XData once an application stores anything substantial, making it the right home for this MCP's own per-object metadata
+- recorded the XData budget that rules it out for bulk use: 16 KB per entity shared across every application writing to that object, with guidance to stay under ~2 KB and never exceed 4 KB per application
+- widened Phase 3F from three carriers to four, since measuring XRecord alongside the others costs the same single export round
+- recorded the framing that explains the apparent redundancy: the three mechanisms come from three merged products rather than three generations, so the deciding question is which consumer needs the data, not which mechanism is best
+- adopted a governance rule for any hybrid carrier design: business data duplicated across carriers without a declared authoritative source drifts, so one carrier authors and the others are generated one-way, with identity-only data in XRecord
+- captured further secondary detail for later verification: Object Data Character fields cap at 132 characters and support multiple records per entity; Property Set formulas use VBScript; not every Civil 3D label type exposes the Property Sets tab; replacing a Property Set definition with an incompatible one can destroy existing manual values
+- compatibilization review of 2026-09-24: reconciled `docs/ROADMAP_PROGRESS.md` with what ships, with the `AGENTS.md` MVP list (sections 14-15) and success criteria (section 38), and with the scope decisions of 2026-09-19/20
+- found that the headline "87% platform progress" did not follow from the phase table printed under it: that table weighted gives 63%, equal weights 58%; the 87% matches exactly the section 38 core success criteria (14/16), so it was the right number under the wrong label
+- replaced the single headline with three labelled numbers: core success 87% (section 38), MVP tools 66% (31/47), whole platform 53% (phases weighted, after compatibilization); published the weights and method so the next revision can reproduce them
+- rescored phases: Audit 100->95 (missing ADRs), Core 99->92 (document_activate, cancel_active_command, defect D2 in Core contracts), Read 97->77 (20/26: block reads and object_select were in scope but ignored; plus two new reads), Safe Write 70->52 (half infrastructure 6/8, half MVP write tools 4/14), Roadway 28->11 (rescoped 12->9 tools, mostly reclassification), Hardening 17->20 (modal dismissal already shipped)
+- found that all five MVP block tools are missing and raised block reads to first priority: blocks are plain AutoCAD entities, so they work in both the geometric and the exported moment
+- rescoped Phase 6 from 12 to 9 tools: `roadway_create_km_marker` paused, the two property set tools moved to Civil (D4), `roadway_get_station` redefined for the exported moment
+- mapped the geometric/exported track onto Phases 2, 3 and 6 instead of adding a phase number; knowledge and design done, implementation 0 of 8
+- brought `docs/FEATURE_MATRIX.md` up from Phase 3C: 12 stale rows corrected (modal handling, transaction pipeline, lock, confirmation, layers, property sets now Implemented; rollback kept Partial because undoing a real write is not proven live) and 7 rows added for block reads, object-layer map, moment detector, Object Data, XRecord, Phase 3F and exported-moment station
+- unified next steps: the handoff now defers to the roadmap as the single source of ordering, since two independent lists were what had let the handoff go stale
+- added a compatibilization note under `AGENTS.md` section 39, Phase 6
+- flagged three section 32/35 compliance gaps: no ADR for the three decisions of 2026-09-19/20, `docs/DEVELOPER_MODE.md` missing, and the presentation in `Apresentacao/index.html` still showing 2026-09-14 figures (37 tools, 69%), left untouched because which number to show an external audience is the operator's choice
+- implemented Phase 2J block reads as READ/Low AutoCAD tools: `block_list`, `block_reference_list`, `block_get_attributes`, with pure rules in `BlockService` behind `IBlockReadAdapter` and the only Autodesk code in `AutodeskBlockAdapter`, opened ForRead
+- resolved dynamic block inserts to their effective name through `DynamicBlockTableRecord`, so a filter on the real block name finds inserts whose definitions are anonymous (*U12); live, dynamic inserts were 66 of 104 in the geometric drawing and 1,372 of 1,961 in the exported one
+- included constant attributes, which exist only on the block definition and never on an insert, through `BlockService.MergeConstantAttributes`, shared by `block_get_attributes` and by `block_reference_list` with `include_attributes`
+- made a cut list say why: `truncated_by` is `scan_budget` or `result_limit`, and a spent scan budget outranks the result limit; both fired live
+- filtered the sweep by `ObjectId.ObjectClass` before opening anything, so 38,179 entities of the exported drawing were swept in 68 ms
+- named every multi-word field of the new contracts explicitly with `[JsonPropertyName]`, so the block tools add nothing to defect D2; a unit test asserts snake_case on the wire
+- added 27 unit tests and 2 MCP integration tests through the real server; the catalog grows from 46 to 49 tools and the suite from 264 to 293 tests, all green
+- fixed `ObjectToolTests`, which hardcoded the whole AutoCAD catalog size (7) and broke on unrelated additions; it now counts only the object tools, the same fix earlier applied to `LayerToolTests`
+- live validated Phase 2J on copies of both drawings of the reference pair, geometric and exported; see `docs/PHASE_2J_LIVE_TEST.md`; originals unchanged by md5, no `acad.exe` left running, decision store empty
+- found that a Civil 3D 2026 update on 2026-09-22 (R25.1.179) moved the Autodesk host from .NET 8 to .NET 10, breaking every Autodesk-facing project with CS1705 before any new code was reached; confirmed environmental by building without the new tests (12 errors)
+- retargeted `Bridge`, `Tools.AutoCAD`, `Tools.Civil` and their two test projects to `net10.0-windows`, leaving Protocol, Core, Sdk, Diagnostics, Server, Survey, Roadway and their tests on .NET 8; recorded as `docs/decisions/ADR-0009-net10-autodesk-host.md`
+- fixed `scripts/package.ps1`, which read the bridge from a hardcoded `net8.0-windows` path and would have packaged an empty or stale folder without error; it now reads `TargetFramework` from the bridge project and fails loudly on a failed build or a missing bridge DLL
+- corrected the bundle manifest from `SeriesMin="R25.0"` to `R25.1`, since a .NET 10 bridge cannot load in the .NET 8 host of Civil 3D 2025, and updated `scripts/check-bundle-install.ps1` to match
+- proved live that the .NET 10 bridge loads and serves all 49 tools in the updated Civil 3D 2026
+- recorded two observations from the live run without concluding them: Civil 3D label components (`AeccTickLine`, `AeccTickCircle`) survive the export as plain blocks, and handle `D7D90` carries the same block in both drawings with a different attribute value, which, if handles survive the export, would make the handle a tracking anchor between the two moments
+- updated roadmap figures: MVP tools 66% to 72% (34/47), Phase 2 from 77% to 88% (23/26), whole platform 53% to 55%; added a CS1705 entry to `docs/TROUBLESHOOTING.md` and updated `docs/INSTALLATION.md` and `docs/AUTODESK_ASSEMBLY_RESOLUTION.md` for the new runtime
+
+Not executed:
+
+- Phase 2 Civil 3D read tools beyond the initial four.
+- any write, destructive, Survey, Developer Mode, or Roadway operation.

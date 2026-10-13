@@ -1,0 +1,43 @@
+# .NET build artifacts
+plugin/bin/
+plugin/obj/
+
+# Hot-reload sidecar build trees — regenerable via plugin/hotreload.ps1
+plugin/hotreload/v*/
+
+# Inno Setup compiled installer
+installer/Output/
+
+# Decompiled API dumps (scratch reference, regenerable)
+api-dump/
+
+# Build / debug logs
+build_err.txt
+build_out.txt
+verify_build.log
+*_log*.txt
+
+# Per-version diff scratch files
+plugin/v*_vs_*.diff
+
+# Civil 3D screenshots and diagnostic dumps from manual debugging sessions
+c3d_*.png
+c3d_*.txt
+
+# AutoCAD lock files (contain the local username)
+*.dwl
+*.dwl2
+
+# Python
+__pycache__/
+*.pyc
+
+# Per-user Claude Code config
+.claude/settings.local.json
+
+# IDE / OS
+.vs/
+.vscode/
+*.user
+Thumbs.db
+.DS_Store

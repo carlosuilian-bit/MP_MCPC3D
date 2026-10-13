@@ -1,0 +1,12 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Civil3D.HybridMcp.Protocol\Civil3D.HybridMcp.Protocol.csproj" />
+    <ProjectReference Include="..\Civil3D.HybridMcp.Core\Civil3D.HybridMcp.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>

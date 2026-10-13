@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ApplicationPackage
+  SchemaVersion="1.0"
+  AutodeskProduct="Civil 3D"
+  ProductType="Application"
+  Name="Civil3D.HybridMcp"
+  AppVersion="0.1.0"
+  Description="Civil3D Hybrid MCP bridge for local named-pipe MCP automation."
+  Author="Civil3D Hybrid MCP Contributors">
+  <CompanyDetails Name="Civil3D Hybrid MCP Contributors" />
+  <Components>
+    <RuntimeRequirements OS="Win64" Platform="AutoCAD*" SeriesMin="R25.1" SeriesMax="R25.1" />
+    <ComponentEntry
+      AppName="Civil3D.HybridMcp.Bridge"
+      ModuleName="./Contents/Win64/Civil3D.HybridMcp.Bridge.dll"
+      AppType=".NET"
+      LoadOnAutoCADStartup="True" />
+  </Components>
+</ApplicationPackage>

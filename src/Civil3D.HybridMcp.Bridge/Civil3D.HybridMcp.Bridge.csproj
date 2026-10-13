@@ -1,0 +1,64 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Civil3D.HybridMcp.Protocol\Civil3D.HybridMcp.Protocol.csproj" />
+    <ProjectReference Include="..\Civil3D.HybridMcp.Core\Civil3D.HybridMcp.Core.csproj" />
+    <ProjectReference Include="..\Civil3D.HybridMcp.Sdk\Civil3D.HybridMcp.Sdk.csproj" />
+    <ProjectReference Include="..\Civil3D.HybridMcp.Diagnostics\Civil3D.HybridMcp.Diagnostics.csproj" />
+    <ProjectReference Include="..\Civil3D.HybridMcp.Tools.AutoCAD\Civil3D.HybridMcp.Tools.AutoCAD.csproj" />
+    <ProjectReference Include="..\Civil3D.HybridMcp.Tools.Civil\Civil3D.HybridMcp.Tools.Civil.csproj" />
+    <ProjectReference Include="..\Civil3D.HybridMcp.Tools.Survey\Civil3D.HybridMcp.Tools.Survey.csproj" />
+    <ProjectReference Include="..\Civil3D.HybridMcp.Tools.Roadway\Civil3D.HybridMcp.Tools.Roadway.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <PlatformTarget>x64</PlatformTarget>
+    <CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+    <EnableDynamicLoading>true</EnableDynamicLoading>
+    <Civil3DTargetYear Condition="'$(Civil3DTargetYear)' == ''">2026</Civil3DTargetYear>
+    <AutodeskAcadDir Condition="'$(AutodeskAcadDir)' == '' and '$(CIVIL3D_ACAD_DIR)' != ''">$(CIVIL3D_ACAD_DIR)</AutodeskAcadDir>
+    <AutodeskAcadDir Condition="'$(AutodeskAcadDir)' == ''">$(ProgramFiles)\Autodesk\AutoCAD $(Civil3DTargetYear)</AutodeskAcadDir>
+    <AutodeskCivil3DDir Condition="'$(AutodeskCivil3DDir)' == '' and '$(CIVIL3D_C3D_DIR)' != ''">$(CIVIL3D_C3D_DIR)</AutodeskCivil3DDir>
+    <AutodeskCivil3DDir Condition="'$(AutodeskCivil3DDir)' == ''">$(AutodeskAcadDir)\C3D</AutodeskCivil3DDir>
+  </PropertyGroup>
+
+  <Target Name="ValidateAutodeskReferences" BeforeTargets="ResolveReferences">
+    <Error Condition="!Exists('$(AutodeskAcadDir)\acmgd.dll')" Text="AutoCAD managed assemblies were not found. Set MSBuild property AutodeskAcadDir or environment variable CIVIL3D_ACAD_DIR. Current value: $(AutodeskAcadDir)" />
+    <Error Condition="!Exists('$(AutodeskAcadDir)\acdbmgd.dll')" Text="acdbmgd.dll was not found. Set AutodeskAcadDir or CIVIL3D_ACAD_DIR. Current value: $(AutodeskAcadDir)" />
+    <Error Condition="!Exists('$(AutodeskAcadDir)\accoremgd.dll')" Text="accoremgd.dll was not found. Set AutodeskAcadDir or CIVIL3D_ACAD_DIR. Current value: $(AutodeskAcadDir)" />
+    <Error Condition="!Exists('$(AutodeskCivil3DDir)\AeccDbMgd.dll')" Text="Civil 3D managed assemblies were not found. Set AutodeskCivil3DDir or CIVIL3D_C3D_DIR. Current value: $(AutodeskCivil3DDir)" />
+    <Error Condition="!Exists('$(AutodeskCivil3DDir)\Autodesk.AECC.Interop.Survey.dll')" Text="Civil 3D Survey interop assembly was not found. Set AutodeskCivil3DDir or CIVIL3D_C3D_DIR. Current value: $(AutodeskCivil3DDir)" />
+    <Error Condition="!Exists('$(AutodeskCivil3DDir)\Autodesk.AECC.Interop.Land.dll')" Text="Civil 3D Land interop assembly was not found. Set AutodeskCivil3DDir or CIVIL3D_C3D_DIR. Current value: $(AutodeskCivil3DDir)" />
+  </Target>
+
+  <ItemGroup>
+    <Reference Include="acmgd">
+      <HintPath>$(AutodeskAcadDir)\acmgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="acdbmgd">
+      <HintPath>$(AutodeskAcadDir)\acdbmgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="accoremgd">
+      <HintPath>$(AutodeskAcadDir)\accoremgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="AeccDbMgd">
+      <HintPath>$(AutodeskCivil3DDir)\AeccDbMgd.dll</HintPath>
+      <Private>false</Private>
+    </Reference>
+    <Reference Include="Autodesk.AECC.Interop.Land">
+      <HintPath>$(AutodeskCivil3DDir)\Autodesk.AECC.Interop.Land.dll</HintPath>
+      <Private>false</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Autodesk.AECC.Interop.Survey">
+      <HintPath>$(AutodeskCivil3DDir)\Autodesk.AECC.Interop.Survey.dll</HintPath>
+      <Private>false</Private>
+      <EmbedInteropTypes>false</EmbedInteropTypes>
+    </Reference>
+  </ItemGroup>
+
+</Project>

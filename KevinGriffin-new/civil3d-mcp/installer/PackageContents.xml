@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Autodesk Autoloader manifest for Civil 3D MCP Bridge plugin.
+  This file tells Civil 3D to automatically load the plugin on startup.
+
+  Placed at:
+    %ProgramData%\Autodesk\ApplicationPlugins\Civil3dMcpBridge.bundle\PackageContents.xml
+
+  The DLL goes in:
+    ...\Civil3dMcpBridge.bundle\Contents\Civil3dMcpBridge.dll
+-->
+<ApplicationPackage
+  SchemaVersion="1.0"
+  AutodeskProduct="Civil3D"
+  ProductType="Application"
+  Name="Civil3dMcpBridge"
+  AppVersion="1.0.0"
+  Description="MCP Bridge for Claude AI integration with Civil 3D. Enables programmatic control of drawing settings, COGO points, styles, labels, and geometry."
+  HelpFile=""
+  OnlineDocumentation=""
+  FriendlyVersion="1.0.0">
+
+  <CompanyDetails
+    Name="Civil3dMcp"
+    Email=""
+    Url="" />
+
+  <!--
+    RuntimeRequirements:
+      SeriesMin="R25.0" = AutoCAD/Civil 3D 2026
+      SeriesMin="R24.0" = AutoCAD/Civil 3D 2025
+      SeriesMin="R23.0" = AutoCAD/Civil 3D 2024
+    Adjust based on your target Civil 3D version.
+  -->
+  <Components Description="Main plugin">
+    <RuntimeRequirements
+      OS="Win64"
+      Platform="AutoCAD"
+      SeriesMin="R24.0"
+      SeriesMax="R25.0" />
+    <ComponentEntry
+      AppName="Civil3dMcpBridge"
+      Version="1.0.0"
+      ModuleName="./Contents/Civil3dMcpBridge.dll"
+      AppType="Managed"
+      LoadOnAutoCADStartup="True"
+      LoadOnCommandInvocation="False" />
+  </Components>
+
+</ApplicationPackage>
